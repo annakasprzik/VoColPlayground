@@ -1,2 +1,2 @@
 # VoColPlayground
-Testbed for a VoCol instance at TIB Hannover
+Testbed for a VoCol installation to be set up at the TIB Hannover
