@@ -1,5 +1,4 @@
 # VoColPlayground
 Testbed for a VoCol installation to be set up at the TIB Hannover
 
-
-temafo and EMOBI are developed by Anna Kasprzik (TIB) from extractions of the thesaurus "Technik und Management" (WTI-Frankfurt eG)
+Experimental files containing "temafo" were created by Anna Kasprzik (TIB) from a .txt version of the internal classification underlying the thesaurus "Technik und Management" (WTI-Frankfurt eG; developed further in cooperation with the TIB since 2013).
