@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix temafo: <http://temafo.de#>.
 
-temafo: rdf:type owl:Ontology.
+temafo: rdf:type rdfs:Ontology.
 
 
 # Definitionen:
