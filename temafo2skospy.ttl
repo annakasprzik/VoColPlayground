@@ -1,0 +1,1658 @@
+# Praefices:
+
+@prefix temafo: <http://onto.tib.eu/temafo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
+
+
+# Konzepte:
+
+temafo:3A rdf:type skos:Concept;
+	skosxl:literalForm "Unternehmen, Management, Recht, Märkte, Politik"@de;
+	skosxl:literalForm "Enterprises, management, economics, politics, legislation"@en.
+temafo:3AA rdf:type skos:Concept;
+	skosxl:literalForm "Unternehmensplanung, Managementstrategien"@de;
+	skosxl:literalForm "Management planning,  management strategies"@en;
+	skos:broader temafo:3A.
+temafo:3AAK rdf:type skos:Concept;
+	skosxl:literalForm "Managementinformationssysteme, Wissensmanagement"@de;
+	skosxl:literalForm "Management information system, knowledge management"@en;
+	skos:broader temafo:3AA.
+temafo:3AAP rdf:type skos:Concept;
+	skosxl:literalForm "Projektmanagement"@de;
+	skosxl:literalForm "Project management"@en;
+	skos:broader temafo:3AA.
+temafo:3AB rdf:type skos:Concept;
+	skosxl:literalForm "Projektierung und Planung von Anlagen, Anlagenbau"@de;
+	skosxl:literalForm "Project engineering and planning of plants, equipment construction"@en;
+	skos:broader temafo:3A.
+temafo:3ABC rdf:type skos:Concept;
+	skosxl:literalForm "Anlagensicherheit"@de;
+	skosxl:literalForm "Plant safety"@en;
+	skos:broader temafo:3AB.
+temafo:3ABZ rdf:type skos:Concept;
+	skosxl:literalForm "Wirtschaftsschutz"@de;
+	skosxl:literalForm "Security for business"@en;
+	skos:broader temafo:3AB.
+temafo:3AD rdf:type skos:Concept;
+	skosxl:literalForm "Kostenrechnung, Finanzwesen, Investitionen"@de;
+	skosxl:literalForm "Costs, finance, investment"@en;
+	skos:broader temafo:3A.
+temafo:3ADA rdf:type skos:Concept;
+	skosxl:literalForm "Bilanzen, Reporting"@de;
+	skosxl:literalForm "Balance (corporate), reporting"@en;
+	skos:broader temafo:3AD.
+temafo:3ADB rdf:type skos:Concept;
+	skosxl:literalForm "Unternehmensbewertung, Controlling"@de;
+	skosxl:literalForm "Enterprise valuation, controlling"@en;
+	skos:broader temafo:3AD.
+temafo:3AE rdf:type skos:Concept;
+	skosxl:literalForm "Marketing, Produktfindung, Absatzförderung, Vertrieb"@de;
+	skosxl:literalForm "Marketing, product research, sales promotion, distribution"@en;
+	skos:broader temafo:3A.
+temafo:3AEN rdf:type skos:Concept;
+	skosxl:literalForm "Neuproduktentwicklung"@de;
+	skosxl:literalForm "New product development"@en;
+	skos:broader temafo:3AE.
+temafo:3AI rdf:type skos:Concept;
+	skosxl:literalForm "Fertigungsplanung, Arbeitsorg., Operations Research"@de;
+	skosxl:literalForm "Production planning and control, operational research"@en;
+	skos:broader temafo:3A.
+temafo:3AIB rdf:type skos:Concept;
+	skosxl:literalForm "rechnerintegrierte Fertigung, virtuelle Produktion"@de;
+	skosxl:literalForm "Computer integrated manufacturing (CIM), virtual production"@en;
+	skos:broader temafo:3AI.
+temafo:3AIX rdf:type skos:Concept;
+	skosxl:literalForm "Logistik, Materialwirtschaft, Lagerhaltung"@de;
+	skosxl:literalForm "Logistics, material management/control"@en;
+	skos:broader temafo:3AI.
+temafo:3AK rdf:type skos:Concept;
+	skosxl:literalForm "Instandhaltung, Wartung"@de;
+	skosxl:literalForm "Maintenance, servicing"@en;
+	skos:broader temafo:3A.
+temafo:3AL rdf:type skos:Concept;
+	skosxl:literalForm "Qualitätsmanagement, Zertifizierung"@de;
+	skosxl:literalForm "Quality assurance/management, certification"@en;
+	skos:broader temafo:3A.
+temafo:3AM rdf:type skos:Concept;
+	skosxl:literalForm "Sicherheit am Arbeitsplatz, Arbeitsunfallverhütung"@de;
+	skosxl:literalForm "Occupational safety, accident prevention"@en;
+	skos:broader temafo:3A.
+temafo:3AMB rdf:type skos:Concept;
+	skosxl:literalForm "Ergonomie, Arbeitswissenschaft und -medizin"@de;
+	skosxl:literalForm "Ergonomics, occupational health"@en;
+	skos:broader temafo:3AM.
+temafo:3AR rdf:type skos:Concept;
+	skosxl:literalForm "Recht, Produkthaftung, Datenschutz"@de;
+	skosxl:literalForm "Legislation, product liability, data protection"@en;
+	skos:broader temafo:3A.
+temafo:3ARA rdf:type skos:Concept;
+	skosxl:literalForm "Arbeitsrecht"@de;
+	skosxl:literalForm "Industrial law"@en;
+	skos:broader temafo:3AR.
+temafo:3ARD rdf:type skos:Concept;
+	skosxl:literalForm "Datenschutz"@de;
+	skosxl:literalForm "Data privacy protection"@en;
+	skos:broader temafo:3AR.
+temafo:3AS rdf:type skos:Concept;
+	skosxl:literalForm "Personalwesen, Entlohnung, Ausbildung, Beruf"@de;
+	skosxl:literalForm "Personnel management,  wage plans, training, career"@en;
+	skos:broader temafo:3A.
+temafo:3AT rdf:type skos:Concept;
+	skosxl:literalForm "Technikentwicklung, Technologietransfer"@de;
+	skosxl:literalForm "Technical development, technology transfer"@en;
+	skos:broader temafo:3A.
+temafo:3ATB rdf:type skos:Concept;
+	skosxl:literalForm "Technikfolgenabschätzung"@de;
+	skosxl:literalForm "Technology assessment"@en;
+	skos:broader temafo:3AT.
+temafo:3ATH rdf:type skos:Concept;
+	skosxl:literalForm "historische Technikentwicklung, Archäologie"@de;
+	skosxl:literalForm "Technical history, archaeology"@en;
+	skos:broader temafo:3AT.
+temafo:3AU rdf:type skos:Concept;
+	skosxl:literalForm "Konstruktionsmet., Warenlehre, Norm, tech. Regelwerk"@de;
+	skosxl:literalForm "Design methodology, merchandise technology, technical standards and rules"@en;
+	skos:broader temafo:3A.
+temafo:3AX rdf:type skos:Concept;
+	skosxl:literalForm "Wirtschaftsforschung, Wirtschaftspolitik"@de;
+	skosxl:literalForm "Economic research and policy"@en;
+	skos:broader temafo:3A.
+temafo:3AXB rdf:type skos:Concept;
+	skosxl:literalForm "Umweltpolitik und -ökonomie, Ökobilanz"@de;
+	skosxl:literalForm "Environmental policy, ecology, ecosystems"@en;
+	skos:broader temafo:3AX.
+temafo:3AXF rdf:type skos:Concept;
+	skosxl:literalForm "Forschungsentwicklung, Forschungspolitik"@de;
+	skosxl:literalForm "Research and development"@en;
+	skos:broader temafo:3AX.
+temafo:3B rdf:type skos:Concept;
+	skosxl:literalForm "naturwissenschaftlich-techn. Grundlagen, Methoden"@de;
+	skosxl:literalForm "Natural sciences (fundamentals, basic methods, models)"@en.
+temafo:3BA rdf:type skos:Concept;
+	skosxl:literalForm "mathematische Methoden"@de;
+	skosxl:literalForm "Mathematical methods"@en;
+	skos:broader temafo:3B.
+temafo:3BAS rdf:type skos:Concept;
+	skosxl:literalForm "Simulation, Simulationstechnik, Simulationsmodell"@de;
+	skosxl:literalForm "Simulation methods, simulation models"@en;
+	skos:broader temafo:3BA.
+temafo:3BB rdf:type skos:Concept;
+	skosxl:literalForm "Mechanik von Festkörpern, Flüssigkeiten und Gasen"@de;
+	skosxl:literalForm "Mechanics of solids, liquids and gases"@en;
+	skos:broader temafo:3B.
+temafo:3BBB rdf:type skos:Concept;
+	skosxl:literalForm "Akustik von Festkörpern, Flüssigkeiten und Gasen"@de;
+	skosxl:literalForm "Acoustics of solids, liquids and gases"@en;
+	skos:broader temafo:3BB.
+temafo:3BBS rdf:type skos:Concept;
+	skosxl:literalForm "Strömungslehre"@de;
+	skosxl:literalForm "Fluid dynamics"@en;
+	skos:broader temafo:3BB.
+temafo:3BF rdf:type skos:Concept;
+	skosxl:literalForm "Optik"@de;
+	skosxl:literalForm "Optical engineering"@en;
+	skos:broader temafo:3B.
+temafo:3BFB rdf:type skos:Concept;
+	skosxl:literalForm "Laser (naturwissenschaftlich-technische Grundlage)"@de;
+	skosxl:literalForm "Laser science, quantum optics"@en;
+	skos:broader temafo:3BF.
+temafo:3BFX rdf:type skos:Concept;
+	skosxl:literalForm "nichtlineare Optik"@de;
+	skosxl:literalForm "Nonlinear optics"@en;
+	skos:broader temafo:3BF.
+temafo:3BG rdf:type skos:Concept;
+	skosxl:literalForm "Elektrizität, Magnetismus, theor. Elektrotechnik"@de;
+	skosxl:literalForm "Electricity and magnetism, electrical engineering (theory)"@en;
+	skos:broader temafo:3B.
+temafo:3BN rdf:type skos:Concept;
+	skosxl:literalForm "statistische Physik, Thermodynamik, Wärmelehre"@de;
+	skosxl:literalForm "Thermodynamics, statistical physics, heat flow"@en;
+	skos:broader temafo:3B.
+temafo:3BR rdf:type skos:Concept;
+	skosxl:literalForm "Festkörperphysik, Halbleitertheorie"@de;
+	skosxl:literalForm "Solid state physics, semiconductor theory"@en;
+	skos:broader temafo:3B.
+temafo:3BU rdf:type skos:Concept;
+	skosxl:literalForm "Atom- und Molekularphysik"@de;
+	skosxl:literalForm "Atomic and molecular physics"@en;
+	skos:broader temafo:3B.
+temafo:3BUB rdf:type skos:Concept;
+	skosxl:literalForm "Plasmaphysik, Physik der elektrischen Entladungen"@de;
+	skosxl:literalForm "Physics of plasmas and electric discharges"@en;
+	skos:broader temafo:3BU.
+temafo:3BUX rdf:type skos:Concept;
+	skosxl:literalForm "Kern- und Elementarteilchenphysik"@de;
+	skosxl:literalForm "Nuclear physics, physics of elementary particles"@en;
+	skos:broader temafo:3BU.
+temafo:3BW rdf:type skos:Concept;
+	skosxl:literalForm "Geowissenschaften, -physik"@de;
+	skosxl:literalForm "Geosciences, geophysics"@en;
+	skos:broader temafo:3B.
+temafo:3BX rdf:type skos:Concept;
+	skosxl:literalForm "chemische Grundlagen"@de;
+	skosxl:literalForm "Fundamentals of chemistry"@en;
+	skos:broader temafo:3B.
+temafo:3BXA rdf:type skos:Concept;
+	skosxl:literalForm "anorganische Chemie"@de;
+	skosxl:literalForm "Inorganic chemistry (fundamentals)"@en;
+	skos:broader temafo:3BX.
+temafo:3BXC rdf:type skos:Concept;
+	skosxl:literalForm "organische Chemie"@de;
+	skosxl:literalForm "Organic chemistry (fundamentals)"@en;
+	skos:broader temafo:3BX.
+temafo:3BXE rdf:type skos:Concept;
+	skosxl:literalForm "Kolloidchemie, Strahlenchemie"@de;
+	skosxl:literalForm "Colloid chemistry , radiochemistry"@en;
+	skos:broader temafo:3BX.
+temafo:3BXP rdf:type skos:Concept;
+	skosxl:literalForm "physikalische Chemie"@de;
+	skosxl:literalForm "Physical chemistry"@en;
+	skos:broader temafo:3BX.
+temafo:3BZ rdf:type skos:Concept;
+	skosxl:literalForm "Biowissenschaften"@de;
+	skosxl:literalForm "Biosciences, life sciences"@en;
+	skos:broader temafo:3B.
+temafo:3BZA rdf:type skos:Concept;
+	skosxl:literalForm "biophysikalische Grundlagen"@de;
+	skosxl:literalForm "Biophysics (fundamentals)"@en;
+	skos:broader temafo:3BZ.
+temafo:3BZB rdf:type skos:Concept;
+	skosxl:literalForm "pharmazeutische Grundlagen, Toxikologie"@de;
+	skosxl:literalForm "Pharmacology, pharmaceutical fundamentals, toxicology"@en;
+	skos:broader temafo:3BZ.
+temafo:3BZG rdf:type skos:Concept;
+	skosxl:literalForm "gentechnische und molekularbiologische Grundlagen"@de;
+	skosxl:literalForm "Fundamentals of genetic engineering and molecular biology"@en;
+	skos:broader temafo:3BZ.
+temafo:3BZH rdf:type skos:Concept;
+	skosxl:literalForm "biochemische Grundlagen"@de;
+	skosxl:literalForm "Biochemistry (fundamentals)"@en;
+	skos:broader temafo:3BZ.
+temafo:3D rdf:type skos:Concept;
+	skosxl:literalForm "Datenverarbeitung"@de;
+	skosxl:literalForm "Data processing and data systems technology"@en.
+temafo:3DB rdf:type skos:Concept;
+	skosxl:literalForm "Grundlagen und Methoden der Informatik"@de;
+	skosxl:literalForm "Information theory (fundamentals), informatics"@en;
+	skos:broader temafo:3D.
+temafo:3DBC rdf:type skos:Concept;
+	skosxl:literalForm "künstl. Intelligenz, neuronale Netze, Expertensysteme"@de;
+	skosxl:literalForm "Artificial intelligence, neural networks, expert systems, fuzzy logic"@en;
+	skos:broader temafo:3DB.
+temafo:3DD rdf:type skos:Concept;
+	skosxl:literalForm "Hardware, Rechnerbetrieb"@de;
+	skosxl:literalForm "Computer hardware, computer operation"@en;
+	skos:broader temafo:3D.
+temafo:3DDB rdf:type skos:Concept;
+	skosxl:literalForm "Groß- und Superrechner"@de;
+	skosxl:literalForm "Mainframe computers, super computers"@en;
+	skos:broader temafo:3DD.
+temafo:3DDG rdf:type skos:Concept;
+	skosxl:literalForm "Peripheriegeräte, Massenspeicher, Datenträger"@de;
+	skosxl:literalForm "Peripheral computer equipment, mass storage, data carriers"@en;
+	skos:broader temafo:3DD.
+temafo:3DDR rdf:type skos:Concept;
+	skosxl:literalForm "Workstations, Mini- und Mikrocomputer"@de;
+	skosxl:literalForm "Workstations, minicomputers, microcomputers"@en;
+	skos:broader temafo:3DD.
+temafo:3DDX rdf:type skos:Concept;
+	skosxl:literalForm "Zentraleinheiten (CPUs)"@de;
+	skosxl:literalForm "Central processing units (CPUs)"@en;
+	skos:broader temafo:3DD.
+temafo:3DF rdf:type skos:Concept;
+	skosxl:literalForm "Systemarchitekt., Betriebssyst., Programmierspr."@de;
+	skosxl:literalForm "Systems architecture/software, programming languages"@en;
+	skos:broader temafo:3D.
+temafo:3DFB rdf:type skos:Concept;
+	skosxl:literalForm "Datenbanksysteme"@de;
+	skosxl:literalForm "Database management systems"@en;
+	skos:broader temafo:3DF.
+temafo:3DG rdf:type skos:Concept;
+	skosxl:literalForm "oftware Engineering, -Eigenschaften, -Komponenten"@de;
+	skosxl:literalForm "Software engineering/maintenance, application software"@en;
+	skos:broader temafo:3D.
+temafo:3DK rdf:type skos:Concept;
+	skosxl:literalForm "Software in Verwaltung/Büro, elektron. Publizieren"@de;
+	skosxl:literalForm "Office software, electronic publishing"@en;
+	skos:broader temafo:3D.
+temafo:3DL rdf:type skos:Concept;
+	skosxl:literalForm "technisch-wissenschaftliche Software"@de;
+	skosxl:literalForm "Computer software (technical-scientific)"@en;
+	skos:broader temafo:3D.
+temafo:3DLB rdf:type skos:Concept;
+	skosxl:literalForm "CAD-, CAE-, CAM- und CIM-Systeme"@de;
+	skosxl:literalForm "CAD/CAE/CAM/CIM systems"@en;
+	skos:broader temafo:3DL.
+temafo:3DR rdf:type skos:Concept;
+	skosxl:literalForm "graphische Datenverarbeitung, virtuelle Realität"@de;
+	skosxl:literalForm "Graphic data processing, virtual reality"@en;
+	skos:broader temafo:3D.
+temafo:3DU rdf:type skos:Concept;
+	skosxl:literalForm "Prozessdatenverarbeitung"@de;
+	skosxl:literalForm "Process data processing"@en;
+	skos:broader temafo:3D.
+temafo:3DX rdf:type skos:Concept;
+	skosxl:literalForm "Rechnernetze/-verbund, verteilte Datenverarbeitung"@de;
+	skosxl:literalForm "Computer networks, distributed data processing"@en;
+	skos:broader temafo:3D.
+temafo:3DXA rdf:type skos:Concept;
+	skosxl:literalForm "internetbasierte Systeme"@de;
+	skosxl:literalForm "Internet-bases systems"@en;
+	skos:broader temafo:3DX.
+temafo:3E rdf:type skos:Concept;
+	skosxl:literalForm "Energietechnik und -wirtschaft"@de;
+	skosxl:literalForm "Power engineering and energy management"@en.
+temafo:3EB rdf:type skos:Concept;
+	skosxl:literalForm "Energiewirtschaft"@de;
+	skosxl:literalForm "Energy industry, energy management"@en;
+	skos:broader temafo:3E.
+temafo:3EBB rdf:type skos:Concept;
+	skosxl:literalForm "Elektrizitätswirtschaft"@de;
+	skosxl:literalForm "Electricity supply industry"@en;
+	skos:broader temafo:3EB.
+temafo:3ED rdf:type skos:Concept;
+	skosxl:literalForm "Brenn- und Kraftstoffe"@de;
+	skosxl:literalForm "Fuel"@en;
+	skos:broader temafo:3E.
+temafo:3EE rdf:type skos:Concept;
+	skosxl:literalForm "Kraftwerke, Kernreaktoren"@de;
+	skosxl:literalForm "Power plants, nuclear reactors"@en;
+	skos:broader temafo:3E.
+temafo:3EEB rdf:type skos:Concept;
+	skosxl:literalForm "Kraftwerkleittechnik, -steuerung und -regelung"@de;
+	skosxl:literalForm "Power plant control engineering"@en;
+	skos:broader temafo:3EE.
+temafo:3EI rdf:type skos:Concept;
+	skosxl:literalForm "Wärmetechnik, Kältetechnik"@de;
+	skosxl:literalForm "Thermal engineering, refrigeration and cold storage"@en;
+	skos:broader temafo:3E.
+temafo:3EIB rdf:type skos:Concept;
+	skosxl:literalForm "Wärmepumpen"@de;
+	skosxl:literalForm "Heat pumps"@en;
+	skos:broader temafo:3EI.
+temafo:3EIC rdf:type skos:Concept;
+	skosxl:literalForm "Wärmeübertragungstechnik, Wärmeaustauscher"@de;
+	skosxl:literalForm "Heat transfer engineering, heat exchangers"@en;
+	skos:broader temafo:3EI.
+temafo:3EIF rdf:type skos:Concept;
+	skosxl:literalForm "Heizwerke, Feuerungsanlagen, Industrieöfen"@de;
+	skosxl:literalForm "Heating plants, industrial burners and furnaces"@en;
+	skos:broader temafo:3EI.
+temafo:3EIH rdf:type skos:Concept;
+	skosxl:literalForm "Heizung, Lüftung, Klima- und Reinraumtechnik"@de;
+	skosxl:literalForm "Heating, ventilation, air conditioning, clean room technology"@en;
+	skos:broader temafo:3EI.
+temafo:3EIK rdf:type skos:Concept;
+	skosxl:literalForm "Kältetechnik"@de;
+	skosxl:literalForm "Refrigeration and cold storage"@en;
+	skos:broader temafo:3EI.
+temafo:3EK rdf:type skos:Concept;
+	skosxl:literalForm "Elektrowärme"@de;
+	skosxl:literalForm "Electric heat"@en;
+	skos:broader temafo:3E.
+temafo:3EL rdf:type skos:Concept;
+	skosxl:literalForm "Energiedirektumwandlung, Energiespeicherung"@de;
+	skosxl:literalForm "Direct energy conversion, energy storage"@en;
+	skos:broader temafo:3E.
+temafo:3ELB rdf:type skos:Concept;
+	skosxl:literalForm "Energiedirektumwandlung in elektrische Energie"@de;
+	skosxl:literalForm "Electric energy storage devices, direct energy conversion"@en;
+	skos:broader temafo:3EL.
+temafo:3ELX rdf:type skos:Concept;
+	skosxl:literalForm "thermische, chem. und mechan. Energiespeicher"@de;
+	skosxl:literalForm "Thermal, chemical and mechanical energy storage devices"@en;
+	skos:broader temafo:3EL.
+temafo:3EM rdf:type skos:Concept;
+	skosxl:literalForm "elektrische Energieübertragung und -netze"@de;
+	skosxl:literalForm "Electric power transmission and systems"@en;
+	skos:broader temafo:3E.
+temafo:3EN rdf:type skos:Concept;
+	skosxl:literalForm "elektrische Schaltanlagen und -geräte"@de;
+	skosxl:literalForm "Power switching devices"@en;
+	skos:broader temafo:3E.
+temafo:3EP rdf:type skos:Concept;
+	skosxl:literalForm "Niederspannungsanlagen, elektrische Installationen"@de;
+	skosxl:literalForm "Low-voltage installations, lighting engineering"@en;
+	skos:broader temafo:3E.
+temafo:3ER rdf:type skos:Concept;
+	skosxl:literalForm "elektrische Schutzmaßnahmen, -arten, -geräte"@de;
+	skosxl:literalForm "Electrical protective measures and devices"@en;
+	skos:broader temafo:3E.
+temafo:3ES rdf:type skos:Concept;
+	skosxl:literalForm "Leistungselektronik, Stromrichtertechnik"@de;
+	skosxl:literalForm "Power electronics, current converters"@en;
+	skos:broader temafo:3E.
+temafo:3ET rdf:type skos:Concept;
+	skosxl:literalForm "Umspannanlagen, Leistungstransfos, Blindleistungsdr."@de;
+	skosxl:literalForm "Power transformers, reactive power compensation"@en;
+	skos:broader temafo:3E.
+temafo:3EU rdf:type skos:Concept;
+	skosxl:literalForm "elektrische Maschinen und Antriebe"@de;
+	skosxl:literalForm "Electrical machines and drives"@en;
+	skos:broader temafo:3E.
+temafo:3EW rdf:type skos:Concept;
+	skosxl:literalForm "instationäre Strom- und Notstromversorgungsanlagen"@de;
+	skosxl:literalForm "Nonstationary and emergency power supplies"@en;
+	skos:broader temafo:3E.
+temafo:3EX rdf:type skos:Concept;
+	skosxl:literalForm "elektrische Hausgeräte"@de;
+	skosxl:literalForm "Electric household appliances"@en;
+	skos:broader temafo:3E.
+temafo:3EZ rdf:type skos:Concept;
+	skosxl:literalForm "elektrophysikalische Anlagen für Labor und Forschung"@de;
+	skosxl:literalForm "Electro-physical laboratory equipment"@en;
+	skos:broader temafo:3E.
+temafo:3F rdf:type skos:Concept;
+	skosxl:literalForm "Elektronik, Mikroelektronik"@de;
+	skosxl:literalForm "Electronics and microelectronics"@en.
+temafo:3FA rdf:type skos:Concept;
+	skosxl:literalForm "Grundschaltungen (Analog- und Digitalschaltungen)"@de;
+	skosxl:literalForm "Basic circuits (analogue, digital)"@en;
+	skos:broader temafo:3F.
+temafo:3FAB rdf:type skos:Concept;
+	skosxl:literalForm "Netzwerktheorie (konzentrierte Schaltungen)"@de;
+	skosxl:literalForm "Network theory (concentrated circuits)"@en;
+	skos:broader temafo:3FA.
+temafo:3FAG rdf:type skos:Concept;
+	skosxl:literalForm "Signal- und Frequenzfilter, Entzerrer"@de;
+	skosxl:literalForm "Signal/frequency filters, equalisers"@en;
+	skos:broader temafo:3FA.
+temafo:3FAR rdf:type skos:Concept;
+	skosxl:literalForm "elektron. Verstärker, Signalumformer, -generatoren"@de;
+	skosxl:literalForm "Amplifiers, signal converters/generators, oscillators"@en;
+	skos:broader temafo:3FA.
+temafo:3FAX rdf:type skos:Concept;
+	skosxl:literalForm "digitale Grundschaltungen"@de;
+	skosxl:literalForm "Digital basic circuits"@en;
+	skos:broader temafo:3FA.
+temafo:3FE rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung von Halbleiterwerkstoffen"@de;
+	skosxl:literalForm "Processing of semiconductor materials"@en;
+	skos:broader temafo:3F.
+temafo:3FF rdf:type skos:Concept;
+	skosxl:literalForm "Herstellungstechnologien für elektron. Bauelemente"@de;
+	skosxl:literalForm "Components and circuits fabrication"@en;
+	skos:broader temafo:3F.
+temafo:3FK rdf:type skos:Concept;
+	skosxl:literalForm "passive und elektromechanische Bauelemente"@de;
+	skosxl:literalForm "Passive/electromechanical components"@en;
+	skos:broader temafo:3F.
+temafo:3FKB rdf:type skos:Concept;
+	skosxl:literalForm "Elektronenröhren"@de;
+	skosxl:literalForm "Electronic tubes/valves"@en;
+	skos:broader temafo:3FK.
+temafo:3FKG rdf:type skos:Concept;
+	skosxl:literalForm "Anzeigeelemente"@de;
+	skosxl:literalForm "Displays"@en;
+	skos:broader temafo:3FK.
+temafo:3FKR rdf:type skos:Concept;
+	skosxl:literalForm "supraleitende Bauelemente und Magnete"@de;
+	skosxl:literalForm "Superconducting devices and magnets"@en;
+	skos:broader temafo:3FK.
+temafo:3FR rdf:type skos:Concept;
+	skosxl:literalForm "Schaltungsentwicklung und -entwurf"@de;
+	skosxl:literalForm "Circuit development/design"@en;
+	skos:broader temafo:3F.
+temafo:3FT rdf:type skos:Concept;
+	skosxl:literalForm "Halbleiter- und mikroelektronische Bauelemente"@de;
+	skosxl:literalForm "Semiconductor/microelectronics components"@en;
+	skos:broader temafo:3F.
+temafo:3FTB rdf:type skos:Concept;
+	skosxl:literalForm "diskrete Halbleiterbauelemente"@de;
+	skosxl:literalForm "Discrete semiconductor components"@en;
+	skos:broader temafo:3FT.
+temafo:3FTG rdf:type skos:Concept;
+	skosxl:literalForm "integr. Analog-/Digital-/Hybrid-/Dick-/Dünnschicht"@de;
+	skosxl:literalForm "Integrated analogue/digital/hybrid/thin/thick film circuits"@en;
+	skos:broader temafo:3FT.
+temafo:3FTR rdf:type skos:Concept;
+	skosxl:literalForm "Mikroprozessoren"@de;
+	skosxl:literalForm "Microprocessors"@en;
+	skos:broader temafo:3FT.
+temafo:3FTX rdf:type skos:Concept;
+	skosxl:literalForm "Speicherschaltungen"@de;
+	skosxl:literalForm "Memory devices"@en;
+	skos:broader temafo:3FT.
+temafo:3FU rdf:type skos:Concept;
+	skosxl:literalForm "Verdrahtungs- u. Anschlusstechnik, Elektron-Einschub"@de;
+	skosxl:literalForm "Wiring, connecting, plug-in units, housings"@en;
+	skos:broader temafo:3F.
+temafo:3FX rdf:type skos:Concept;
+	skosxl:literalForm "optoelektronische Bauelemente, integrierte Optik"@de;
+	skosxl:literalForm "Optoelectronic devices, integrated optics"@en;
+	skos:broader temafo:3F.
+temafo:3G rdf:type skos:Concept;
+	skosxl:literalForm "Nachrichten- und Kommunikationstechnik"@de;
+	skosxl:literalForm "Communications and telecommunication engineering"@en.
+temafo:3GA rdf:type skos:Concept;
+	skosxl:literalForm "Grundlagen/Methoden Nachrichten/Kommunikationstech."@de;
+	skosxl:literalForm "Fundamentals of telecommunications engineering"@en;
+	skos:broader temafo:3G.
+temafo:3GE rdf:type skos:Concept;
+	skosxl:literalForm "elektromagn. Beeinflussung von elektron. Schaltungen"@de;
+	skosxl:literalForm "Electromagnetic interference of circuits"@en;
+	skos:broader temafo:3G.
+temafo:3GF rdf:type skos:Concept;
+	skosxl:literalForm "Signalerkennung und -verarbeitung"@de;
+	skosxl:literalForm "Signal recognition/processing"@en;
+	skos:broader temafo:3G.
+temafo:3GFB rdf:type skos:Concept;
+	skosxl:literalForm "Bilderkennung und -verarbeitung"@de;
+	skosxl:literalForm "Pattern recognition/processing, image processing"@en;
+	skos:broader temafo:3GF.
+temafo:3GFX rdf:type skos:Concept;
+	skosxl:literalForm "Sprachanalyse/-synthese/-verarbeitung,Sprechererkenn."@de;
+	skosxl:literalForm "Speech analysis/synthesis/processing"@en;
+	skos:broader temafo:3GF.
+temafo:3GG rdf:type skos:Concept;
+	skosxl:literalForm "Audio/Video/Studio/Foto/Film/Kino/Rundfunktechnik"@de;
+	skosxl:literalForm "Audio, video, photography, cinematography, radio, tv"@en;
+	skos:broader temafo:3G.
+temafo:3GL rdf:type skos:Concept;
+	skosxl:literalForm "Kommunikationsmedien/-dienste/-endeinrichtungen"@de;
+	skosxl:literalForm "Communication media/services"@en;
+	skos:broader temafo:3G.
+temafo:3GN rdf:type skos:Concept;
+	skosxl:literalForm "Nachrichtennetze und -vermittlungen"@de;
+	skosxl:literalForm "Communication networks/switching technology"@en;
+	skos:broader temafo:3G.
+temafo:3GR rdf:type skos:Concept;
+	skosxl:literalForm "Nachrichtenübertragungsverfahren und -geräte"@de;
+	skosxl:literalForm "Communication devices and techniques"@en;
+	skos:broader temafo:3G.
+temafo:3GRP rdf:type skos:Concept;
+	skosxl:literalForm "Übertragungsprotokolle und -prozeduren"@de;
+	skosxl:literalForm "Communication protocols/procedures"@en;
+	skos:broader temafo:3GR.
+temafo:3GS rdf:type skos:Concept;
+	skosxl:literalForm "Nachrichtenkabel und -leitungen"@de;
+	skosxl:literalForm "Communication cables/lines"@en;
+	skos:broader temafo:3G.
+temafo:3GSB rdf:type skos:Concept;
+	skosxl:literalForm "Lichtwellenleiter und Glasfaserkabel"@de;
+	skosxl:literalForm "Optical waveguides, fibreglass cables"@en;
+	skos:broader temafo:3GS.
+temafo:3GU rdf:type skos:Concept;
+	skosxl:literalForm "optische Nachrichtentechnik, Glasfasernetze"@de;
+	skosxl:literalForm "Optical communications, fibreglass networks"@en;
+	skos:broader temafo:3G.
+temafo:3GW rdf:type skos:Concept;
+	skosxl:literalForm "Funktechnik und -übertragung"@de;
+	skosxl:literalForm "Radio communication/transmission"@en;
+	skos:broader temafo:3G.
+temafo:3GX rdf:type skos:Concept;
+	skosxl:literalForm "Mikrowellentechnik, -bauelemente und -schaltungen"@de;
+	skosxl:literalForm "Microwave engineering/devices"@en;
+	skos:broader temafo:3G.
+temafo:3GZ rdf:type skos:Concept;
+	skosxl:literalForm "Radar, Ortung, Peilung, Navigation, Fernlenkung"@de;
+	skosxl:literalForm "Radar, position/direction finding, navigation"@en;
+	skos:broader temafo:3G.
+temafo:3I rdf:type skos:Concept;
+	skosxl:literalForm "Mess-, Prüf-, Steuerungs- und Regelungstechnik"@de;
+	skosxl:literalForm "Measurement, testing and control"@en.
+temafo:3IB rdf:type skos:Concept;
+	skosxl:literalForm "Maßsysteme und -einheiten, Metrologie"@de;
+	skosxl:literalForm "Measuring units/systems"@en;
+	skos:broader temafo:3I.
+temafo:3ID rdf:type skos:Concept;
+	skosxl:literalForm "Mess- und Prüfverfahren, -geräte, -anlagen"@de;
+	skosxl:literalForm "Measuring/testing methods/devices"@en;
+	skos:broader temafo:3I.
+temafo:3IDA rdf:type skos:Concept;
+	skosxl:literalForm "akustische Messverfahren"@de;
+	skosxl:literalForm "Acoustic measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDB rdf:type skos:Concept;
+	skosxl:literalForm "biologisch-biochemische Messverfahren"@de;
+	skosxl:literalForm "Biological-biochemical measurements"@en;
+	skos:broader temafo:3ID.
+temafo:3IDC rdf:type skos:Concept;
+	skosxl:literalForm "physikalisch-chemische Messverfahren"@de;
+	skosxl:literalForm "Physico-chemical measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDE rdf:type skos:Concept;
+	skosxl:literalForm "elektrische und magnetische Messverfahren"@de;
+	skosxl:literalForm "Electrical, magnetic measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDM rdf:type skos:Concept;
+	skosxl:literalForm "mechanische Messverfahren"@de;
+	skosxl:literalForm "Mechanical measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDO rdf:type skos:Concept;
+	skosxl:literalForm "optische Messverfahren"@de;
+	skosxl:literalForm "Optical measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDT rdf:type skos:Concept;
+	skosxl:literalForm "thermische Messverfahren"@de;
+	skosxl:literalForm "Thermal measuring methods"@en;
+	skos:broader temafo:3ID.
+temafo:3IDX rdf:type skos:Concept;
+	skosxl:literalForm "Teilchenspektrometrie und -mikroskopie"@de;
+	skosxl:literalForm "Particle spectroscopy/microscopy"@en;
+	skos:broader temafo:3ID.
+temafo:3IF rdf:type skos:Concept;
+	skosxl:literalForm "Messgrößen"@de;
+	skosxl:literalForm "Measuring variables"@en;
+	skos:broader temafo:3I.
+temafo:3IFA rdf:type skos:Concept;
+	skosxl:literalForm "Messung/ Prüfung akustischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of acoustical variables"@en;
+	skos:broader temafo:3IF.
+temafo:3IFC rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung chem. Größen, chemische Analytik"@de;
+	skosxl:literalForm "Measuring/testing of chemical variables, chemical analysis"@en;
+	skos:broader temafo:3IF.
+temafo:3IFE rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung elektrischer und magnetischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of electric/magnetic variables"@en;
+	skos:broader temafo:3IF.
+temafo:3IFF rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung der Frequenz und der Zeit"@de;
+	skosxl:literalForm "Measuring/testing of frequency and time"@en;
+	skos:broader temafo:3IF.
+temafo:3IFM rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung mechanischer/geometrischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of mechanical/geometrical variables/mass/density"@en;
+	skos:broader temafo:3IF.
+temafo:3IFO rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung optischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of optical variables"@en;
+	skos:broader temafo:3IF.
+temafo:3IFS rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung strömungstechnischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of fluid flow variables"@en;
+	skos:broader temafo:3IF.
+temafo:3IFT rdf:type skos:Concept;
+	skosxl:literalForm "Messung/Prüfung thermischer und kalorischer Größen"@de;
+	skosxl:literalForm "Measuring/testing of thermal variables/humidity"@en;
+	skos:broader temafo:3IF.
+temafo:3IFX rdf:type skos:Concept;
+	skosxl:literalForm "Messung von Kernstrahlung und Teilchennachweis"@de;
+	skosxl:literalForm "Nuclear radiation measurement, particle detection"@en;
+	skos:broader temafo:3IF.
+temafo:3IG rdf:type skos:Concept;
+	skosxl:literalForm "Werkstoffprüfung"@de;
+	skosxl:literalForm "Materials testing/inspection"@en;
+	skos:broader temafo:3I.
+temafo:3IGB rdf:type skos:Concept;
+	skosxl:literalForm "zerstörende Werkstoffprüfung"@de;
+	skosxl:literalForm "Destructive materials testing"@en;
+	skos:broader temafo:3IG.
+temafo:3IGK rdf:type skos:Concept;
+	skosxl:literalForm "Korrosionsprüfung"@de;
+	skosxl:literalForm "Corrosion testing"@en;
+	skos:broader temafo:3IG.
+temafo:3IGT rdf:type skos:Concept;
+	skosxl:literalForm "Faser-, Garn- und Textilprüfung"@de;
+	skosxl:literalForm "Fibre, yarn and textile testing"@en;
+	skos:broader temafo:3IG.
+temafo:3IGX rdf:type skos:Concept;
+	skosxl:literalForm "zerstörungsfreie Prüfung von Werkstoffen/Bauteilen"@de;
+	skosxl:literalForm "Non-destructive testing/inspection of materials/components"@en;
+	skos:broader temafo:3IG.
+temafo:3IK rdf:type skos:Concept;
+	skosxl:literalForm "Messwertverarbeitung, Meßwertanzeigen"@de;
+	skosxl:literalForm "Measured data processing and display"@en;
+	skos:broader temafo:3I.
+temafo:3IL rdf:type skos:Concept;
+	skosxl:literalForm "Sensorik, Aktorik"@de;
+	skosxl:literalForm "Sensor technology, actoric, sensors and actuators"@en;
+	skos:broader temafo:3I.
+temafo:3IN rdf:type skos:Concept;
+	skosxl:literalForm "Regelungstheorie, Kybernetik"@de;
+	skosxl:literalForm "Control theory, cybernetics"@en;
+	skos:broader temafo:3I.
+temafo:3IR rdf:type skos:Concept;
+	skosxl:literalForm "Steuerungs- und Regelungssysteme"@de;
+	skosxl:literalForm "Control and control systems"@en;
+	skos:broader temafo:3I.
+temafo:3IRB rdf:type skos:Concept;
+	skosxl:literalForm "elektrische und elektronische Steuerung und Regelung"@de;
+	skosxl:literalForm "Electric/electronic control systems"@en;
+	skos:broader temafo:3IR.
+temafo:3IRG rdf:type skos:Concept;
+	skosxl:literalForm "hydraulische und pneumatische Steuerung und Regelung"@de;
+	skosxl:literalForm "Hydraulic/pneumatic control systems"@en;
+	skos:broader temafo:3IR.
+temafo:3IRR rdf:type skos:Concept;
+	skosxl:literalForm "programmierte und programmierbare Steuerungen"@de;
+	skosxl:literalForm "Programmed/programmable controllers"@en;
+	skos:broader temafo:3IR.
+temafo:3IT rdf:type skos:Concept;
+	skosxl:literalForm "Leit- und Überwachungstechnik"@de;
+	skosxl:literalForm "Control technology, monitoring"@en;
+	skos:broader temafo:3I.
+temafo:3IU rdf:type skos:Concept;
+	skosxl:literalForm "Laboratoriumstechnik"@de;
+	skosxl:literalForm "Laboratory techniques"@en;
+	skos:broader temafo:3I.
+temafo:3K rdf:type skos:Concept;
+	skosxl:literalForm "Werkstoffe, Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Materials and material properties"@en.
+temafo:3KB rdf:type skos:Concept;
+	skosxl:literalForm "Rohstoffe, natürliche und Sekundärrohstoffe"@de;
+	skosxl:literalForm "Raw materials (natural/secondary)"@en;
+	skos:broader temafo:3K.
+temafo:3KE rdf:type skos:Concept;
+	skosxl:literalForm "metallische Werkstoffe"@de;
+	skosxl:literalForm "Metallic materials"@en;
+	skos:broader temafo:3K.
+temafo:3KEB rdf:type skos:Concept;
+	skosxl:literalForm "Stähle, Stahlguss"@de;
+	skosxl:literalForm "Steels, cast steel"@en;
+	skos:broader temafo:3KE.
+temafo:3KEE rdf:type skos:Concept;
+	skosxl:literalForm "Reineisen, Eisenlegierungen"@de;
+	skosxl:literalForm "Pure iron, iron alloys"@en;
+	skos:broader temafo:3KE.
+temafo:3KEG rdf:type skos:Concept;
+	skosxl:literalForm "Eisengusswerkstoffe"@de;
+	skosxl:literalForm "Cast iron"@en;
+	skos:broader temafo:3KE.
+temafo:3KEM rdf:type skos:Concept;
+	skosxl:literalForm "Nichteisen-/Sonder-Metalle, NE-Legierungen, NE-Guss"@de;
+	skosxl:literalForm "Nonferrous metals/alloys/casting materials"@en;
+	skos:broader temafo:3KE.
+temafo:3KER rdf:type skos:Concept;
+	skosxl:literalForm "Superlegierungen"@de;
+	skosxl:literalForm "Superalloys"@en;
+	skos:broader temafo:3KE.
+temafo:3KET rdf:type skos:Concept;
+	skosxl:literalForm "metallische Gläser, Reinmetall/Legierungen (amorph)"@de;
+	skosxl:literalForm "Metallic glasses, amorphous metals/pure metals and alloys"@en;
+	skos:broader temafo:3KE.
+temafo:3KEX rdf:type skos:Concept;
+	skosxl:literalForm "Hartmetalle, Cermets"@de;
+	skosxl:literalForm "Cemented carbides, cermets"@en;
+	skos:broader temafo:3KE.
+temafo:3KG rdf:type skos:Concept;
+	skosxl:literalForm "anorganisch-nichtmetallische Werkstoffe"@de;
+	skosxl:literalForm "Inorganic nonmetallic materials"@en;
+	skos:broader temafo:3K.
+temafo:3KGB rdf:type skos:Concept;
+	skosxl:literalForm "Minerale, natürliche/synthet. Kristalle, Gesteine"@de;
+	skosxl:literalForm "Minerals, natural/synthetic crystals, rocks"@en;
+	skos:broader temafo:3KG.
+temafo:3KGG rdf:type skos:Concept;
+	skosxl:literalForm "Keramik, Glaskeramik, Feuerfest-Werkstoffe"@de;
+	skosxl:literalForm "Ceramic/refractory materials, glass ceramics"@en;
+	skos:broader temafo:3KG.
+temafo:3KGR rdf:type skos:Concept;
+	skosxl:literalForm "Glas"@de;
+	skosxl:literalForm "Glass"@en;
+	skos:broader temafo:3KG.
+temafo:3KGU rdf:type skos:Concept;
+	skosxl:literalForm "Bindemittel, Baustoffe"@de;
+	skosxl:literalForm "Binders, construction materials"@en;
+	skos:broader temafo:3KG.
+temafo:3KH rdf:type skos:Concept;
+	skosxl:literalForm "Fasern, Mikrofasern, Nanofasern"@de;
+	skosxl:literalForm "Fibres, microfibres, nanofibres"@en;
+	skos:broader temafo:3K.
+temafo:3KHB rdf:type skos:Concept;
+	skosxl:literalForm "Naturfasern"@de;
+	skosxl:literalForm "Natural fibres"@en;
+	skos:broader temafo:3KH.
+temafo:3KHX rdf:type skos:Concept;
+	skosxl:literalForm "Chemiefasern, Glasfasern, Kohlenstoff-/Metallfasern"@de;
+	skosxl:literalForm "Chemical/glass/carbon/metal fibres"@en;
+	skos:broader temafo:3KH.
+temafo:3KK rdf:type skos:Concept;
+	skosxl:literalForm "organische Werkstoffe, Polymerwerkstoffe"@de;
+	skosxl:literalForm "Organic materials, polymers"@en;
+	skos:broader temafo:3K.
+temafo:3KKB rdf:type skos:Concept;
+	skosxl:literalForm "Kunststoffe"@de;
+	skosxl:literalForm "Plastics"@en;
+	skos:broader temafo:3KK.
+temafo:3KKC rdf:type skos:Concept;
+	skosxl:literalForm "Zellstoffe"@de;
+	skosxl:literalForm "Cellulose"@en;
+	skos:broader temafo:3KK.
+temafo:3KM rdf:type skos:Concept;
+	skosxl:literalForm "erbundwerkstoffe"@de;
+	skosxl:literalForm "Composites"@en;
+	skos:broader temafo:3K.
+temafo:3KMA rdf:type skos:Concept;
+	skosxl:literalForm "partikelverstärkte Verbundwerkstoffe"@de;
+	skosxl:literalForm "Particle-reinforced composites"@en;
+	skos:broader temafo:3KM.
+temafo:3KMB rdf:type skos:Concept;
+	skosxl:literalForm "faserverstärkte Verbundwerkstoffe"@de;
+	skosxl:literalForm "Fibre-reinforced composites"@en;
+	skos:broader temafo:3KM.
+temafo:3KMC rdf:type skos:Concept;
+	skosxl:literalForm "Schichtverbund-/Gradientenwerkstoffe, Laminate"@de;
+	skosxl:literalForm "Laminated materials, laminates, gradient materials"@en;
+	skos:broader temafo:3KM.
+temafo:3KMD rdf:type skos:Concept;
+	skosxl:literalForm "organisch-anorganische Verbundwerkstoffe"@de;
+	skosxl:literalForm "Organic-inorganic composites"@en;
+	skos:broader temafo:3KM.
+temafo:3KMF rdf:type skos:Concept;
+	skosxl:literalForm "Metall-Matrix-Verbundstoffe (MMCs)"@de;
+	skosxl:literalForm "Metal-matrix composites (MMCs)"@en;
+	skos:broader temafo:3KM.
+temafo:3KMK rdf:type skos:Concept;
+	skosxl:literalForm "Keramik/Glas-Matrix-Verbundstoffe (CMCs)"@de;
+	skosxl:literalForm "Ceramics/glass-matrix composites (CMCs)"@en;
+	skos:broader temafo:3KM.
+temafo:3KMN rdf:type skos:Concept;
+	skosxl:literalForm "Polymer-Matrix-Verbundstoffe (PMCs)"@de;
+	skosxl:literalForm "Polymer-matrix composites (PMCs)"@en;
+	skos:broader temafo:3KM.
+temafo:3KMZ rdf:type skos:Concept;
+	skosxl:literalForm "Zuschlagstoffe"@de;
+	skosxl:literalForm "Additives"@en;
+	skos:broader temafo:3KM.
+temafo:3KP rdf:type skos:Concept;
+	skosxl:literalForm "pulverförmige Stoffe, Granulate"@de;
+	skosxl:literalForm "Powders, granular solids"@en;
+	skos:broader temafo:3K.
+temafo:3KS rdf:type skos:Concept;
+	skosxl:literalForm "Schaumstoffe, Schaumwerkstoffe"@de;
+	skosxl:literalForm "Foam materials"@en;
+	skos:broader temafo:3K.
+temafo:3KU rdf:type skos:Concept;
+	skosxl:literalForm "Überzüge, Coatings, dünne Schichten"@de;
+	skosxl:literalForm "Coatings, thin films"@en;
+	skos:broader temafo:3K.
+temafo:3KUF rdf:type skos:Concept;
+	skosxl:literalForm "Folien"@de;
+	skosxl:literalForm "Film sheets"@en;
+	skos:broader temafo:3KU.
+temafo:3KW rdf:type skos:Concept;
+	skosxl:literalForm "Werkstoffkunde, -physik"@de;
+	skosxl:literalForm "Materials science"@en;
+	skos:broader temafo:3K.
+temafo:3KWB rdf:type skos:Concept;
+	skosxl:literalForm "Keimbildung, Kristallwachstum, Glasbildung, Epitaxie"@de;
+	skosxl:literalForm "Nucleation, crystal growth, vitrification, epitaxy"@en;
+	skos:broader temafo:3KW.
+temafo:3KWG rdf:type skos:Concept;
+	skosxl:literalForm "Kristallstruktur, Werkstoffgefüge und -textur"@de;
+	skosxl:literalForm "Crystal structure, material structure/textures"@en;
+	skos:broader temafo:3KW.
+temafo:3KWR rdf:type skos:Concept;
+	skosxl:literalForm "Phasendiagramme der Werkstoffe"@de;
+	skosxl:literalForm "Phase diagrams of materials"@en;
+	skos:broader temafo:3KW.
+temafo:3KX rdf:type skos:Concept;
+	skosxl:literalForm "Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Materials properties"@en;
+	skos:broader temafo:3K.
+temafo:3KXA rdf:type skos:Concept;
+	skosxl:literalForm "akustische Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Acoustic properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXE rdf:type skos:Concept;
+	skosxl:literalForm "elektrische/magnetische/supraleitende Werkstoffeigen."@de;
+	skosxl:literalForm "Electrical/magnetic properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXH rdf:type skos:Concept;
+	skosxl:literalForm "Halbleitereigenschaften"@de;
+	skosxl:literalForm "Semiconductor properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXM rdf:type skos:Concept;
+	skosxl:literalForm "mechanische Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Mechanical properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXO rdf:type skos:Concept;
+	skosxl:literalForm "optische Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Optical properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXP rdf:type skos:Concept;
+	skosxl:literalForm "sensorische Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Sensory material properties"@en;
+	skos:broader temafo:3KX.
+temafo:3KXS rdf:type skos:Concept;
+	skosxl:literalForm "Werkstoffeigenschaft unter Strahlungsbeeinflussung"@de;
+	skosxl:literalForm "Material behaviour under radiation exposure"@en;
+	skos:broader temafo:3KX.
+temafo:3KXT rdf:type skos:Concept;
+	skosxl:literalForm "thermische/thermomechan. Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Thermal/thermomechanical properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3KXU rdf:type skos:Concept;
+	skosxl:literalForm "chem. Werkstoffeigenschaft, Korrosion-/Erosion-Verh."@de;
+	skosxl:literalForm "Chemical properties of materials, corrosion/erosion behaviour"@en;
+	skos:broader temafo:3KX.
+temafo:3KXW rdf:type skos:Concept;
+	skosxl:literalForm "Oberflächeneigenschaften"@de;
+	skosxl:literalForm "Surface properties"@en;
+	skos:broader temafo:3KX.
+temafo:3KXZ rdf:type skos:Concept;
+	skosxl:literalForm "biomedizinische/biochemische Werkstoffeigenschaften"@de;
+	skosxl:literalForm "Biomedical/biochemical properties of materials"@en;
+	skos:broader temafo:3KX.
+temafo:3L rdf:type skos:Concept;
+	skosxl:literalForm "Fertigungstechnik"@de;
+	skosxl:literalForm "Manufacturing technology"@en.
+temafo:3LD rdf:type skos:Concept;
+	skosxl:literalForm "Rapid Prototyping, Rapid Tooling"@de;
+	skosxl:literalForm "Rapid Prototyping, Rapid Tooling"@en;
+	skos:broader temafo:3L.
+temafo:3LE rdf:type skos:Concept;
+	skosxl:literalForm "Technologie der Werkstoffgewinnung, Urformtechnik"@de;
+	skosxl:literalForm "Materials exploitation/extracting/master forming technology"@en;
+	skos:broader temafo:3L.
+temafo:3LEB rdf:type skos:Concept;
+	skosxl:literalForm "Eisen- und Stahlherstellung"@de;
+	skosxl:literalForm "Iron and steel making"@en;
+	skos:broader temafo:3LE.
+temafo:3LEE rdf:type skos:Concept;
+	skosxl:literalForm "Nichteisen-Metallherstellung"@de;
+	skosxl:literalForm "Nonferrous metal production"@en;
+	skos:broader temafo:3LE.
+temafo:3LEG rdf:type skos:Concept;
+	skosxl:literalForm "Gießereiwesen und -technik"@de;
+	skosxl:literalForm "Foundry"@en;
+	skos:broader temafo:3LE.
+temafo:3LEK rdf:type skos:Concept;
+	skosxl:literalForm "Pulvermetallurgie"@de;
+	skosxl:literalForm "Powder metallurgy"@en;
+	skos:broader temafo:3LE.
+temafo:3LEM rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung/Verarbeitung nichtmetall-anorgan. Stoffe"@de;
+	skosxl:literalForm "Production/processing of non-metallic inorganic materials"@en;
+	skos:broader temafo:3LE.
+temafo:3LER rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung und Verarbeitung von Mineralen"@de;
+	skosxl:literalForm "Production/processing of minerals"@en;
+	skos:broader temafo:3LE.
+temafo:3LET rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung/Verarbeitung von Kunststoffen und Gummi"@de;
+	skosxl:literalForm "Production/processing of plastics/rubbers"@en;
+	skos:broader temafo:3LE.
+temafo:3LEX rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung und Verarbeitung von Verbundwerkstoffen"@de;
+	skosxl:literalForm "Production/processing of composite materials"@en;
+	skos:broader temafo:3LE.
+temafo:3LF rdf:type skos:Concept;
+	skosxl:literalForm "Formgebungsverfahren, Umformtechnik"@de;
+	skosxl:literalForm "Mechanical working"@en;
+	skos:broader temafo:3L.
+temafo:3LFB rdf:type skos:Concept;
+	skosxl:literalForm "Formgebung durch   Pressen"@de;
+	skosxl:literalForm "Press forming"@en;
+	skos:broader temafo:3LF.
+temafo:3LFG rdf:type skos:Concept;
+	skosxl:literalForm "Formgebung durch   Walzen"@de;
+	skosxl:literalForm "Rolling"@en;
+	skos:broader temafo:3LF.
+temafo:3LFR rdf:type skos:Concept;
+	skosxl:literalForm "Formgebung durch   Zug- und Zugdruckbeanspruchung"@de;
+	skosxl:literalForm "Deformation by tension/tension-compression stresses"@en;
+	skos:broader temafo:3LF.
+temafo:3LFX rdf:type skos:Concept;
+	skosxl:literalForm "Formgebung durch Biege- und Scherbeanspruchung"@de;
+	skosxl:literalForm "Deformation by bending and shear stresses"@en;
+	skos:broader temafo:3LF.
+temafo:3LK rdf:type skos:Concept;
+	skosxl:literalForm "spanende und abtragende Bearbeitung"@de;
+	skosxl:literalForm "Material removal processes"@en;
+	skos:broader temafo:3L.
+temafo:3LKB rdf:type skos:Concept;
+	skosxl:literalForm "spanende Bearbeitung, Zerspanen, Zerteilen"@de;
+	skosxl:literalForm "Machining (chip-type), cutting"@en;
+	skos:broader temafo:3LK.
+temafo:3LKG rdf:type skos:Concept;
+	skosxl:literalForm "chemisches und elektrochemisches Abtragen"@de;
+	skosxl:literalForm "Chemical/electrochemical machining"@en;
+	skos:broader temafo:3LK.
+temafo:3LKR rdf:type skos:Concept;
+	skosxl:literalForm "mechanisches/chemisches Reinigen techn. Oberflächen"@de;
+	skosxl:literalForm "Surface cleaning (mechanical and chemical)"@en;
+	skos:broader temafo:3LK.
+temafo:3LN rdf:type skos:Concept;
+	skosxl:literalForm "Fügen, thermisches Trennen"@de;
+	skosxl:literalForm "Joining, thermal cutting"@en;
+	skos:broader temafo:3L.
+temafo:3LNB rdf:type skos:Concept;
+	skosxl:literalForm "Schweißen, Löten"@de;
+	skosxl:literalForm "Welding, soldering"@en;
+	skos:broader temafo:3LN.
+temafo:3LNG rdf:type skos:Concept;
+	skosxl:literalForm "Kleben"@de;
+	skosxl:literalForm "Adhesive bonding"@en;
+	skos:broader temafo:3LN.
+temafo:3LNR rdf:type skos:Concept;
+	skosxl:literalForm "kraft- und formschlüssiges Fügen"@de;
+	skosxl:literalForm "Positive and negative joining"@en;
+	skos:broader temafo:3LN.
+temafo:3LNX rdf:type skos:Concept;
+	skosxl:literalForm "thermisches Trennen (Formgebung)"@de;
+	skosxl:literalForm "Thermal separation (molding)"@en;
+	skos:broader temafo:3LN.
+temafo:3LR rdf:type skos:Concept;
+	skosxl:literalForm "Behandlungen, um Stoffeigenschaften zu ändern"@de;
+	skosxl:literalForm "Processes for changing properties of materials"@en;
+	skos:broader temafo:3L.
+temafo:3LRB rdf:type skos:Concept;
+	skosxl:literalForm "thermische Verfahren, um Stoffeigenschaft zu ändern"@de;
+	skosxl:literalForm "Heat treatment for changing properties of materials"@en;
+	skos:broader temafo:3LR.
+temafo:3LRG rdf:type skos:Concept;
+	skosxl:literalForm "thermochem. Verfahren, um Oberflächeneigen. zu ändern"@de;
+	skosxl:literalForm "Thermochemical processes to change surface properties"@en;
+	skos:broader temafo:3LR.
+temafo:3LRR rdf:type skos:Concept;
+	skosxl:literalForm "mechanische Oberflächenbehandlung"@de;
+	skosxl:literalForm "Mechanical surface treatment"@en;
+	skos:broader temafo:3LR.
+temafo:3LX rdf:type skos:Concept;
+	skosxl:literalForm "Beschichtungsverfahren (Dünn-/Dickschicht-Fertigung)"@de;
+	skosxl:literalForm "Coating processes (thin/thick films)"@en;
+	skos:broader temafo:3L.
+temafo:3LXB rdf:type skos:Concept;
+	skosxl:literalForm "metallisches Beschichten"@de;
+	skosxl:literalForm "Metal deposition"@en;
+	skos:broader temafo:3LX.
+temafo:3LXG rdf:type skos:Concept;
+	skosxl:literalForm "nichtmetallisches Beschichten"@de;
+	skosxl:literalForm "Nonmetal deposition"@en;
+	skos:broader temafo:3LX.
+temafo:3LXR rdf:type skos:Concept;
+	skosxl:literalForm "Zerstäuben, Sputtern, Aufdampfen"@de;
+	skosxl:literalForm "Atomizing, sputtering, vapour deposition"@en;
+	skos:broader temafo:3LX.
+temafo:3LXX rdf:type skos:Concept;
+	skosxl:literalForm "thermisches Spritzen"@de;
+	skosxl:literalForm "Thermal spraying"@en;
+	skos:broader temafo:3LX.
+temafo:3LZ rdf:type skos:Concept;
+	skosxl:literalForm "Montagetechnik"@de;
+	skosxl:literalForm "Assembling lines and assembly systems"@en;
+	skos:broader temafo:3L.
+temafo:3M rdf:type skos:Concept;
+	skosxl:literalForm "Maschinenbau"@de;
+	skosxl:literalForm "Mechanical engineering"@en.
+temafo:3MB rdf:type skos:Concept;
+	skosxl:literalForm "Maschinenelemente"@de;
+	skosxl:literalForm "Machine components"@en;
+	skos:broader temafo:3M.
+temafo:3MBB rdf:type skos:Concept;
+	skosxl:literalForm "lösbare Verbindungselemente"@de;
+	skosxl:literalForm "Detachable joints"@en;
+	skos:broader temafo:3MB.
+temafo:3MBE rdf:type skos:Concept;
+	skosxl:literalForm "Federungen, Dämpfer, Maschinenfundamente und -gehäuse"@de;
+	skosxl:literalForm "Springs, absorbers, machine foundations/casings"@en;
+	skos:broader temafo:3MB.
+temafo:3MBK rdf:type skos:Concept;
+	skosxl:literalForm "Kraftübertragungselemente, Bremsen"@de;
+	skosxl:literalForm "Power transmission units, brakes"@en;
+	skos:broader temafo:3MB.
+temafo:3MBL rdf:type skos:Concept;
+	skosxl:literalForm "Rohre, Rohrverbindungen und -leitungen"@de;
+	skosxl:literalForm "Tubes, pipe joints, tubings"@en;
+	skos:broader temafo:3MB.
+temafo:3MBM rdf:type skos:Concept;
+	skosxl:literalForm "Dichtungen"@de;
+	skosxl:literalForm "Seals and gaskets"@en;
+	skos:broader temafo:3MB.
+temafo:3MBR rdf:type skos:Concept;
+	skosxl:literalForm "Armaturen"@de;
+	skosxl:literalForm "Valves and fittings"@en;
+	skos:broader temafo:3MB.
+temafo:3MBX rdf:type skos:Concept;
+	skosxl:literalForm "Lager (Maschinenelemente)"@de;
+	skosxl:literalForm "Bearings"@en;
+	skos:broader temafo:3MB.
+temafo:3MD rdf:type skos:Concept;
+	skosxl:literalForm "Tribologie"@de;
+	skosxl:literalForm "Tribology"@en;
+	skos:broader temafo:3M.
+temafo:3ME rdf:type skos:Concept;
+	skosxl:literalForm "Fluidik (Hydraulik, Pneumatik)"@de;
+	skosxl:literalForm "Fluidics (hydraulics, pneumatics)"@en;
+	skos:broader temafo:3M.
+temafo:3MF rdf:type skos:Concept;
+	skosxl:literalForm "Getriebe"@de;
+	skosxl:literalForm "Gears and linkages"@en;
+	skos:broader temafo:3M.
+temafo:3MFB rdf:type skos:Concept;
+	skosxl:literalForm "Zahnrad- und Umschlingungsgetriebe"@de;
+	skosxl:literalForm "Gear drives, flexible drive mechanisms"@en;
+	skos:broader temafo:3MF.
+temafo:3MFL rdf:type skos:Concept;
+	skosxl:literalForm "Gelenkgetriebe (Hebelgetriebe)"@de;
+	skosxl:literalForm "Link mechanisms, crank mechanisms"@en;
+	skos:broader temafo:3MF.
+temafo:3MFR rdf:type skos:Concept;
+	skosxl:literalForm "Flüssigkeits- und dynamoelektrische Getriebe"@de;
+	skosxl:literalForm "Hydraulic and electric transmission"@en;
+	skos:broader temafo:3MF.
+temafo:3MG rdf:type skos:Concept;
+	skosxl:literalForm "Strömungs- und Kolbenmaschinen"@de;
+	skosxl:literalForm "Turbomachinery and piston engines"@en;
+	skos:broader temafo:3M.
+temafo:3MGB rdf:type skos:Concept;
+	skosxl:literalForm "Dampfturbinen"@de;
+	skosxl:literalForm "Steam turbines"@en;
+	skos:broader temafo:3MG.
+temafo:3MGD rdf:type skos:Concept;
+	skosxl:literalForm "Wasserturbinen, Schiffspropeller"@de;
+	skosxl:literalForm "Hydraulic turbines, marine propellers"@en;
+	skos:broader temafo:3MG.
+temafo:3MGF rdf:type skos:Concept;
+	skosxl:literalForm "Gasturbinen, Strahl- und Raketentriebwerke"@de;
+	skosxl:literalForm "Gas turbines, jet engines, rocket engines"@en;
+	skos:broader temafo:3MG.
+temafo:3MGG rdf:type skos:Concept;
+	skosxl:literalForm "Windturbinen, Luftschrauben"@de;
+	skosxl:literalForm "Wind turbines, windmills"@en;
+	skos:broader temafo:3MG.
+temafo:3MGK rdf:type skos:Concept;
+	skosxl:literalForm "Pumpen"@de;
+	skosxl:literalForm "Pumps"@en;
+	skos:broader temafo:3MG.
+temafo:3MGL rdf:type skos:Concept;
+	skosxl:literalForm "Verdichter, Ventilatoren"@de;
+	skosxl:literalForm "Compressors, fans"@en;
+	skos:broader temafo:3MG.
+temafo:3MGN rdf:type skos:Concept;
+	skosxl:literalForm "Kolbenkraftmaschinen"@de;
+	skosxl:literalForm "Piston-driven engines"@en;
+	skos:broader temafo:3MG.
+temafo:3MGR rdf:type skos:Concept;
+	skosxl:literalForm "Gemischbildung/Verbrennung in Kraft-/Strömungsmaschine"@de;
+	skosxl:literalForm "Turbomachinery: carburation/combustion"@en;
+	skos:broader temafo:3MG.
+temafo:3MGT rdf:type skos:Concept;
+	skosxl:literalForm "Kühlsysteme für Strömungs- und Kolbenmaschinen"@de;
+	skosxl:literalForm "Cooling systems for turbomachinery/piston-driven engines"@en;
+	skos:broader temafo:3MG.
+temafo:3MI rdf:type skos:Concept;
+	skosxl:literalForm "Verarbeitungsmaschinen und -verfahren"@de;
+	skosxl:literalForm "Processing and processing machines"@en;
+	skos:broader temafo:3M.
+temafo:3MIB rdf:type skos:Concept;
+	skosxl:literalForm "Bautechnik/-maschinen, Baustoffmaschinen/-gewinnung"@de;
+	skosxl:literalForm "Civil engineering, construction (building) machinery"@en;
+	skos:broader temafo:3MI.
+temafo:3MIK rdf:type skos:Concept;
+	skosxl:literalForm "Druckmaschinen, -verfahren, Reproduktionstechnik"@de;
+	skosxl:literalForm "Printing machines/processes, reproduction techniques"@en;
+	skos:broader temafo:3MI.
+temafo:3MIM rdf:type skos:Concept;
+	skosxl:literalForm "Verpackungsmaschinen und -technik, Packmittel"@de;
+	skosxl:literalForm "Packaging machines/technology/materials"@en;
+	skos:broader temafo:3MI.
+temafo:3MIR rdf:type skos:Concept;
+	skosxl:literalForm "Nahrungs- und Genussmittelmaschinen"@de;
+	skosxl:literalForm "Food and beverages processing machines"@en;
+	skos:broader temafo:3MI.
+temafo:3MIT rdf:type skos:Concept;
+	skosxl:literalForm "land- u. forstwirtschaftliche Maschinen, Agrartechnik"@de;
+	skosxl:literalForm "Agricultural and forestry machinery"@en;
+	skos:broader temafo:3MI.
+temafo:3ML rdf:type skos:Concept;
+	skosxl:literalForm "Hebe- und Fördertechnik, Lagerwesen"@de;
+	skosxl:literalForm "Hoisting and transportation technology, storage"@en;
+	skos:broader temafo:3M.
+temafo:3MLB rdf:type skos:Concept;
+	skosxl:literalForm "ortsfeste Speicheranlagen"@de;
+	skosxl:literalForm "Tanks, silos"@en;
+	skos:broader temafo:3ML.
+temafo:3MM rdf:type skos:Concept;
+	skosxl:literalForm "Roboter, Handhabungstechnik"@de;
+	skosxl:literalForm "Robots, industrial handling"@en;
+	skos:broader temafo:3M.
+temafo:3MN rdf:type skos:Concept;
+	skosxl:literalForm "Hand- und Heimwerkzeuge"@de;
+	skosxl:literalForm "Hand tools"@en;
+	skos:broader temafo:3M.
+temafo:3MR rdf:type skos:Concept;
+	skosxl:literalForm "Wasser- und Gasversorgung, Sanitärtechnik"@de;
+	skosxl:literalForm "Water and gas supply, sanitary engineering"@en;
+	skos:broader temafo:3M.
+temafo:3MU rdf:type skos:Concept;
+	skosxl:literalForm "Vakuumtechnik"@de;
+	skosxl:literalForm "Vacuum technology"@en;
+	skos:broader temafo:3M.
+temafo:3MX rdf:type skos:Concept;
+	skosxl:literalForm "Brandschutz, Feuerwehrtechnik"@de;
+	skosxl:literalForm "Fire safety and fire fighting technology"@en;
+	skos:broader temafo:3M.
+temafo:3MZ rdf:type skos:Concept;
+	skosxl:literalForm "Berg-/Tunnelbau, Erdöl-/Erdgasförderung, Bohrtechnik"@de;
+	skosxl:literalForm "Mining, tunneling, petroleum/natural gas production, deep well drilling"@en;
+	skos:broader temafo:3M.
+temafo:3MZB rdf:type skos:Concept;
+	skosxl:literalForm "Bergbau: Berg-, Tunnel- und Schachtbau"@de;
+	skosxl:literalForm "Mining: mining, tunneling, shaft construction"@en;
+	skos:broader temafo:3MZ.
+temafo:3MZC rdf:type skos:Concept;
+	skosxl:literalForm "Explosiv- und Sprengstoffe, Sprengtechnik"@de;
+	skosxl:literalForm "Explosives, blasting agents"@en;
+	skos:broader temafo:3MZ.
+temafo:3MZE rdf:type skos:Concept;
+	skosxl:literalForm "Erdöl/Erdgas: Bohr-, Förder- und Anlagentechnik"@de;
+	skosxl:literalForm "Oil & Gas: Drilling, production, process equipment"@en;
+	skos:broader temafo:3MZ.
+temafo:3N rdf:type skos:Concept;
+	skosxl:literalForm "Verkehr, Transport, Fahrzeuge"@de;
+	skosxl:literalForm "Traffic, transportation, vehicles"@en.
+temafo:3NA rdf:type skos:Concept;
+	skosxl:literalForm "Verkehrssysteme"@de;
+	skosxl:literalForm "Traffic systems"@en;
+	skos:broader temafo:3N.
+temafo:3NAB rdf:type skos:Concept;
+	skosxl:literalForm "Verkehrsleitsysteme und -signalanlagen"@de;
+	skosxl:literalForm "Traffic control systems/signalling installations"@en;
+	skos:broader temafo:3NA.
+temafo:3ND rdf:type skos:Concept;
+	skosxl:literalForm "Straßen- und gleislose Fahrzeuge"@de;
+	skosxl:literalForm "Road vehicles"@en;
+	skos:broader temafo:3N.
+temafo:3NDB rdf:type skos:Concept;
+	skosxl:literalForm "Personenkraftwagen, Zweiradfahrzeuge"@de;
+	skosxl:literalForm "Passenger cars, two-wheeled vehicles"@en;
+	skos:broader temafo:3ND.
+temafo:3NDG rdf:type skos:Concept;
+	skosxl:literalForm "Nutz- und Arbeitsfahrzeuge"@de;
+	skosxl:literalForm "Commercial vehicles"@en;
+	skos:broader temafo:3ND.
+temafo:3NF rdf:type skos:Concept;
+	skosxl:literalForm "Schienenfahrzeuge, Seil- und Schwebebahnen"@de;
+	skosxl:literalForm "Rail vehicles, suspended railways and ropeways"@en;
+	skos:broader temafo:3N.
+temafo:3NK rdf:type skos:Concept;
+	skosxl:literalForm "Schiffe, Wasserfahrzeuge, Schiffbau"@de;
+	skosxl:literalForm "Ships, watercraft, shipbuilding"@en;
+	skos:broader temafo:3N.
+temafo:3NN rdf:type skos:Concept;
+	skosxl:literalForm "Luft- und Raumfahrzeuge, Raumstationen"@de;
+	skosxl:literalForm "Aircraft, space vehicles/stations"@en;
+	skos:broader temafo:3N.
+temafo:3NR rdf:type skos:Concept;
+	skosxl:literalForm "Fahrzeugtechnik"@de;
+	skosxl:literalForm "Automotive engineering"@en;
+	skos:broader temafo:3N.
+temafo:3NRB rdf:type skos:Concept;
+	skosxl:literalForm "spezielle Fahrzeugantriebe"@de;
+	skosxl:literalForm "Special drives for vehicles"@en;
+	skos:broader temafo:3NR.
+temafo:3NRF rdf:type skos:Concept;
+	skosxl:literalForm "Antriebe für Elektrostraßenfahrzeuge"@de;
+	skosxl:literalForm "Drives for electrical road vehicles"@en;
+	skos:broader temafo:3NR.
+temafo:3NRK rdf:type skos:Concept;
+	skosxl:literalForm "Fahrwerk, Fahrmechanik/-dynamik, Fahrzeugbaukörper"@de;
+	skosxl:literalForm "Chassis, mechanics/dynamics of vehicle movement, vehicle body"@en;
+	skos:broader temafo:3NR.
+temafo:3NRN rdf:type skos:Concept;
+	skosxl:literalForm "Fahrzeugausrüstung"@de;
+	skosxl:literalForm "Vehicle components"@en;
+	skos:broader temafo:3NR.
+temafo:3NRT rdf:type skos:Concept;
+	skosxl:literalForm "Fahrzeugbeleuchtung, -elektrik, -elektronik"@de;
+	skosxl:literalForm "Electric and electronic equipment of vehicles"@en;
+	skos:broader temafo:3NR.
+temafo:3NRX rdf:type skos:Concept;
+	skosxl:literalForm "Fahrzeugsicherheit/-erprobung/-wartung/-instandsetz."@de;
+	skosxl:literalForm "Vehicle safety/testing/maintenance"@en;
+	skos:broader temafo:3NR.
+temafo:3NT rdf:type skos:Concept;
+	skosxl:literalForm "Pipelines"@de;
+	skosxl:literalForm "Pipelines"@en;
+	skos:broader temafo:3N.
+temafo:3NX rdf:type skos:Concept;
+	skosxl:literalForm "Meeres- und Offshore-Technik"@de;
+	skosxl:literalForm "Marine engineering, Ocean and coastal structures"@en;
+	skos:broader temafo:3N.
+temafo:3NZ rdf:type skos:Concept;
+	skosxl:literalForm "Wehrtechnik"@de;
+	skosxl:literalForm "Military engineering"@en;
+	skos:broader temafo:3N.
+temafo:3P rdf:type skos:Concept;
+	skosxl:literalForm "(Bio-)Verfahrens-/Aufbereitungs-/Reaktionstechnik"@de;
+	skosxl:literalForm "Process engineering, bioprocess engineering, downstream processing, reaction engineering"@en.
+temafo:3PA rdf:type skos:Concept;
+	skosxl:literalForm "Rohstoffaufbereitung"@de;
+	skosxl:literalForm "Raw material processing"@en;
+	skos:broader temafo:3P.
+temafo:3PAB rdf:type skos:Concept;
+	skosxl:literalForm "Aufbereitung anorganischer, mineralischer Rohstoffe"@de;
+	skosxl:literalForm "Processing of anorganic, mineral raw materials"@en;
+	skos:broader temafo:3PA.
+temafo:3PAD rdf:type skos:Concept;
+	skosxl:literalForm "Aufbereitung organischer Rohstoffe"@de;
+	skosxl:literalForm "Processing of organic raw materials"@en;
+	skos:broader temafo:3PA.
+temafo:3PB rdf:type skos:Concept;
+	skosxl:literalForm "Zerkleinern"@de;
+	skosxl:literalForm "Size reduction"@en;
+	skos:broader temafo:3P.
+temafo:3PD rdf:type skos:Concept;
+	skosxl:literalForm "Stoffvereinigen, Mischen"@de;
+	skosxl:literalForm "Material combination, mixing"@en;
+	skos:broader temafo:3P.
+temafo:3PF rdf:type skos:Concept;
+	skosxl:literalForm "Trocknen fester, flüssiger und gasförmiger Stoffe"@de;
+	skosxl:literalForm "Drying of solid, liquid and gaseous matters"@en;
+	skos:broader temafo:3P.
+temafo:3PH rdf:type skos:Concept;
+	skosxl:literalForm "Trennen fester/flüssiger/gasförmig./disperser Stoffe"@de;
+	skosxl:literalForm "Separation of solid, liquid and gaseous matters, disperse systems"@en;
+	skos:broader temafo:3P.
+temafo:3PHB rdf:type skos:Concept;
+	skosxl:literalForm "Sorptionstechnik"@de;
+	skosxl:literalForm "Sorption technology"@en;
+	skos:broader temafo:3PH.
+temafo:3PHC rdf:type skos:Concept;
+	skosxl:literalForm "Membran- und Diffusionstrennverfahren"@de;
+	skosxl:literalForm "Membrane and diffusion separation processes"@en;
+	skos:broader temafo:3PH.
+temafo:3PHD rdf:type skos:Concept;
+	skosxl:literalForm "Destillieren, Rektifizieren"@de;
+	skosxl:literalForm "Distillation, rectification technology"@en;
+	skos:broader temafo:3PH.
+temafo:3PJ rdf:type skos:Concept;
+	skosxl:literalForm "Sterilisations- und Desinfektionsverfahren"@de;
+	skosxl:literalForm "Sterilization and disinfection processes"@en;
+	skos:broader temafo:3P.
+temafo:3PL rdf:type skos:Concept;
+	skosxl:literalForm "chemische Verfahrens- und Reaktionstechnik"@de;
+	skosxl:literalForm "Chemical engineering, chemical reaction engineering"@en;
+	skos:broader temafo:3P.
+temafo:3PLA rdf:type skos:Concept;
+	skosxl:literalForm "chem. Gleichgewicht/Lösungen, Kinetik, Katalyse"@de;
+	skosxl:literalForm "Chemical equilibrium, kinetics, catalysis, chemical solutions"@en;
+	skos:broader temafo:3PL.
+temafo:3PLC rdf:type skos:Concept;
+	skosxl:literalForm "chemische Reaktionen, Reaktionsführung"@de;
+	skosxl:literalForm "Chemical reactions, chemical reaction engineering"@en;
+	skos:broader temafo:3PL.
+temafo:3PLD rdf:type skos:Concept;
+	skosxl:literalForm "chem. Prozessentwicklung/-modellierung/-optimierung"@de;
+	skosxl:literalForm "Chemical process-development, -modelling, -performance and -optimization"@en;
+	skos:broader temafo:3PL.
+temafo:3PLE rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung v. Grundchemikalie/chem.Zwischenprodukt"@de;
+	skosxl:literalForm "Production of basic chemicals and chemical intermediate products"@en;
+	skos:broader temafo:3PL.
+temafo:3PLF rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung v. anorganischen chemischen Endprodukten"@de;
+	skosxl:literalForm "Production of inorganic chemical final products"@en;
+	skos:broader temafo:3PL.
+temafo:3PLG rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung v. organischen chemischen Endprodukten"@de;
+	skosxl:literalForm "Production of organic chemical final products"@en;
+	skos:broader temafo:3PL.
+temafo:3PLK rdf:type skos:Concept;
+	skosxl:literalForm "Partikelchemie, disp.Systeme, Emulsion, Suspension"@de;
+	skosxl:literalForm "Particle chemistry, disperse systems, emulsions, colloids, suspensions"@en;
+	skos:broader temafo:3PL.
+temafo:3PLL rdf:type skos:Concept;
+	skosxl:literalForm "chemische Apparate, Anlagen und Reaktoren"@de;
+	skosxl:literalForm "Chemical apparatuses and plants"@en;
+	skos:broader temafo:3PL.
+temafo:3PLM rdf:type skos:Concept;
+	skosxl:literalForm "chemische Mikroverfahrenstechnik"@de;
+	skosxl:literalForm "Chemical micro process engineering"@en;
+	skos:broader temafo:3PL.
+temafo:3PN rdf:type skos:Concept;
+	skosxl:literalForm "Nahrungs- und Lebensmitteltechnologie"@de;
+	skosxl:literalForm "Food technology"@en;
+	skos:broader temafo:3P.
+temafo:3PP rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung von pharmazeutischen Produkten"@de;
+	skosxl:literalForm "Production of pharmaceutical products"@en;
+	skos:broader temafo:3P.
+temafo:3PZ rdf:type skos:Concept;
+	skosxl:literalForm "Bioverfahrenstechnik, Biotechnologie"@de;
+	skosxl:literalForm "Bioprocess engineering, biotechnology"@en;
+	skos:broader temafo:3P.
+temafo:3PZA rdf:type skos:Concept;
+	skosxl:literalForm "Fermentation, Zellkulturen"@de;
+	skosxl:literalForm "Fermentation, cell culture"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZC rdf:type skos:Concept;
+	skosxl:literalForm "Biotransformation und enzymatische Verfahren"@de;
+	skosxl:literalForm "Biotransformation and enzymatic processes"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZE rdf:type skos:Concept;
+	skosxl:literalForm "molekulare Biotechnologie"@de;
+	skosxl:literalForm "Molecular biotechnology"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZG rdf:type skos:Concept;
+	skosxl:literalForm "Tissue Engineering"@de;
+	skosxl:literalForm "Tissue Engineering"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZI rdf:type skos:Concept;
+	skosxl:literalForm "biologischer Abbau und Bioremediation"@de;
+	skosxl:literalForm "Biological degradation and bioremediation"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZK rdf:type skos:Concept;
+	skosxl:literalForm "Agrobiotechnologie"@de;
+	skosxl:literalForm "Agrobiotechnology"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZM rdf:type skos:Concept;
+	skosxl:literalForm "biotechnologische Reaktionstechnik und -führung"@de;
+	skosxl:literalForm "Biotechnological reaction technology and processing"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZO rdf:type skos:Concept;
+	skosxl:literalForm "biotechnologische Apparate, Anlagen und Reaktoren"@de;
+	skosxl:literalForm "Biotechnological apparatuses, plants and reactors"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZP rdf:type skos:Concept;
+	skosxl:literalForm "biot. Prozessentwicklung/-modellierung/-optimierng"@de;
+	skosxl:literalForm "Biotechnological process development"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZS rdf:type skos:Concept;
+	skosxl:literalForm "biotechnologisch hergestellte Produkte"@de;
+	skosxl:literalForm "Biotechnologically manufactured products"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZU rdf:type skos:Concept;
+	skosxl:literalForm "biotechnologischer Downstreaming-Prozess"@de;
+	skosxl:literalForm "Downstream processing in biotechnology"@en;
+	skos:broader temafo:3PZ.
+temafo:3PZX rdf:type skos:Concept;
+	skosxl:literalForm "Biochips, DNA-Chips (Gen-Chips)"@de;
+	skosxl:literalForm "Biochips, DNA chips (gene chips)"@en;
+	skos:broader temafo:3PZ.
+temafo:3Q rdf:type skos:Concept;
+	skosxl:literalForm "Mikrotechnik, Nanotechnik"@de;
+	skosxl:literalForm "Micro technology, nanotechnology"@en.
+temafo:3QB rdf:type skos:Concept;
+	skosxl:literalForm "Mikrosystemtechnik"@de;
+	skosxl:literalForm "Microsystems technology"@en;
+	skos:broader temafo:3Q.
+temafo:3QBD rdf:type skos:Concept;
+	skosxl:literalForm "mikromechanische Bauteile"@de;
+	skosxl:literalForm "Micromechanical components"@en;
+	skos:broader temafo:3QB.
+temafo:3QBE rdf:type skos:Concept;
+	skosxl:literalForm "mikroelektromechanische Bauelemente"@de;
+	skosxl:literalForm "Micro-electro-mechanical components"@en;
+	skos:broader temafo:3QB.
+temafo:3QN rdf:type skos:Concept;
+	skosxl:literalForm "Nanotechnologie, Nanoröhrchen"@de;
+	skosxl:literalForm "Nanotechnology, nanotubes"@en;
+	skos:broader temafo:3Q.
+temafo:3R rdf:type skos:Concept;
+	skosxl:literalForm "biomedizinische Technik"@de;
+	skosxl:literalForm "Biomedical engineering"@en.
+temafo:3RB rdf:type skos:Concept;
+	skosxl:literalForm "medizinische Diagnostik und Diagnosesysteme"@de;
+	skosxl:literalForm "Medical diagnosis and diagnostic systems"@en;
+	skos:broader temafo:3R.
+temafo:3RBB rdf:type skos:Concept;
+	skosxl:literalForm "medizinische Messtechnik, Biosignalverarbeitung"@de;
+	skosxl:literalForm "Medical measurement, bioelectrical signal processing"@en;
+	skos:broader temafo:3RB.
+temafo:3RBX rdf:type skos:Concept;
+	skosxl:literalForm "labormedizin. Diagnostik, klinisch-chemische Analysen"@de;
+	skosxl:literalForm "Clinical laboratories diagnosis"@en;
+	skos:broader temafo:3RB.
+temafo:3RF rdf:type skos:Concept;
+	skosxl:literalForm "bildgebende medizinische Diagnostik"@de;
+	skosxl:literalForm "Diagnostic medical imaging"@en;
+	skos:broader temafo:3R.
+temafo:3RFB rdf:type skos:Concept;
+	skosxl:literalForm "Computer- und Kernspintomographie (Medizindiagnostik)"@de;
+	skosxl:literalForm "Computer-aided tomography, magnetic resonance imaging"@en;
+	skos:broader temafo:3RF.
+temafo:3RFF rdf:type skos:Concept;
+	skosxl:literalForm "endoskopische Diagnostik (medizinische Diagnostik)"@de;
+	skosxl:literalForm "Medical endoscopic diagnosis"@en;
+	skos:broader temafo:3RF.
+temafo:3RFK rdf:type skos:Concept;
+	skosxl:literalForm "nuklearmedizinische Diagnostik"@de;
+	skosxl:literalForm "Nuclear medicine diagnosis"@en;
+	skos:broader temafo:3RF.
+temafo:3RFN rdf:type skos:Concept;
+	skosxl:literalForm "Röntgendiagnostik (medizinische Diagnostik)"@de;
+	skosxl:literalForm "Medical X-ray diagnostics"@en;
+	skos:broader temafo:3RF.
+temafo:3RFT rdf:type skos:Concept;
+	skosxl:literalForm "Ultraschalldiagnostik (medizinische Diagnostik)"@de;
+	skosxl:literalForm "Medical ultrasonic diagnostics"@en;
+	skos:broader temafo:3RF.
+temafo:3RI rdf:type skos:Concept;
+	skosxl:literalForm "Optometrie, physiologische Optik, Sehhilfen"@de;
+	skosxl:literalForm "Optometry, physiological optics, vision aids"@en;
+	skos:broader temafo:3R.
+temafo:3RK rdf:type skos:Concept;
+	skosxl:literalForm "medizinische Therapie"@de;
+	skosxl:literalForm "Medical treatment"@en;
+	skos:broader temafo:3R.
+temafo:3RKB rdf:type skos:Concept;
+	skosxl:literalForm "chirurgische Technik und Verfahren"@de;
+	skosxl:literalForm "Surgery"@en;
+	skos:broader temafo:3RK.
+temafo:3RKG rdf:type skos:Concept;
+	skosxl:literalForm "Elektro-, Licht- und Klimatherapie"@de;
+	skosxl:literalForm "Electro therapy, light therapy, climate therapy"@en;
+	skos:broader temafo:3RK.
+temafo:3RKR rdf:type skos:Concept;
+	skosxl:literalForm "Strahlentherapie"@de;
+	skosxl:literalForm "Radiation therapy"@en;
+	skos:broader temafo:3RK.
+temafo:3RKX rdf:type skos:Concept;
+	skosxl:literalForm "intensivmedizinische Therapie"@de;
+	skosxl:literalForm "Acute medical care"@en;
+	skos:broader temafo:3RK.
+temafo:3RN rdf:type skos:Concept;
+	skosxl:literalForm "Rehabilitation, Körperersatzteil, Organfunktionsers."@de;
+	skosxl:literalForm "Rehabilitation engineering, prostheses, artificial organs"@en;
+	skos:broader temafo:3R.
+temafo:3RNB rdf:type skos:Concept;
+	skosxl:literalForm "Endoprothesen passiver Art"@de;
+	skosxl:literalForm "Passive endoprostheses"@en;
+	skos:broader temafo:3RN.
+temafo:3RNX rdf:type skos:Concept;
+	skosxl:literalForm "technische Hilfen für die Rehabilitation"@de;
+	skosxl:literalForm "Technical aids for rehabilitation"@en;
+	skos:broader temafo:3RN.
+temafo:3RT rdf:type skos:Concept;
+	skosxl:literalForm "Krankenhauswesen, -technik und -informationssysteme"@de;
+	skosxl:literalForm "Hospital management/information systems, doctor's practice management"@en;
+	skos:broader temafo:3R.
+temafo:3S rdf:type skos:Concept;
+	skosxl:literalForm "Holz und Papier"@de;
+	skosxl:literalForm "Wood and paper"@en.
+temafo:3SK rdf:type skos:Concept;
+	skosxl:literalForm "Holzkunde"@de;
+	skosxl:literalForm "Wood science and engineering"@en;
+	skos:broader temafo:3S.
+temafo:3SL rdf:type skos:Concept;
+	skosxl:literalForm "Holz"@de;
+	skosxl:literalForm "Wood"@en;
+	skos:broader temafo:3S.
+temafo:3SM rdf:type skos:Concept;
+	skosxl:literalForm "Holzüberzüge"@de;
+	skosxl:literalForm "Wood coatings"@en;
+	skos:broader temafo:3S.
+temafo:3SN rdf:type skos:Concept;
+	skosxl:literalForm "Herstellung von Holz- und Holzverbundwerkstoffen"@de;
+	skosxl:literalForm "Wood manufacturing technology, composite materials with wood"@en;
+	skos:broader temafo:3S.
+temafo:3SP rdf:type skos:Concept;
+	skosxl:literalForm "Holzbearbeitungsmaschinen"@de;
+	skosxl:literalForm "Woodworking machinery"@en;
+	skos:broader temafo:3S.
+temafo:3SQ rdf:type skos:Concept;
+	skosxl:literalForm "Fertigerzeugnisse aus Holz und Holzwerkstoffen"@de;
+	skosxl:literalForm "Wood finished products"@en;
+	skos:broader temafo:3S.
+temafo:3SV rdf:type skos:Concept;
+	skosxl:literalForm "Papier"@de;
+	skosxl:literalForm "Paper"@en;
+	skos:broader temafo:3S.
+temafo:3SY rdf:type skos:Concept;
+	skosxl:literalForm "Papierverarbeitungsmasch., Papier-/ Zellstofftechnik"@de;
+	skosxl:literalForm "Paper making machines, paper technology, paper pulp processing"@en;
+	skos:broader temafo:3S.
+temafo:3T rdf:type skos:Concept;
+	skosxl:literalForm "Textil, Bekleidung, Textilmaschinen"@de;
+	skosxl:literalForm "Textiles, garment, textile machinery"@en.
+temafo:3TC rdf:type skos:Concept;
+	skosxl:literalForm "Fasergewinnung, Faserherstellung, Garntechnologie"@de;
+	skosxl:literalForm "Fibre extraction, fibre production, yarn technology"@en;
+	skos:broader temafo:3T.
+temafo:3TCE rdf:type skos:Concept;
+	skosxl:literalForm "Garntechnologie"@de;
+	skosxl:literalForm "Spinning, winding, twisting, texturing of yarn"@en;
+	skos:broader temafo:3TC.
+temafo:3TG rdf:type skos:Concept;
+	skosxl:literalForm "textile Flächentechnologie"@de;
+	skosxl:literalForm "Warping, beaming, sizing, braiding, tufting, lace manufacturing"@en;
+	skos:broader temafo:3T.
+temafo:3TGB rdf:type skos:Concept;
+	skosxl:literalForm "Weberei"@de;
+	skosxl:literalForm "Weaving"@en;
+	skos:broader temafo:3TG.
+temafo:3TGG rdf:type skos:Concept;
+	skosxl:literalForm "Wirkerei, Strickerei"@de;
+	skosxl:literalForm "Knitting"@en;
+	skos:broader temafo:3TG.
+temafo:3TGR rdf:type skos:Concept;
+	skosxl:literalForm "Vliesstoffherstellung"@de;
+	skosxl:literalForm "Nonwoven manufacturing"@en;
+	skos:broader temafo:3TG.
+temafo:3TK rdf:type skos:Concept;
+	skosxl:literalForm "Textilveredlung und -ausrüstung"@de;
+	skosxl:literalForm "Finishing, pretreatment, bleaching, resin finishing, coating of textiles"@en;
+	skos:broader temafo:3T.
+temafo:3TKB rdf:type skos:Concept;
+	skosxl:literalForm "Textilfärberei und -druck"@de;
+	skosxl:literalForm "Dyeing and printing of textiles"@en;
+	skos:broader temafo:3TK.
+temafo:3TM rdf:type skos:Concept;
+	skosxl:literalForm "textile Endprodukte"@de;
+	skosxl:literalForm "Textiles, textile goods"@en;
+	skos:broader temafo:3T.
+temafo:3TMB rdf:type skos:Concept;
+	skosxl:literalForm "Konfektionierung textiler Endprodukte, Besticken"@de;
+	skosxl:literalForm "Making-up, embroidering of textiles"@en;
+	skos:broader temafo:3TM.
+temafo:3TML rdf:type skos:Concept;
+	skosxl:literalForm "Bekleidung, Funktionskleidung, Schutzkleidung"@de;
+	skosxl:literalForm "Clothing (apparel), functional wear, protective clothing"@en;
+	skos:broader temafo:3TM.
+temafo:3TMP rdf:type skos:Concept;
+	skosxl:literalForm "intelligente Textilien, technische Textilien"@de;
+	skosxl:literalForm "Smart textiles, industrial textiles"@en;
+	skos:broader temafo:3TM.
+temafo:3TMW rdf:type skos:Concept;
+	skosxl:literalForm "Heim- und Haustextilien, Teppiche"@de;
+	skosxl:literalForm "Home and household textiles, carpets"@en;
+	skos:broader temafo:3TM.
+temafo:3TT rdf:type skos:Concept;
+	skosxl:literalForm "Textilpflege"@de;
+	skosxl:literalForm "Textile care, care labelling"@en;
+	skos:broader temafo:3T.
+temafo:3U rdf:type skos:Concept;
+	skosxl:literalForm "Umweltschadstoffe, -belastung, -technik"@de;
+	skosxl:literalForm "Environmental engineering, environmental pollution"@en.
+temafo:3UM rdf:type skos:Concept;
+	skosxl:literalForm "Umweltschadstoffe, -toxikologie"@de;
+	skosxl:literalForm "Environmental pollutants and toxicology"@en;
+	skos:broader temafo:3U.
+temafo:3UMB rdf:type skos:Concept;
+	skosxl:literalForm "Abfallstoffe, -behandlung, -vermeidung, -verwertung"@de;
+	skosxl:literalForm "Garbage, waste treatment/avoidance/management"@en;
+	skos:broader temafo:3UM.
+temafo:3UMG rdf:type skos:Concept;
+	skosxl:literalForm "Umweltchemikalien, Schäden durch Chemikalien"@de;
+	skosxl:literalForm "Environmental chemicals, chemical pollutants/avoidance"@en;
+	skos:broader temafo:3UM.
+temafo:3UMR rdf:type skos:Concept;
+	skosxl:literalForm "Lärmquellen, -schäden und -verminderung"@de;
+	skosxl:literalForm "Noise sources/injury/abatement"@en;
+	skos:broader temafo:3UM.
+temafo:3UMX rdf:type skos:Concept;
+	skosxl:literalForm "radioaktive Strahlungsquellen, -schäden, -schutz"@de;
+	skosxl:literalForm "Radioactive radiation sources/damage/protection"@en;
+	skos:broader temafo:3UM.
+temafo:3UMZ rdf:type skos:Concept;
+	skosxl:literalForm "Auswirkung (elektro)magnet. Felder auf Lebewesen"@de;
+	skosxl:literalForm "Electric/magnetic/electromagnetic fields effects on living beings"@en;
+	skos:broader temafo:3UM.
+temafo:3UX rdf:type skos:Concept;
+	skosxl:literalForm "Umweltbelastung, -technik"@de;
+	skosxl:literalForm "Environmental pollution and engineering"@en;
+	skos:broader temafo:3U.
+temafo:3UXB rdf:type skos:Concept;
+	skosxl:literalForm "Bodenbelastung, -reinhaltung (Umweltschutz), -schutz"@de;
+	skosxl:literalForm "Soil contamination/protection/cleanliness"@en;
+	skos:broader temafo:3UX.
+temafo:3UXG rdf:type skos:Concept;
+	skosxl:literalForm "Belastung der Luft und Erdatmosphäre, Luftreinhaltung"@de;
+	skosxl:literalForm "Air pollution"@en;
+	skos:broader temafo:3UX.
+temafo:3UXR rdf:type skos:Concept;
+	skosxl:literalForm "Belastung der Biosphäre"@de;
+	skosxl:literalForm "Earth biosphere pollution"@en;
+	skos:broader temafo:3UX.
+temafo:3UXX rdf:type skos:Concept;
+	skosxl:literalForm "Belastung von Wasser, Wasserreinhaltung, Abwasser"@de;
+	skosxl:literalForm "Water pollution, wastewater"@en;
+	skos:broader temafo:3UX.
