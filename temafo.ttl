@@ -15,7 +15,7 @@ temafo: rdf:type owl:Ontology.
 
 # Definitionen:
 
-:TemaNot rdf:type rdfs:Class.
+:TemaNot rdf:type owl:Class.
 
 :hasTemaNotVerb rdf:type owl:DatatypeProperty;
 	rdfs:domain :TemaNot;
