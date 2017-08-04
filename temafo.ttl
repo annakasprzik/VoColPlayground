@@ -3,9 +3,9 @@
 # (internal classification for the thesaurus "Technik and Management",
 #  a product of the WTI-Frankfurt eG)
 
-# Prefixes:
+# Praefices:
 
-@prefix : <http://temafo.de#> .
+@prefix : <http://onto.tib.eu/temafo#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
@@ -13,14 +13,17 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
 @prefix iso-thes: <http://purl.org/iso25964/skos-thes#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix temafo: <http://temafo.de#>.
 
-temafo: rdf:type rdfs:Ontology.
+<http://onto.tib.eu/temafo> rdf:type owl:Ontology.
 
 
 # Definitionen:
 
 :TemaNot rdf:type rdfs:Class.
+
+:hasTemaNot rdf:type owl:ObjectProperty;
+	rdfs:domain :TemaConcept;
+	rdfs:range :TemaNot.
 
 :hasTemaNotVerb rdf:type owl:DatatypeProperty;
 	rdfs:domain :TemaNot;
