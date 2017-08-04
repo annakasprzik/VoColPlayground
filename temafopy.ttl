@@ -23,7 +23,7 @@ temafo:TemaNot rdf:type rdfs:Class.
 
 temafo:hasTemaNot rdf:type owl:ObjectProperty;
 	rdfs:domain temafo:TemaConcept;
-	rdfs:range rdf:langString.
+	rdfs:range temafo:TemaNot.
 
 temafo:hasTemaNotVerb rdf:type owl:DatatypeProperty;
 	rdfs:domain temafo:TemaNot;
