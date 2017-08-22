@@ -34,7 +34,7 @@ rdf:langString rdf:type rdfs:Datatype.
 
 # Fachordnung:
 
-:3A rdf:type aa :TemaNot;
+:3A rdf:type :TemaNot;
 	:hasTemaNotVerb "Unternehmen, Management, Recht, Märkte, Politik"@de;
 	:hasTemaNotVerb "Enterprises, management, economics, politics, legislation"@en.
 :3AA rdf:type :TemaNot;
