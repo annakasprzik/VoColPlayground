@@ -1,4 +1,4 @@
 # VoColPlayground
-Testbed for a VoCol installation to be set up at the TIB Hannover
+Testbed for a VoCol installation to be set up at the TIB Hannover by Anna Kasprzik.
 
-Experimental files containing "temafo" were created by Anna Kasprzik (TIB) from a .txt version of the internal classification underlying the thesaurus "Technik und Management" (WTI-Frankfurt eG; developed further in cooperation with the TIB since 2013).
+KDSF files were created by Tatiana Walther (TIB) in the context of the VIVO research information system.
