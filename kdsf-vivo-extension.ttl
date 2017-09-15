@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
-@prefix Meta <http://kerndatensatz-forschung.de/owl/Meta#> .
+@prefix Meta: <http://kerndatensatz-forschung.de/owl/Meta:#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 
@@ -18,7 +18,7 @@
   rdfs:subPropertyOf owl:topObjectProperty ;
   rdfs:domain <http://kerndatensatz-forschung.de/owl/Basis#Person> ;
   rdfs:range <http://lod.tib.eu/onto/kdsf/Altersgruppe> ;
-  MetainhaltlicheDefinition "Be52" ;
+  Meta:inhaltlicheDefinition "Be52" ;
   vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
   vitro:displayRankAnnot "1"^^xsd:int ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
@@ -32,7 +32,7 @@
   rdfs:subPropertyOf owl:topObjectProperty ;
   rdfs:domain <http://kerndatensatz-forschung.de/owl/Basis#Qualifizierungsverfahren> ;
   rdfs:range <http://lod.tib.eu/onto/kdsf/Altersgruppe> ;
-  MetainhaltlicheDefinition "Na69", "Na71" ;
+  Meta:inhaltlicheDefinition "Na69", "Na71" ;
   vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
@@ -44,7 +44,7 @@
   rdfs:subPropertyOf owl:topObjectProperty ;
   rdfs:domain <http://kerndatensatz-forschung.de/owl/Basis#Professoren> ;
   rdfs:range foaf:Organization ;
-  MetainhaltlicheDefinition "Be4a" ;
+  Meta:inhaltlicheDefinition "Be4a" ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
@@ -163,7 +163,7 @@
   rdfs:subPropertyOf owl:topObjectProperty ;
   rdfs:domain <http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> ;
   rdfs:range foaf:Organization ;
-  MetainhaltlicheDefinition "Dr19a" ;
+  Meta:inhaltlicheDefinition "Dr19a" ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
@@ -183,7 +183,7 @@
 
 <http://lod.tib.eu/onto/kdsf/Altersgruppe>
   a owl:Class ;
-  MetainhaltlicheDefinition "Be52" ;
+  Meta:inhaltlicheDefinition "Be52" ;
   rdfs:label "Altersgruppe"@de .
 
 <http://lod.tib.eu/onto/kdsf/Zugriffsrechte>
