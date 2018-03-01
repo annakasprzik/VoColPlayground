@@ -17,7 +17,7 @@
 #################################################################
 #    Concepts
 #################################################################
-
+ 
 <https://onto.tib.eu/destf/cs/01> a  skos:Concept ;
 	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
 	skos:notation "01"^^xsd:string ;
