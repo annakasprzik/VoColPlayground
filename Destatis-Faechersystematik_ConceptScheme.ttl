@@ -1,0 +1,3865 @@
+@prefix pahf: <https://onto.tib.eu/destf/cs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@base <https://onto.tib.eu/destf/cs/> .
+
+<https://onto.tib.eu/destf/cs/> a skos:ConceptScheme ;
+							   rdfs:comment "Diese Ontologie basiert auf \"Bildung und Kultur: Personal an Hochschulen - Fächersystematik - 2015; Stand: Berichtsjahr 2015; Statistisches Bundesamt (Destatis), 2015\"; in SKOS konvertiert von Tatiana Walther unter Mitwirkung von Christian Hauschke und Anna Kasprzik (Technische Informationsbibliothek (TIB) Hannover). Die Bezeichnungen und Inhalte der Fächersystematik blieben unverändert."@de , "© Statistisches Bundesamt (Destatis), 2017"@de ;
+							   owl:versionInfo "2017-05-15"^^xsd:string  ;
+							   skos:prefLabel "Personal an Hochschulen - Fächersystematik"@de .
+
+
+#################################################################
+#    Concepts
+#################################################################
+
+<https://onto.tib.eu/destf/cs/01> a  skos:Concept ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:notation "01"^^xsd:string ;
+	skos:prefLabel "Geisteswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/010> a  skos:Concept ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:notation "010"^^xsd:string ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Geisteswissenschaften allgemein"@de .
+	
+<https://onto.tib.eu/destf/cs/0100> a  skos:Concept ; 
+	skos:broader <https://onto.tib.eu/destf/cs/010> ;
+	skos:notation "0100"^^xsd:string ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Geisteswissenschaften allgemein"@de .
+	
+<https://onto.tib.eu/destf/cs/0120> a  skos:Concept ;
+	skos:notation "0120"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/010> ;
+	skos:note "Interdisziplinäre Lehr- und Forschungsgebiete, die mehrere Lehr- und Forschungsbereiche einer Fächergruppe betreffen und nicht schwerpunktmäßig zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Interdisziplinäre Studien (Schwerpunkt Sprach- und Kulturwissenschaften)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0130> a  skos:Concept ;
+	skos:notation "0130"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/010> ;
+	skos:prefLabel "Medienwissenschaften"@de .
+
+
+<https://onto.tib.eu/destf/cs/020> a  skos:Concept ;
+	skos:notation "020"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Evang. Theologie"@de .
+
+<https://onto.tib.eu/destf/cs/0200> a  skos:Concept ;
+	skos:notation "0200"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen"@de ;
+	skos:prefLabel "Evang. Theologie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/0210> a  skos:Concept ;
+	skos:notation "0210"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Altes Testament (evang. Th.)"@de .
+
+<https://onto.tib.eu/destf/cs/0215> a  skos:Concept ;
+	skos:notation "0215"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Diakoniewissenschaft"@de .	
+
+<https://onto.tib.eu/destf/cs/0230> a  skos:Concept ;
+	skos:notation "0230"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Historische Theologie (evang. Th.)"@de .
+
+<https://onto.tib.eu/destf/cs/0220> a  skos:Concept ;
+	skos:notation "0220"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Neues Testament (evang. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0250> a  skos:Concept ;
+	skos:notation "0250"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Praktische Theologie und Religionspädagogik (evang. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0260> a  skos:Concept ;
+	skos:notation "0260"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Religionsgeschichte und Missionswissenschaft (evang. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0240> a  skos:Concept ;
+	skos:notation "0240"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/020> ;
+	skos:prefLabel "Systematische Theologie (evang. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/030> a  skos:Concept ;
+	skos:notation "030"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ; 
+	skos:prefLabel "Kath. Theologie"@de .
+	
+
+<https://onto.tib.eu/destf/cs/0300> a  skos:Concept ;
+	skos:notation "0300"^^xsd:string ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Kath. Theologie allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/0390> a  skos:Concept ;
+	skos:notation "0390"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Altkatholische Theologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/0310> a  skos:Concept ;
+	skos:notation "0310"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Biblische Theologie (kath. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0315> a  skos:Concept ;
+	skos:notation "0315"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Caritaswissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/0320> a  skos:Concept ;
+	skos:notation "0320"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Historische Theologie (kath. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0350> a  skos:Concept ;
+	skos:notation "0350"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Kanonistik (kath. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0340> a  skos:Concept ;
+	skos:notation "0340"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Praktische Theologie und Religionspädagogik (kath. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0330> a  skos:Concept  ;
+	skos:notation "0330"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/030> ;
+	skos:prefLabel "Systematische Theologie (kath. Th.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/040> a  skos:Concept ;
+	skos:notation "040"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Philosophie"@de .
+
+<https://onto.tib.eu/destf/cs/0400> a  skos:Concept ;
+	skos:notation "0400"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Philosophie allgemein"@de .
+	
+
+<https://onto.tib.eu/destf/cs/0420> a  skos:Concept ;
+	skos:notation "0420"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:prefLabel "Didaktik der Philosophie/Ethik"@de .
+
+
+<https://onto.tib.eu/destf/cs/0425> a  skos:Concept ;
+	skos:notation "0425"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:prefLabel "Geschichte der Philosophie"@de .
+
+
+<https://onto.tib.eu/destf/cs/0426> a  skos:Concept ;
+	skos:notation "0426"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:prefLabel "Logik"@de .
+
+
+<https://onto.tib.eu/destf/cs/0410> a  skos:Concept ;
+	skos:notation "0410"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:prefLabel "Religionswissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/0430> a  skos:Concept ;
+	skos:notation "0430"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/040> ;
+	skos:prefLabel "Wissenschaftsforschung/-lehre"@de .
+
+
+<https://onto.tib.eu/destf/cs/050> a  skos:Concept ;
+	skos:notation "050"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Geschichte"@de .
+
+<https://onto.tib.eu/destf/cs/0500> a  skos:Concept ;
+	skos:notation "0500"^^xsd:string ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Geschichte allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/0520> a  skos:Concept ;
+	skos:notation "0520"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Alte Geschichte"@de .
+
+
+<https://onto.tib.eu/destf/cs/0570> a  skos:Concept ;
+	skos:notation "0570"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Archäologie"@de .
+
+<https://onto.tib.eu/destf/cs/0580> a  skos:Concept ;
+	skos:notation "0580"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Didaktik der Geschichte"@de .
+
+<https://onto.tib.eu/destf/cs/0585> a  skos:Concept ;
+	skos:notation "0585"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Kultur- und Geistesgeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/0550> a  skos:Concept ;
+	skos:notation "0550"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Länder-, Landesgeschichte"@de .
+
+
+<https://onto.tib.eu/destf/cs/0530> a  skos:Concept ;
+	skos:notation "0530"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Mittelalterliche Geschichte"@de .
+
+
+<https://onto.tib.eu/destf/cs/0540> a  skos:Concept ;
+	skos:notation "0540"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Neuere und neueste Geschichte"@de .
+
+
+<https://onto.tib.eu/destf/cs/0590> a  skos:Concept ;
+	skos:notation "0590"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Technikgeschichte"@de .
+
+
+<https://onto.tib.eu/destf/cs/0510> a  skos:Concept ;
+	skos:notation "0510"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Ur- und Frühgeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/0560> a  skos:Concept ;
+	skos:notation "0560"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/050> ;
+	skos:prefLabel "Wirtschafts- und Sozialgeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/070> a  skos:Concept ;
+	skos:notation "070"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Bibliothekswissenschaft, Dokumentation"@de .
+	
+
+<https://onto.tib.eu/destf/cs/0700> a  skos:Concept ;
+	skos:notation "0700"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/070> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Bibliothekswissenschaft, Dokumentation allgemein"@de .
+	
+
+<https://onto.tib.eu/destf/cs/0710> a  skos:Concept ;
+	skos:notation "0710"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/070> ;
+	skos:prefLabel "Bibliothekswissenschaft/-wesen (nicht für Verwaltungs-FH)"@de .
+
+
+<https://onto.tib.eu/destf/cs/0720> a  skos:Concept ;
+	skos:notation "0720"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/070> ;
+	skos:prefLabel "Dokumentationswissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/080> a  skos:Concept ;
+	skos:notation "080"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Allgemeine und vergleichende Literatur- und Sprachwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/0800> a  skos:Concept ;
+	skos:notation "0800"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Allg. und vergleichende Literatur- und Sprachwissenschaft allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/0820> a  skos:Concept ;
+	skos:notation "0820"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Allg. und vergleichende Literaturwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/0810> a  skos:Concept ;
+	skos:notation "0810"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Allg. und vergleichende Sprachwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/0830> a  skos:Concept ;
+	skos:notation "0830"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Angewandte Sprachwissenschaft, berufsbezogene Fremdsprachenausbildung"@de .
+
+<https://onto.tib.eu/destf/cs/0835> a  skos:Concept ;
+	skos:notation "0835"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Computerlinguistik"@de .
+
+<https://onto.tib.eu/destf/cs/0840> a  skos:Concept ;
+	skos:notation "0840"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Fremdsprachenausbildung (f. Hörer aller Fakultäten)"@de .
+
+<https://onto.tib.eu/destf/cs/0845> a  skos:Concept ;
+	skos:notation "0845"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/080> ;
+	skos:prefLabel "Indogermanistik"@de .
+
+<https://onto.tib.eu/destf/cs/090> a  skos:Concept ;
+	skos:notation "090"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Altphilologie (klass. Philologie)"@de .
+
+<https://onto.tib.eu/destf/cs/0900> a  skos:Concept ;
+	skos:notation "0900"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Altphilologie allgemein"@de .
+	
+
+<https://onto.tib.eu/destf/cs/0930> a  skos:Concept ;
+	skos:notation "0930"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Byzantinistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/0960> a  skos:Concept ;
+	skos:notation "0960"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Didaktik der Altphilologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/0910> a  skos:Concept ;
+	skos:notation "0910"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Griechische Philologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/0920> a  skos:Concept ;
+	skos:notation "0920"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Lateinische Philologie"@de .
+
+<https://onto.tib.eu/destf/cs/0940> a  skos:Concept ;
+	skos:notation "0940"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Neugriechisch"@de .
+
+
+<https://onto.tib.eu/destf/cs/0950> a  skos:Concept ;
+	skos:notation "0950"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/090> ;
+	skos:prefLabel "Papyrologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/100> a  skos:Concept ;
+	skos:notation "100"^^xsd:string ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Germanistik (Deutsch, germanische Sprachen ohne Anglistik)"@de .
+
+<https://onto.tib.eu/destf/cs/1000> a  skos:Concept ;
+	skos:notation "1000"^^xsd:string ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Germanistik (Deutsch, germanische Sprachen ohne Anglistik) allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/1040> a  skos:Concept ;
+	skos:notation "1040" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Deutsch als Fremdsprache oder als Zweitsprache"@de .
+
+
+<https://onto.tib.eu/destf/cs/1080> a  skos:Concept ;
+	skos:notation "1080" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Deutsche Literaturwissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/1090> a  skos:Concept ;
+	skos:notation "1090" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Deutsche Sprachwissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/1050> a  skos:Concept ;
+	skos:notation "1050" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Didaktik der deutschen Sprache"@de .
+
+
+<https://onto.tib.eu/destf/cs/1030> a  skos:Concept ;
+	skos:notation "1030" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Niederlandistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/1020> a  skos:Concept ;
+	skos:notation "1020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Skandinavistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/1070> a  skos:Concept ;
+	skos:notation "1070" ;
+	skos:broader <https://onto.tib.eu/destf/cs/100> ;
+	skos:prefLabel "Sonstige germanische Sprachen (ohne Anglistik)"@de .
+
+<https://onto.tib.eu/destf/cs/110> a  skos:Concept ;
+	skos:notation "110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Anglistik, Amerikanistik"@de .
+	
+
+<https://onto.tib.eu/destf/cs/1110> a  skos:Concept ;
+	skos:notation "1110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/110> ;
+	skos:prefLabel "Amerikanistik"@de .
+	
+
+<https://onto.tib.eu/destf/cs/1100> a  skos:Concept ;
+	skos:notation "1100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/110> ;
+	skos:prefLabel "Anglistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/1120> a  skos:Concept ;
+	skos:notation "1120" ;
+	skos:broader <https://onto.tib.eu/destf/cs/110> ;
+	skos:prefLabel "Didaktik des Englischen"@de .
+
+
+<https://onto.tib.eu/destf/cs/1125> a  skos:Concept ;
+	skos:notation "1125" ;
+	skos:broader <https://onto.tib.eu/destf/cs/110> ;
+	skos:prefLabel "Wirtschaftsenglisch, Englische Fachsprachen"@de .
+
+
+<https://onto.tib.eu/destf/cs/120> a  skos:Concept ;
+	skos:notation "120" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Romanistik"@de .
+
+<https://onto.tib.eu/destf/cs/1200> a  skos:Concept ;
+	skos:notation "1200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Romanistik allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/1215> a  skos:Concept ;
+	skos:notation "1215" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Didaktik des Französischen"@de .
+
+<https://onto.tib.eu/destf/cs/1225> a  skos:Concept ;
+	skos:notation "1225" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Didaktik des Italienischen"@de .
+
+
+<https://onto.tib.eu/destf/cs/1235> a  skos:Concept ;
+	skos:notation "1235" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Didaktik des Spanischen"@de .
+
+<https://onto.tib.eu/destf/cs/1210> a  skos:Concept ;
+	skos:notation "1210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Französische Sprach- und Literaturwissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/1230> a  skos:Concept ;
+	skos:notation "1230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Iberoromanische Sprach- und Literaturwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/1220> a  skos:Concept ;
+	skos:notation "1220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Italienische Sprach- und Literaturwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/1240> a  skos:Concept ;
+	skos:notation "1240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/120> ;
+	skos:prefLabel "Sonstige romanische Sprachen"@de .
+
+<https://onto.tib.eu/destf/cs/130> a  skos:Concept ;
+	skos:notation "130" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Slawistik, Baltistik, Finno-Ugristik"@de .
+
+<https://onto.tib.eu/destf/cs/1300> a  skos:Concept ;
+	skos:notation "1300" ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Slawistik, Baltistik, Finno-Ugristik allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/1310> a  skos:Concept ;
+	skos:notation "1310" ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Slawistik allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/1380> a  skos:Concept ;
+	skos:notation "1380" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Balkanologie"@de .
+
+<https://onto.tib.eu/destf/cs/1350> a  skos:Concept ;
+	skos:notation "1350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Baltistik"@de .
+
+<https://onto.tib.eu/destf/cs/1370> a  skos:Concept ;
+	skos:notation "1370" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Finno-Ugristik"@de .
+
+<https://onto.tib.eu/destf/cs/130> skos:narrower <https://onto.tib.eu/destf/cs/1370> .
+
+<https://onto.tib.eu/destf/cs/1315> a  skos:Concept ;
+	skos:notation "1315" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Ostslawische Philologien"@de .
+
+<https://onto.tib.eu/destf/cs/1346> a  skos:Concept ;
+	skos:notation "1346" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Polnisch"@de .
+
+<https://onto.tib.eu/destf/cs/1320> a  skos:Concept ;
+	skos:notation "1320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Russische Sprach- und Literaturwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/1347> a  skos:Concept ;
+	skos:notation "1347" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Sorbisch"@de .
+
+<https://onto.tib.eu/destf/cs/1340> a  skos:Concept ;
+	skos:notation "1340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Südslawische Philologien"@de .
+
+<https://onto.tib.eu/destf/cs/1348> a  skos:Concept ;
+	skos:notation "1348" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Tschechisch"@de .
+
+<https://onto.tib.eu/destf/cs/1345> a  skos:Concept ;
+	skos:notation "1345" ;
+	skos:broader <https://onto.tib.eu/destf/cs/130> ;
+	skos:prefLabel "Westslawische Philologien"@de .
+
+<https://onto.tib.eu/destf/cs/140> a  skos:Concept ;
+	skos:notation "140" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Sonstige/Außereuropäische Sprach- und Kulturwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/1400> a  skos:Concept ;
+	skos:notation "1400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sonstige/Außereuropäische Sprach- und Kulturwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/1420> a  skos:Concept ;
+	skos:notation "1420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Afrikanistik"@de .
+
+<https://onto.tib.eu/destf/cs/1410> a  skos:Concept ;
+	skos:notation "1410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Ägyptologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/1430> a  skos:Concept ;
+	skos:notation "1430" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Altorientalistik"@de .
+
+<https://onto.tib.eu/destf/cs/1570> a  skos:Concept ;
+	skos:notation "1570" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Außereuropäische Sprachen und Kulturen Amerikas"@de .
+
+<https://onto.tib.eu/destf/cs/1575> a  skos:Concept ;
+	skos:notation "1575" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Außereuropäische Sprachen und Kulturen Australiens"@de .
+
+<https://onto.tib.eu/destf/cs/1490> a  skos:Concept ;
+	skos:notation "1490" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Indologie"@de .
+
+<https://onto.tib.eu/destf/cs/1480> a  skos:Concept ;
+	skos:notation "1480" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Iranistik"@de .
+
+<https://onto.tib.eu/destf/cs/1470> a  skos:Concept ;
+	skos:notation "1470" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Islamwissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/1540> a  skos:Concept ;
+	skos:notation "1540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Japanologie"@de .
+
+<https://onto.tib.eu/destf/cs/1460> a  skos:Concept ;
+	skos:notation "1460" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Judaistik/Hebräisch"@de .
+
+<https://onto.tib.eu/destf/cs/1465> a  skos:Concept ;
+	skos:notation "1465" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Kaukasistik"@de .
+
+<https://onto.tib.eu/destf/cs/1550> a  skos:Concept ;
+	skos:notation "1550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Koreanistik"@de .
+
+<https://onto.tib.eu/destf/cs/1576> a  skos:Concept ;
+	skos:notation "1576" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Orientalistik allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/1450> a  skos:Concept  ;
+	skos:notation "1450" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Semitistik, Arabistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/1530> a  skos:Concept  ;
+	skos:notation "1530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sinologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/1440> a  skos:Concept  ;
+	skos:notation "1440" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sprachen und Kulturen des christlichen Orients"@de .
+
+
+<https://onto.tib.eu/destf/cs/1445> a  skos:Concept  ;
+	skos:notation "1445" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sprachen und Kulturen des Nahen und Mittleren Ostens"@de .
+
+<https://onto.tib.eu/destf/cs/1495> a  skos:Concept  ;
+	skos:notation "1495" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Sprachen und Kulturen Ostasiens allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/1560> a  skos:Concept  ;
+	skos:notation "1560" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sprachen und Kulturen Südostasiens und Ozeaniens"@de .
+
+
+<https://onto.tib.eu/destf/cs/1520> a  skos:Concept  ;
+	skos:notation "1520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sprachen und Kulturen Zentralasiens"@de .
+
+
+<https://onto.tib.eu/destf/cs/1510> a  skos:Concept  ;
+	skos:notation "1510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Turkologie"@de .
+
+<https://onto.tib.eu/destf/cs/1610> a  skos:Concept  ;
+	skos:notation "1610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/140> ;
+	skos:prefLabel "Sonstige Sprachwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/160> a  skos:Concept ;
+	skos:notation "160" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Kulturwissenschaften i.e.S."@de .
+	
+<https://onto.tib.eu/destf/cs/1650> a  skos:Concept  ;
+	skos:notation "1650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/160> ;
+	skos:prefLabel "Allgemeine Kulturwissenschaft"@de .
+
+
+<https://onto.tib.eu/destf/cs/1580> a  skos:Concept  ;
+	skos:notation "1580" ;
+	skos:broader <https://onto.tib.eu/destf/cs/160> ;
+	skos:prefLabel "Ethnologie"@de .
+
+
+<https://onto.tib.eu/destf/cs/1660> a  skos:Concept  ;
+	skos:notation "1660" ;
+	skos:broader <https://onto.tib.eu/destf/cs/160> ;
+	skos:prefLabel "Europäische Ethnologie"@de .
+
+<https://onto.tib.eu/destf/cs/1590> a  skos:Concept  ;
+	skos:notation "1590" ;
+	skos:broader <https://onto.tib.eu/destf/cs/160> ;
+	skos:prefLabel "Volkskunde"@de .
+
+<https://onto.tib.eu/destf/cs/195> a  skos:Concept ;
+	skos:notation "195" ;
+	skos:broader <https://onto.tib.eu/destf/cs/01> ;
+	skos:prefLabel "Islamische Studien"@de .
+
+<https://onto.tib.eu/destf/cs/1950> a  skos:Concept  ;
+	skos:notation "1950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/195> ;
+	skos:prefLabel "Islamische Studien"@de .
+
+
+<https://onto.tib.eu/destf/cs/02> a  skos:Concept ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:notation "02" ;
+	skos:prefLabel "Sport"@de .
+	
+
+<https://onto.tib.eu/destf/cs/200> a  skos:Concept ;
+	skos:notation "200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/02> ;
+	skos:prefLabel "Sport"@de .
+
+<https://onto.tib.eu/destf/cs/2000> a  skos:Concept  ;
+	skos:notation "2000" ;
+	skos:broader <https://onto.tib.eu/destf/cs/200> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Sportwissenschaften allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/2005> a  skos:Concept  ;
+	skos:notation "2005" ;
+	skos:broader <https://onto.tib.eu/destf/cs/200> ;
+	skos:prefLabel "Didaktiken einzelner Sportarten"@de .
+
+
+<https://onto.tib.eu/destf/cs/2010> a  skos:Concept  ;
+	skos:notation "2010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/200> ;
+	skos:prefLabel "Sportmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/2020> a  skos:Concept  ;
+	skos:notation "2020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/200> ;
+	skos:prefLabel "Sportpädagogik/Sportpsychologie"@de .
+
+<https://onto.tib.eu/destf/cs/03> a  skos:Concept ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:notation "03" ;
+	skos:prefLabel "Rechts-, Wirtschafts- und Sozialwissenschaften"@de .	
+
+<https://onto.tib.eu/destf/cs/220> a  skos:Concept ;
+	skos:notation "220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Rechts-, Wirtschafts- und Sozialwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/2200> a  skos:Concept  ;
+	skos:notation "2200" ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:broader <https://onto.tib.eu/destf/cs/220> ;
+	skos:prefLabel "Rechts-, Wirtschafts- und Sozialwissenschaften allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/2210> a  skos:Concept  ;
+	skos:notation "2210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/220> ;
+	skos:note "Interdisziplinäre Lehr- und Forschungsgebiete, die mehrere Lehr- und Forschungsbereiche einer Fächergruppe betreffen und nicht schwerpunktmäßig zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Interdisziplinäre Studien (Schwerpunkt Rechts-, Wirtschafts- und Sozialwissenschaften)"@de .
+
+<https://onto.tib.eu/destf/cs/2240> a  skos:Concept  ;
+	skos:notation "2240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/220> ;
+	skos:prefLabel "Kommunikationswissenschaft/Publizistik"@de .
+
+
+<https://onto.tib.eu/destf/cs/2220> a  skos:Concept  ;
+	skos:notation "2220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/220> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Wirtschafts- und Sozialwissenschaften allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/2230> a  skos:Concept  ;
+	skos:notation "2230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/220> ;
+	skos:prefLabel "Wirtschafts- und Sozialpolitik"@de .
+
+<https://onto.tib.eu/destf/cs/225> a  skos:Concept ;
+	skos:notation "225" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Regionalwissenschaften (soweit nicht einzelnen Lehr- und Forschungsbereichen oder anderen Fächergruppen zuzuordnen)"@de .
+
+<https://onto.tib.eu/destf/cs/2250> a  skos:Concept  ;
+	skos:notation "2250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Afrika"@de .
+
+<https://onto.tib.eu/destf/cs/2255> a  skos:Concept  ;
+	skos:notation "2255" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Lateinamerika"@de .
+
+<https://onto.tib.eu/destf/cs/2265> a  skos:Concept  ;
+	skos:notation "2265" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Naher und Mittlerer Osten"@de .
+
+<https://onto.tib.eu/destf/cs/2260> a  skos:Concept  ;
+	skos:notation "2260" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Nordamerika"@de .
+
+<https://onto.tib.eu/destf/cs/2290> a  skos:Concept  ;
+	skos:notation "2290" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Nord- und Westeuropa"@de .
+
+
+<https://onto.tib.eu/destf/cs/2270> a  skos:Concept  ;
+	skos:notation "2270" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Ostasien"@de .
+
+<https://onto.tib.eu/destf/cs/2285> a  skos:Concept  ;
+	skos:notation "2285" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Ost- und Südosteuropa"@de .
+
+
+<https://onto.tib.eu/destf/cs/2275> a  skos:Concept  ;
+	skos:notation "2275" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Südasien"@de .
+
+<https://onto.tib.eu/destf/cs/2280> a  skos:Concept  ;
+	skos:notation "2280" ;
+	skos:broader <https://onto.tib.eu/destf/cs/225> ;
+	skos:prefLabel "Südostasien und Ozeanien"@de .
+
+<https://onto.tib.eu/destf/cs/230> a  skos:Concept ;
+	skos:notation "230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Politikwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/2300> a  skos:Concept  ;
+	skos:notation "2300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/230> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Politikwissenschaften allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/2350> a  skos:Concept  ;
+	skos:notation "2350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/230> ;
+	skos:prefLabel "Internationale Politik, Internationale Beziehungen"@de .
+
+<https://onto.tib.eu/destf/cs/2360> a  skos:Concept  ;
+	skos:notation "2360" ;
+	skos:broader <https://onto.tib.eu/destf/cs/230> ;
+	skos:prefLabel "Politische Bildung"@de .
+
+<https://onto.tib.eu/destf/cs/235> a  skos:Concept ;
+	skos:notation "235" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Sozialwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/2320> a  skos:Concept  ;
+	skos:notation "2320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/235> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Sozialwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/2340> a  skos:Concept  ;
+	skos:notation "2340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/235> ;
+	skos:prefLabel "Bevölkerungswissenschaft (Demographie)"@de .
+
+<https://onto.tib.eu/destf/cs/2345> a  skos:Concept  ;
+	skos:notation "2345" ;
+	skos:broader <https://onto.tib.eu/destf/cs/235> ;
+	skos:prefLabel "Sozialkunde"@de .
+
+<https://onto.tib.eu/destf/cs/2330> a  skos:Concept  ;
+	skos:notation "2330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/235> ;
+	skos:prefLabel "Soziologie"@de .
+
+<https://onto.tib.eu/destf/cs/240> a  skos:Concept ;
+	skos:notation "240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Sozialwesen"@de .
+
+<https://onto.tib.eu/destf/cs/2400> a  skos:Concept  ;
+	skos:notation "2400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/240> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Sozialwesen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/2410> a  skos:Concept  ;
+	skos:notation "2410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/240> ;
+	skos:prefLabel "Soziale Arbeit"@de .
+
+<https://onto.tib.eu/destf/cs/2420> a  skos:Concept  ;
+	skos:notation "2420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/240> ;
+	skos:prefLabel "Sozialpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/250> a  skos:Concept ;
+	skos:notation "250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Rechtswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/2500> a  skos:Concept  ;
+	skos:notation "2500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Rechtswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/2630> a  skos:Concept  ;
+	skos:notation "2630" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Arbeitsrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2670> a  skos:Concept  ;
+	skos:notation "2670" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Bürgerliches Recht"@de .
+
+
+<https://onto.tib.eu/destf/cs/2665> a  skos:Concept  ;
+	skos:notation "2665" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Europarecht"@de .
+
+<https://onto.tib.eu/destf/cs/2620> a  skos:Concept  ;
+	skos:notation "2620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Handelsrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2580> a  skos:Concept  ;
+	skos:notation "2580" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Internationales Recht und Rechtsvergleichung"@de .
+
+<https://onto.tib.eu/destf/cs/2540> a  skos:Concept  ;
+	skos:notation "2540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Kirchenrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2545> a  skos:Concept  ;
+	skos:notation "2545" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Kriminologie"@de .
+
+<https://onto.tib.eu/destf/cs/2560> a  skos:Concept  ;
+	skos:notation "2560" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Öffentliches Recht"@de .
+
+<https://onto.tib.eu/destf/cs/2550> a  skos:Concept  ;
+	skos:notation "2550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Privatrecht (ohne Arbeitsrecht)"@de .
+
+<https://onto.tib.eu/destf/cs/2650> a  skos:Concept  ;
+	skos:notation "2650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Prozessrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2520> a  skos:Concept  ;
+	skos:notation "2520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Rechts- und Staatsphilosophie"@de .
+
+<https://onto.tib.eu/destf/cs/2510> a  skos:Concept  ;
+	skos:notation "2510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Rechtsgeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/2515> a  skos:Concept  ;
+	skos:notation "2515" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Rechtsinformatik"@de .
+
+<https://onto.tib.eu/destf/cs/2530> a  skos:Concept  ;
+	skos:notation "2530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Rechtssoziologie"@de .
+
+<https://onto.tib.eu/destf/cs/2680> a  skos:Concept  ;
+	skos:notation "2680" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Sozialrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2590> a  skos:Concept  ;
+	skos:notation "2590" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Steuerrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2570> a  skos:Concept  ;
+	skos:notation "2570" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Strafrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2690> a  skos:Concept  ;
+	skos:notation "2690" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Versicherungsrecht"@de .
+
+<https://onto.tib.eu/destf/cs/2640> a  skos:Concept  ;
+	skos:notation "2640" ;
+	skos:broader <https://onto.tib.eu/destf/cs/250> ;
+	skos:prefLabel "Wirtschaftsrecht"@de .
+
+<https://onto.tib.eu/destf/cs/270> a  skos:Concept ;
+	skos:notation "270" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Verwaltungswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/2700> a  skos:Concept  ;
+	skos:notation "2700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Verwaltungswissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/2770> a  skos:Concept  ;
+	skos:notation "2770" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Allgemeine innere Verwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/2710> a  skos:Concept  ;
+	skos:notation "2710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Arbeits- und Berufsberatung"@de .
+
+<https://onto.tib.eu/destf/cs/2720> a  skos:Concept  ;
+	skos:notation "2720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Arbeitsverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/2711> a  skos:Concept  ;
+	skos:notation "2711" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Archivwesen"@de .
+
+<https://onto.tib.eu/destf/cs/2730> a  skos:Concept  ;
+	skos:notation "2730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Auswärtige Angelegenheiten"@de .
+
+<https://onto.tib.eu/destf/cs/2740> a  skos:Concept  ;
+	skos:notation "2740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Bankwesen"@de .
+
+<https://onto.tib.eu/destf/cs/2712> a  skos:Concept  ;
+	skos:notation "2712" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Bibliothekswesen"@de .
+
+<https://onto.tib.eu/destf/cs/2750> a  skos:Concept  ;
+	skos:notation "2750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Bundeswehrverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/2760> a  skos:Concept  ;
+	skos:notation "2760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Finanzverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/2780> a  skos:Concept  ;
+	skos:notation "2780" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Justizvollzug"@de .
+
+<https://onto.tib.eu/destf/cs/2790> a  skos:Concept  ;
+	skos:notation "2790" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Polizei/Verfassungsschutz"@de .
+
+<https://onto.tib.eu/destf/cs/2810> a  skos:Concept  ;
+	skos:notation "2810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Post- und Fernmeldewesen"@de .
+
+<https://onto.tib.eu/destf/cs/2610> a  skos:Concept  ;
+	skos:notation "2610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Rechtspflege"@de .
+
+<https://onto.tib.eu/destf/cs/2820> a  skos:Concept  ;
+	skos:notation "2820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Sozialverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/2830> a  skos:Concept  ;
+	skos:notation "2830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Verkehrswesen"@de .
+
+<https://onto.tib.eu/destf/cs/2840> a  skos:Concept  ;
+	skos:notation "2840" ;
+	skos:broader <https://onto.tib.eu/destf/cs/270> ;
+	skos:prefLabel "Zoll- und Steuerverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/290> a  skos:Concept ;
+	skos:notation "290" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Wirtschaftswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/2900> a  skos:Concept  ;
+	skos:notation "2900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Wirtschaftswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3010> a  skos:Concept  ;
+	skos:notation "3010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Arbeitslehre/-wissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/2960> a  skos:Concept  ;
+	skos:notation "2960" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Betriebswirtschaftslehre"@de .
+
+<https://onto.tib.eu/destf/cs/2980> a  skos:Concept  ;
+	skos:notation "2980" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Finanzwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/2966> a  skos:Concept  ;
+	skos:notation "2966" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Internationale Wirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/2985> a  skos:Concept  ;
+	skos:notation "2985" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Medienwirtschaft/Medienmanagement"@de .
+
+<https://onto.tib.eu/destf/cs/2940> a  skos:Concept  ;
+	skos:notation "2940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Ökonometrie"@de .
+
+<https://onto.tib.eu/destf/cs/2925> a  skos:Concept  ;
+	skos:notation "2925" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Sportmanagement/Sportökonomie"@de .
+
+<https://onto.tib.eu/destf/cs/2815> a  skos:Concept  ;
+	skos:notation "2815" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Tourismuswirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/2905> a  skos:Concept  ;
+	skos:notation "2905" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Umweltwirtschaft/Umweltökonomie"@de .
+
+<https://onto.tib.eu/destf/cs/2971> a  skos:Concept  ;
+	skos:notation "2971" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Verkehrswirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/2835> a  skos:Concept  ;
+	skos:notation "2835" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Versicherungswesen"@de .
+
+<https://onto.tib.eu/destf/cs/2930> a  skos:Concept  ;
+	skos:notation "2930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Volkswirtschaftslehre"@de .
+
+<https://onto.tib.eu/destf/cs/2920> a  skos:Concept  ;
+	skos:notation "2920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Wirtschaftsinformatik (f. Wirtschaftsingenieure)"@de .
+
+
+<https://onto.tib.eu/destf/cs/2935> a  skos:Concept  ;
+	skos:notation "2935" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Wirtschaftsinformatik (f. Wirtschaftswiss.)"@de .
+
+<https://onto.tib.eu/destf/cs/2936> a  skos:Concept  ;
+	skos:notation "2936" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Wirtschaftsmathematik (f. Wirtschaftswiss.)"@de .
+
+
+<https://onto.tib.eu/destf/cs/2910> a  skos:Concept  ;
+	skos:notation "2910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Wirtschaftspädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/2915> a  skos:Concept  ;
+	skos:notation "2915" ;
+	skos:broader <https://onto.tib.eu/destf/cs/290> ;
+	skos:prefLabel "Wirtschaftsstatistik"@de .
+
+<https://onto.tib.eu/destf/cs/310> a  skos:Concept ;
+	skos:notation "310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de .
+
+<https://onto.tib.eu/destf/cs/3100> a  skos:Concept  ;
+	skos:notation "3100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/310> ;
+	skos:prefLabel "Wirtschaftsingenieurwesen mit wirtschaftswissenschaftlichem Schwerpunkt"@de .
+
+<https://onto.tib.eu/destf/cs/3110> a  skos:Concept  ;
+	skos:notation "3110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/310> ;
+	skos:prefLabel "Facility Management Schwerpunkt"@de .
+
+<https://onto.tib.eu/destf/cs/315> a  skos:Concept ;
+	skos:notation "315" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Psychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1700> a  skos:Concept  ;
+	skos:notation "1700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Psychologie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/1750> a  skos:Concept  ;
+	skos:notation "1750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Allgemeine und kognitive Psychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1715> a  skos:Concept  ;
+	skos:notation "1715" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Arbeits-, Organisations- und Wirtschaftspsychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1760> a  skos:Concept  ;
+	skos:notation "1760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Biologische und Neuropsychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1710> a  skos:Concept  ;
+	skos:notation "1710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Differentielle Psychologie, Persönlichkeitspsychologie und Diagnostik"@de .
+
+<https://onto.tib.eu/destf/cs/1720> a  skos:Concept  ;
+	skos:notation "1720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Entwicklungspsychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1740> a  skos:Concept  ;
+	skos:notation "1740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Klinische Psychologie, Diagnostik und Psychotherapie"@de .
+
+<https://onto.tib.eu/destf/cs/1725> a  skos:Concept  ;
+	skos:notation "1725" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Pädagogische Psychologie"@de .
+
+<https://onto.tib.eu/destf/cs/1730> a  skos:Concept  ;
+	skos:notation "1730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/315> ;
+	skos:prefLabel "Sozialpsychologie"@de .
+
+<https://onto.tib.eu/destf/cs/320> a  skos:Concept ;
+	skos:notation "320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/03> ;
+	skos:prefLabel "Erziehungswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/1800> a  skos:Concept  ;
+	skos:notation "1800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Erziehungswissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/1805> a  skos:Concept  ;
+	skos:notation "1805" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Berufs- und Wirtschaftspädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/1801> a  skos:Concept  ;
+	skos:notation "1801" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Didaktik"@de .
+
+<https://onto.tib.eu/destf/cs/1802> a  skos:Concept  ;
+	skos:notation "1802" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Empirische Bildungsforschung"@de .
+
+<https://onto.tib.eu/destf/cs/1820> a  skos:Concept  ;
+	skos:notation "1820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Erwachsenenbildung"@de .
+
+<https://onto.tib.eu/destf/cs/1803> a  skos:Concept  ;
+	skos:notation "1803" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Grundschul- und Primarstufenpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/1804> a  skos:Concept  ;
+	skos:notation "1804" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Historische Bildungsforschung"@de .
+
+<https://onto.tib.eu/destf/cs/1829> a  skos:Concept  ;
+	skos:notation "1829" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Interkulturelle und International Vergleichende Erziehungswissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/1828> a  skos:Concept  ;
+	skos:notation "1828" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Kultur- und Medienpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/1826> a  skos:Concept  ;
+	skos:notation "1826" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Pädagogik der frühen Kindheit"@de .
+
+<https://onto.tib.eu/destf/cs/1825> a  skos:Concept  ;
+	skos:notation "1825" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Pädagogische Freizeitforschung und Sportpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/1827> a  skos:Concept  ;
+	skos:notation "1827" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:prefLabel "Schulpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/1806> a  skos:Concept  ;
+	skos:notation "1806" ;
+	skos:broader <https://onto.tib.eu/destf/cs/320> ;
+	skos:note "Alle Fachgebiete des bis 2014 gültigen Lehr- und Forschungsbereichs „Sonderpädagogik“ werden ab 2015 im Fachgebiet „Sonderpädagogik“ zusammengefasst nachgewiesen."@de ;
+	skos:prefLabel "Sonderpädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/04> a  skos:Concept ;
+	skos:notation "04" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:prefLabel "Mathematik, Naturwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/330> a  skos:Concept ;
+	skos:notation "330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Mathematik, Naturwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3300> a  skos:Concept  ;
+	skos:notation "3300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/330> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Mathematik, Naturwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3320> a  skos:Concept  ;
+	skos:notation "3320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/330> ;
+	skos:note "Interdisziplinäre Lehr- und Forschungsgebiete, die mehrere Lehr- und Forschungsbereiche einer Fächergruppe betreffen und nicht schwerpunktmäßig zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Interdisziplinäre Studien (Schwerpunkt Naturwissenschaft)"@de .
+
+<https://onto.tib.eu/destf/cs/3310> a  skos:Concept  ;
+	skos:notation "3310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/330> ;
+	skos:prefLabel "Geschichte der Mathematik und Naturwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/3315> a  skos:Concept  ;
+	skos:notation "3315" ;
+	skos:broader <https://onto.tib.eu/destf/cs/330> ;
+	skos:prefLabel "Naturwissenschaftliche Fachdidaktiken, soweit nicht aufteilbar"@de .
+
+<https://onto.tib.eu/destf/cs/340> a  skos:Concept ;
+	skos:notation "340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Mathematik"@de .
+
+<https://onto.tib.eu/destf/cs/3400> a  skos:Concept  ;
+	skos:notation "3400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Mathematik allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3420> a  skos:Concept  ;
+	skos:notation "3420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Angewandte Mathematik"@de .
+
+<https://onto.tib.eu/destf/cs/3450> a  skos:Concept  ;
+	skos:notation "3450" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Didaktik der Mathematik"@de .
+
+<https://onto.tib.eu/destf/cs/2950> a  skos:Concept  ;
+	skos:notation "2950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Mathematische Statistik/ Wahrscheinlichkeitsrechnung"@de .
+
+<https://onto.tib.eu/destf/cs/3410> a  skos:Concept  ;
+	skos:notation "3410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Reine Mathematik"@de .
+
+<https://onto.tib.eu/destf/cs/3430> a  skos:Concept  ;
+	skos:notation "3430" ;
+	skos:broader <https://onto.tib.eu/destf/cs/340> ;
+	skos:prefLabel "Wirtschaftsmathematik (f. Mathematiker)"@de .
+
+<https://onto.tib.eu/destf/cs/360> a  skos:Concept ;
+	skos:notation "360" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Physik, Astronomie"@de .
+
+<https://onto.tib.eu/destf/cs/3600> a  skos:Concept  ;
+	skos:notation "3600" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Physik, Astronomie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3690> a  skos:Concept  ;
+	skos:notation "3690" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Astronomie, Astrophysik"@de .
+
+<https://onto.tib.eu/destf/cs/3650> a  skos:Concept  ;
+	skos:notation "3650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Didaktik der Physik"@de .
+
+<https://onto.tib.eu/destf/cs/3630> a  skos:Concept  ;
+	skos:notation "3630" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Experimentelle Physik"@de .
+
+<https://onto.tib.eu/destf/cs/3635> a  skos:Concept  ;
+	skos:notation "3635" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Festkörperphysik"@de .
+
+<https://onto.tib.eu/destf/cs/3636> a  skos:Concept  ;
+	skos:notation "3636" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Kernphysik"@de .
+
+<https://onto.tib.eu/destf/cs/3638> a  skos:Concept  ;
+	skos:notation "3638" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Materialphysik"@de .
+
+<https://onto.tib.eu/destf/cs/3637> a  skos:Concept  ;
+	skos:notation "3637" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Optik"@de .
+
+<https://onto.tib.eu/destf/cs/3610> a  skos:Concept  ;
+	skos:notation "3610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Physik"@de .
+
+<https://onto.tib.eu/destf/cs/3640> a  skos:Concept  ;
+	skos:notation "3640" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Technische Physik"@de .
+
+<https://onto.tib.eu/destf/cs/3620> a  skos:Concept  ;
+	skos:notation "3620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/360> ;
+	skos:prefLabel "Theoretische Physik"@de .
+
+<https://onto.tib.eu/destf/cs/370> a  skos:Concept ;
+	skos:notation "370" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3700> a  skos:Concept  ;
+	skos:notation "3700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Chemie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3750> a  skos:Concept  ;
+	skos:notation "3750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Analytische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3710> a  skos:Concept  ;
+	skos:notation "3710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Anorganische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3760> a  skos:Concept  ;
+	skos:notation "3760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Biochemie (f. Chemiker)"@de .
+
+<https://onto.tib.eu/destf/cs/3800> a  skos:Concept  ;
+	skos:notation "3800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Didaktik der Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3830> a  skos:Concept  ;
+	skos:notation "3830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Elektrochemie"@de .
+
+<https://onto.tib.eu/destf/cs/3810> a  skos:Concept  ;
+	skos:notation "3810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Lebensmittelchemie"@de .
+
+<https://onto.tib.eu/destf/cs/3770> a  skos:Concept  ;
+	skos:notation "3770" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Makromolekulare Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3820> a  skos:Concept  ;
+	skos:notation "3820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Materialchemie"@de .
+
+<https://onto.tib.eu/destf/cs/3780> a  skos:Concept  ;
+	skos:notation "3780" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Nuklearchemie"@de .
+
+<https://onto.tib.eu/destf/cs/3840> a  skos:Concept  ;
+	skos:notation "3840" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Oberflächen- und Nanochemie"@de .
+
+<https://onto.tib.eu/destf/cs/3720> a  skos:Concept  ;
+	skos:notation "3720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Organische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3730> a  skos:Concept  ;
+	skos:notation "3730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Physikalische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3740> a  skos:Concept  ;
+	skos:notation "3740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Technische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3790> a  skos:Concept  ;
+	skos:notation "3790" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Theoretische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3850> a  skos:Concept  ;
+	skos:notation "3850" ;
+	skos:broader <https://onto.tib.eu/destf/cs/370> ;
+	skos:prefLabel "Umwelt- und Atmosphärenchemie"@de .
+
+<https://onto.tib.eu/destf/cs/390> a  skos:Concept ;
+	skos:notation "390" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Pharmazie"@de .
+
+<https://onto.tib.eu/destf/cs/3900> a  skos:Concept  ;
+	skos:notation "3900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Pharmazie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3950> a  skos:Concept  ;
+	skos:notation "3950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:prefLabel "Klinische Pharmazie"@de .
+
+<https://onto.tib.eu/destf/cs/3940> a  skos:Concept  ;
+	skos:notation "3940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:prefLabel "Pharmakologie und Toxikologie (Pharmazie)"@de .
+
+<https://onto.tib.eu/destf/cs/3910> a  skos:Concept  ;
+	skos:notation "3910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:prefLabel "Pharmazeutische Biologie/Pharmakognosie"@de .
+
+<https://onto.tib.eu/destf/cs/3920> a  skos:Concept  ;
+	skos:notation "3920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:prefLabel "Pharmazeutische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/3930> a  skos:Concept  ;
+	skos:notation "3930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/390> ;
+	skos:prefLabel "Pharmazeutische Technologie"@de .
+
+<https://onto.tib.eu/destf/cs/400> a  skos:Concept ;
+	skos:notation "400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Biologie"@de .
+
+<https://onto.tib.eu/destf/cs/4000> a  skos:Concept  ;
+	skos:notation "4000" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Biologie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4060> a  skos:Concept  ;
+	skos:notation "4060" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Anthropologie (Humanbiologie)"@de .
+
+<https://onto.tib.eu/destf/cs/4065> a  skos:Concept  ;
+	skos:notation "4065" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Biochemie (f. Biologen)"@de .
+
+<https://onto.tib.eu/destf/cs/4030> a  skos:Concept  ;
+	skos:notation "4030" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Biophysik"@de .
+
+<https://onto.tib.eu/destf/cs/4035> a  skos:Concept  ;
+	skos:notation "4035" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Biotechnologie (f. Biologen)"@de .
+
+<https://onto.tib.eu/destf/cs/4040> a  skos:Concept  ;
+	skos:notation "4040" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Botanik"@de .
+
+<https://onto.tib.eu/destf/cs/4070> a  skos:Concept  ;
+	skos:notation "4070" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Didaktik der Biologie"@de .
+
+<https://onto.tib.eu/destf/cs/4010> a  skos:Concept  ;
+	skos:notation "4010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Genetik"@de .
+
+<https://onto.tib.eu/destf/cs/4020> a  skos:Concept  ;
+	skos:notation "4020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Mikrobiologie"@de .
+
+<https://onto.tib.eu/destf/cs/4080> a  skos:Concept  ;
+	skos:notation "4080" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Neurobiologie"@de .
+
+<https://onto.tib.eu/destf/cs/4090> a  skos:Concept  ;
+	skos:notation "4090" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Ökologie"@de .
+
+<https://onto.tib.eu/destf/cs/4050> a  skos:Concept  ;
+	skos:notation "4050" ;
+	skos:broader <https://onto.tib.eu/destf/cs/400> ;
+	skos:prefLabel "Zoologie"@de .
+
+<https://onto.tib.eu/destf/cs/410> a  skos:Concept ;
+	skos:notation "410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Geowissenschaften (ohne Geographie)"@de .
+
+<https://onto.tib.eu/destf/cs/4100> a  skos:Concept  ;
+	skos:notation "4100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Geowissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4180> a  skos:Concept  ;
+	skos:notation "4180" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Geochemie"@de .
+
+<https://onto.tib.eu/destf/cs/4110> a  skos:Concept  ;
+	skos:notation "4110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Geologie"@de .
+
+<https://onto.tib.eu/destf/cs/4190> a  skos:Concept  ;
+	skos:notation "4190" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Geoökologie"@de .
+
+<https://onto.tib.eu/destf/cs/4150> a  skos:Concept  ;
+	skos:notation "4150" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Geophysik"@de .
+
+<https://onto.tib.eu/destf/cs/4170> a  skos:Concept  ;
+	skos:notation "4170" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Kristallographie"@de .
+
+<https://onto.tib.eu/destf/cs/4160> a  skos:Concept  ;
+	skos:notation "4160" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Meteorologie"@de .
+
+<https://onto.tib.eu/destf/cs/4130> a  skos:Concept  ;
+	skos:notation "4130" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Mineralogie"@de .
+
+<https://onto.tib.eu/destf/cs/4135> a  skos:Concept  ;
+	skos:notation "4135" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Ozeanographie"@de .
+
+<https://onto.tib.eu/destf/cs/4120> a  skos:Concept  ;
+	skos:notation "4120" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Paläontologie"@de .
+
+<https://onto.tib.eu/destf/cs/4140> a  skos:Concept  ;
+	skos:notation "4140" ;
+	skos:broader <https://onto.tib.eu/destf/cs/410> ;
+	skos:prefLabel "Petrologie, -graphie"@de .
+
+<https://onto.tib.eu/destf/cs/420> a  skos:Concept ;
+	skos:notation "420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/04> ;
+	skos:prefLabel "Geographie"@de .
+
+<https://onto.tib.eu/destf/cs/4200> a  skos:Concept  ;
+	skos:notation "4200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Geographie allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4220> a  skos:Concept  ;
+	skos:notation "4220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Anthropogeographie"@de .
+
+<https://onto.tib.eu/destf/cs/4240> a  skos:Concept  ;
+	skos:notation "4240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Biogeographie"@de .
+
+<https://onto.tib.eu/destf/cs/4250> a  skos:Concept  ;
+	skos:notation "4250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Didaktik der Geographie"@de .
+
+<https://onto.tib.eu/destf/cs/4230> a  skos:Concept  ;
+	skos:notation "4230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Geographische Länder- und Landschaftskunde"@de .
+
+<https://onto.tib.eu/destf/cs/4205> a  skos:Concept  ;
+	skos:notation "4205" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Geoinformatik/Geoinformationssysteme"@de .
+
+<https://onto.tib.eu/destf/cs/4210> a  skos:Concept  ;
+	skos:notation "4210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Physische Geographie"@de .
+
+<https://onto.tib.eu/destf/cs/4215> a  skos:Concept  ;
+	skos:notation "4215" ;
+	skos:broader <https://onto.tib.eu/destf/cs/420> ;
+	skos:prefLabel "Wirtschafts- und Sozialgeographie"@de .
+
+<https://onto.tib.eu/destf/cs/05> a  skos:Concept ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:notation "05" ;
+	skos:prefLabel "Humanmedizin/Gesundheitswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/440> a  skos:Concept ;
+	skos:notation "440" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Humanmedizin allgemein"@de .
+	
+<https://onto.tib.eu/destf/cs/4400> a  skos:Concept  ;
+	skos:notation "4400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/440> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Humanmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/445> a  skos:Concept ;
+	skos:notation "445" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Gesundheitswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4450> a  skos:Concept  ;
+	skos:notation "4450" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Gesundheitswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4459> a  skos:Concept  ;
+	skos:notation "4459" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:prefLabel "Gesundheitsökonomie"@de .
+
+<https://onto.tib.eu/destf/cs/4451> a  skos:Concept  ;
+	skos:notation "4451" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:prefLabel "Gesundheitspädagogik"@de .
+
+<https://onto.tib.eu/destf/cs/4453> a  skos:Concept  ;
+	skos:notation "4453" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:prefLabel "Gesundheitswissenschaft/-management"@de .
+
+<https://onto.tib.eu/destf/cs/4455> a  skos:Concept  ;
+	skos:notation "4455" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:prefLabel "Nichtärztliche Heilberufe/Therapien"@de .
+
+<https://onto.tib.eu/destf/cs/4457> a  skos:Concept  ;
+	skos:notation "4457" ;
+	skos:broader <https://onto.tib.eu/destf/cs/445> ;
+	skos:prefLabel "Pflegewissenschaft/-management"@de .
+
+<https://onto.tib.eu/destf/cs/450> a  skos:Concept ;
+	skos:notation "450" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:prefLabel "Vorklinische Humanmedizin (einschl. Zahnmedizin)"@de .
+
+<https://onto.tib.eu/destf/cs/4500> a  skos:Concept  ;
+	skos:notation "4500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Vorklinische Humanmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4560> a  skos:Concept  ;
+	skos:notation "4560" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Anatomie"@de .
+
+<https://onto.tib.eu/destf/cs/4530> a  skos:Concept  ;
+	skos:notation "4530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Biologie"@de .
+
+<https://onto.tib.eu/destf/cs/4520> a  skos:Concept  ;
+	skos:notation "4520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Chemie"@de .
+
+<https://onto.tib.eu/destf/cs/4525> a  skos:Concept  ;
+	skos:notation "4525" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Informatik (nur für Mediziner)"@de .
+
+<https://onto.tib.eu/destf/cs/4510> a  skos:Concept  ;
+	skos:notation "4510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Physik"@de .
+
+<https://onto.tib.eu/destf/cs/4580> a  skos:Concept  ;
+	skos:notation "4580" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Psychologie"@de .
+
+<https://onto.tib.eu/destf/cs/4585> a  skos:Concept  ;
+	skos:notation "4585" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Soziologie"@de .
+
+<https://onto.tib.eu/destf/cs/4590> a  skos:Concept  ;
+	skos:notation "4590" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Medizinische Terminologie"@de .
+
+<https://onto.tib.eu/destf/cs/4540> a  skos:Concept  ;
+	skos:notation "4540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Physiologie"@de .
+
+<https://onto.tib.eu/destf/cs/4550> a  skos:Concept  ;
+	skos:notation "4550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Physiologische Chemie (Biochemie)"@de .
+
+<https://onto.tib.eu/destf/cs/4595> a  skos:Concept  ;
+	skos:notation "4595" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Radiologie/Strahlentherapie/Nuklearmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/4610> a  skos:Concept  ;
+	skos:notation "4610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/450> ;
+	skos:prefLabel "Vorklin. Zahnheilkunde"@de .
+
+<https://onto.tib.eu/destf/cs/470> a  skos:Concept ;
+	skos:notation "470" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:prefLabel "Klinisch-Theoretische Humanmedizin (einschl. Zahnmedizin)"@de .
+
+<https://onto.tib.eu/destf/cs/4700> a  skos:Concept  ;
+	skos:notation "4700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Klin.-Theor. Humanmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4705> a  skos:Concept  ;
+	skos:notation "4705" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Arbeitsmedizin (klin.-theor.)"@de .
+
+<https://onto.tib.eu/destf/cs/4720> a  skos:Concept  ;
+	skos:notation "4720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Biomathematik (f. Mediziner)"@de .
+
+<https://onto.tib.eu/destf/cs/4725> a  skos:Concept  ;
+	skos:notation "4725" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Biomedizinische Technik"@de .
+
+<https://onto.tib.eu/destf/cs/4745> a  skos:Concept  ;
+	skos:notation "4745" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Epidemiologie"@de .
+
+<https://onto.tib.eu/destf/cs/4820> a  skos:Concept  ;
+	skos:notation "4820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Experimentelle Medizin/Medizinforschung (ohne klinische Medizin)"@de .
+
+<https://onto.tib.eu/destf/cs/4760> a  skos:Concept  ;
+	skos:notation "4760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Geschichte der Medizin"@de .
+
+<https://onto.tib.eu/destf/cs/4750> a  skos:Concept  ;
+	skos:notation "4750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Humangenetik"@de .
+
+<https://onto.tib.eu/destf/cs/4780> a  skos:Concept  ;
+	skos:notation "4780" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Hygiene und Mikrobiologie"@de .
+
+<https://onto.tib.eu/destf/cs/4810> a  skos:Concept  ;
+	skos:notation "4810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Immunologie"@de .
+
+<https://onto.tib.eu/destf/cs/4730> a  skos:Concept  ;
+	skos:notation "4730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Klinische Chemie und Hämatologie"@de .
+
+<https://onto.tib.eu/destf/cs/4732> a  skos:Concept  ;
+	skos:notation "4732" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Klinische Krebsforschung und molekulare Tumorforschung"@de .
+
+<https://onto.tib.eu/destf/cs/4735> a  skos:Concept  ;
+	skos:notation "4735" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Medizinische Balneologie und Klimatologie"@de .
+
+<https://onto.tib.eu/destf/cs/4736> a  skos:Concept  ;
+	skos:notation "4736" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Medizinische Biophysik und Elektronenmikroskopie"@de .
+
+<https://onto.tib.eu/destf/cs/4737> a  skos:Concept  ;
+	skos:notation "4737" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Medizinische Statistik und Dokumentation"@de .
+
+<https://onto.tib.eu/destf/cs/4738> a  skos:Concept  ;
+	skos:notation "4738" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Parasitologie"@de .
+
+<https://onto.tib.eu/destf/cs/4710> a  skos:Concept  ;
+	skos:notation "4710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Pathologie, Neuropathologie"@de .
+
+<https://onto.tib.eu/destf/cs/4715> a  skos:Concept  ;
+	skos:notation "4715" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Pharmakologie und Toxikologie (medizinisch)"@de .
+
+<https://onto.tib.eu/destf/cs/4716> a  skos:Concept  ;
+	skos:notation "4716" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Präventiv- und Vorsorgemedizin"@de .
+
+<https://onto.tib.eu/destf/cs/4740> a  skos:Concept  ;
+	skos:notation "4740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Radiologie (diagnostisch, ohne Betten)"@de .
+
+<https://onto.tib.eu/destf/cs/4770> a  skos:Concept  ;
+	skos:notation "4770" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Rechtsmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/4775> a  skos:Concept  ;
+	skos:notation "4775" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Sexualmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/4776> a  skos:Concept  ;
+	skos:notation "4776" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Sozialmedizin (klinisch-theoretisch)"@de .
+
+<https://onto.tib.eu/destf/cs/4790> a  skos:Concept  ;
+	skos:notation "4790" ;
+	skos:broader <https://onto.tib.eu/destf/cs/470> ;
+	skos:prefLabel "Virologie"@de .
+
+<https://onto.tib.eu/destf/cs/490> a  skos:Concept ;
+	skos:notation "490" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:prefLabel "Klinisch-Praktische Humanmedizin (ohne Zahnmedizin)"@de .
+
+<https://onto.tib.eu/destf/cs/4900> a  skos:Concept  ;
+	skos:notation "4900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Klin.-Prakt. Humanmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/4910> a  skos:Concept  ;
+	skos:notation "4910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Allgemeinmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5070> a  skos:Concept  ;
+	skos:notation "5070" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Anästhesiologie"@de .
+
+<https://onto.tib.eu/destf/cs/5090> a  skos:Concept  ;
+	skos:notation "5090" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Arbeitsmedizin (klin.-prakt.)"@de .
+
+<https://onto.tib.eu/destf/cs/5020> a  skos:Concept  ;
+	skos:notation "5020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Augenheilkunde"@de .
+
+<https://onto.tib.eu/destf/cs/4980> a  skos:Concept  ;
+	skos:notation "4980" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Chirurgie"@de .
+
+<https://onto.tib.eu/destf/cs/4960> a  skos:Concept  ;
+	skos:notation "4960" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Dermato-Venerologie"@de .
+
+<https://onto.tib.eu/destf/cs/5120> a  skos:Concept  ;
+	skos:notation "5120" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Geriatrie/Gerontologie"@de .
+
+<https://onto.tib.eu/destf/cs/4990> a  skos:Concept  ;
+	skos:notation "4990" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Gynäkologie"@de .
+
+<https://onto.tib.eu/destf/cs/5030> a  skos:Concept  ;
+	skos:notation "5030" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Hals-, Nasen-, Ohrenheilkunde"@de .
+
+<https://onto.tib.eu/destf/cs/4940> a  skos:Concept  ;
+	skos:notation "4940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Innere Medizin"@de .
+
+<https://onto.tib.eu/destf/cs/4950> a  skos:Concept  ;
+	skos:notation "4950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Kinderheilkunde"@de .
+
+<https://onto.tib.eu/destf/cs/5160> a  skos:Concept  ;
+	skos:notation "5160" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Kinder- und Jugendpsychiatrie"@de .
+
+<https://onto.tib.eu/destf/cs/5130> a  skos:Concept  ;
+	skos:notation "5130" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Neurochirurgie"@de .
+
+<https://onto.tib.eu/destf/cs/5040> a  skos:Concept  ;
+	skos:notation "5040" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Neurologie"@de .
+
+<https://onto.tib.eu/destf/cs/5010> a  skos:Concept  ;
+	skos:notation "5010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Orthopädie"@de .
+
+<https://onto.tib.eu/destf/cs/5015> a  skos:Concept  ;
+	skos:notation "5015" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Physikalische Medizin"@de .
+
+<https://onto.tib.eu/destf/cs/5050> a  skos:Concept  ;
+	skos:notation "5050" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Psychiatrie"@de .
+
+<https://onto.tib.eu/destf/cs/5060> a  skos:Concept  ;
+	skos:notation "5060" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Psychosomatische Medizin und Psychotherapie"@de .
+
+<https://onto.tib.eu/destf/cs/5150> a  skos:Concept  ;
+	skos:notation "5150" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Radiologie/Strahlentherapie/Nuklearmedizin (mit Betten)"@de .
+
+<https://onto.tib.eu/destf/cs/5080> a  skos:Concept  ;
+	skos:notation "5080" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Rehabilitation"@de .
+
+<https://onto.tib.eu/destf/cs/5140> a  skos:Concept  ;
+	skos:notation "5140" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Rheumatologie"@de .
+
+<https://onto.tib.eu/destf/cs/5110> a  skos:Concept  ;
+	skos:notation "5110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Sozialmedizin (klinisch-praktisch)"@de .
+
+<https://onto.tib.eu/destf/cs/4920> a  skos:Concept  ;
+	skos:notation "4920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Spezielle Pathologie"@de .
+
+<https://onto.tib.eu/destf/cs/4930> a  skos:Concept  ;
+	skos:notation "4930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Spezielle Pharmakologie"@de .
+
+<https://onto.tib.eu/destf/cs/4935> a  skos:Concept  ;
+	skos:notation "4935" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Sportmedizin (klinisch-praktisch)"@de .
+
+<https://onto.tib.eu/destf/cs/4936> a  skos:Concept  ;
+	skos:notation "4936" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Tumorzentrum und Transfusionsmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/4970> a  skos:Concept  ;
+	skos:notation "4970" ;
+	skos:broader <https://onto.tib.eu/destf/cs/490> ;
+	skos:prefLabel "Urologie"@de .
+
+<https://onto.tib.eu/destf/cs/520> a  skos:Concept ;
+	skos:notation "520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/05> ;
+	skos:prefLabel "Zahnmedizin (klinisch-praktisch)"@de .
+
+<https://onto.tib.eu/destf/cs/5200> a  skos:Concept  ;
+	skos:notation "5200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/520> ;
+	skos:prefLabel "Zahnmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5240> a  skos:Concept  ;
+	skos:notation "5240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/520> ;
+	skos:prefLabel "Kieferorthopädie"@de .
+
+<https://onto.tib.eu/destf/cs/5220> a  skos:Concept  ;
+	skos:notation "5220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/520> ;
+	skos:prefLabel "Zahnärztliche Prothetik"@de .
+
+<https://onto.tib.eu/destf/cs/5210> a  skos:Concept  ;
+	skos:notation "5210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/520> ;
+	skos:prefLabel "Zahnerhaltung und Paradontologie"@de .
+
+<https://onto.tib.eu/destf/cs/5230> a  skos:Concept  ;
+	skos:notation "5230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/520> ;
+	skos:prefLabel "Zahn-, Mund- und Kieferchirurgie"@de .
+
+<https://onto.tib.eu/destf/cs/07> a  skos:Concept ;
+	skos:notation "07" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:prefLabel "Agrar-, Forst- und Ernährungswissenschaften, Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/540> a  skos:Concept ;
+	skos:notation "540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Veterinärmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5400> a  skos:Concept  ;
+	skos:notation "5400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/540> ;
+	skos:prefLabel "Veterinärmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/550> a  skos:Concept ;
+	skos:notation "550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Vorklinische Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5500> a  skos:Concept  ;
+	skos:notation "5500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/550> ;
+	skos:prefLabel "Vorklinische Veterinärmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5510> a  skos:Concept  ;
+	skos:notation "5510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/550> ;
+	skos:prefLabel "Anatomie, Embryologie und Histologie"@de .
+
+<https://onto.tib.eu/destf/cs/5520> a  skos:Concept  ;
+	skos:notation "5520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/550> ;
+	skos:prefLabel "Physiologie, Biochemie und Ernährungsphysiologie"@de .
+
+<https://onto.tib.eu/destf/cs/5530> a  skos:Concept  ;
+	skos:notation "5530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/550> ;
+	skos:prefLabel "Tierschutz, Medizinische Terminologie, Geschichte der Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5535> a  skos:Concept  ;
+	skos:notation "5535" ;
+	skos:broader <https://onto.tib.eu/destf/cs/550> ;
+	skos:prefLabel "Veterinärmedizinische Zoologie und Hydrobiologie"@de .
+
+<https://onto.tib.eu/destf/cs/560> a  skos:Concept ;
+	skos:notation "560" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Klinisch-Theoretische Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5600> a  skos:Concept  ;
+	skos:notation "5600" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Klin.-Theor. Veterinärmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5670> a  skos:Concept  ;
+	skos:notation "5670" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Fleisch-, Lebensmittel- und Milchhygiene"@de .
+
+<https://onto.tib.eu/destf/cs/5640> a  skos:Concept  ;
+	skos:notation "5640" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Mikrobiologie, Virologie, Tierhygiene und Tierseuchenbekämpfung"@de .
+
+<https://onto.tib.eu/destf/cs/5650> a  skos:Concept  ;
+	skos:notation "5650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Parasitologie, Tropenveterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5660> a  skos:Concept  ;
+	skos:notation "5660" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Pharmakologie, Toxikologie und Arzneiverordnungslehre"@de .
+
+<https://onto.tib.eu/destf/cs/5620> a  skos:Concept  ;
+	skos:notation "5620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Tierernährung, allg. Landwirtschaftslehre, Verhaltenskunde"@de .
+
+<https://onto.tib.eu/destf/cs/5610> a  skos:Concept  ;
+	skos:notation "5610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Tierzucht, vet.-med. Genetik und Zuchthygiene"@de .
+
+<https://onto.tib.eu/destf/cs/5680> a  skos:Concept  ;
+	skos:notation "5680" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Versuchstierkunde und Fischkunde einschl. Krankheiten"@de .
+
+<https://onto.tib.eu/destf/cs/5630> a  skos:Concept  ;
+	skos:notation "5630" ;
+	skos:broader <https://onto.tib.eu/destf/cs/560> ;
+	skos:prefLabel "Veterinärmedizinische Pathologie"@de .
+
+<https://onto.tib.eu/destf/cs/580> a  skos:Concept ;
+	skos:notation "580" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Klinisch-Praktische Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5800> a  skos:Concept  ;
+	skos:notation "5800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Klin.-Prakt. Veterinärmedizin allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5840> a  skos:Concept  ;
+	skos:notation "5840" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Andrologie und Haustierbesamung"@de .
+
+<https://onto.tib.eu/destf/cs/5830> a  skos:Concept  ;
+	skos:notation "5830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Geburtshilfe und Gynäkologie"@de .
+
+<https://onto.tib.eu/destf/cs/5850> a  skos:Concept  ;
+	skos:notation "5850" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Gerichtliche Veterinärmedizin"@de .
+
+<https://onto.tib.eu/destf/cs/5860> a  skos:Concept  ;
+	skos:notation "5860" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Innere Veterinärmedizin einschl. Labordiagnostik"@de .
+
+<https://onto.tib.eu/destf/cs/5920> a  skos:Concept  ;
+	skos:notation "5920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Krankheiten des Geflügels"@de .
+
+<https://onto.tib.eu/destf/cs/5910> a  skos:Concept  ;
+	skos:notation "5910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Krankheiten der kleinen Haustiere"@de .
+
+<https://onto.tib.eu/destf/cs/5890> a  skos:Concept  ;
+	skos:notation "5890" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Krankheiten der kleinen Klauentiere"@de .
+
+<https://onto.tib.eu/destf/cs/5870> a  skos:Concept  ;
+	skos:notation "5870" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Krankheiten der Pferde"@de .
+
+<https://onto.tib.eu/destf/cs/5880> a  skos:Concept  ;
+	skos:notation "5880" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Krankheiten der Rinder"@de .
+
+<https://onto.tib.eu/destf/cs/5810> a  skos:Concept  ;
+	skos:notation "5810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Tierklinik allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/5820> a  skos:Concept  ;
+	skos:notation "5820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/580> ;
+	skos:prefLabel "Veterinärmedizinische Chirurgie"@de .
+
+<https://onto.tib.eu/destf/cs/610> a  skos:Concept ;
+	skos:notation "610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Agrar-, Forst- und Ernährungswissenschaften allgemein"@de .
+	
+<https://onto.tib.eu/destf/cs/6100> a  skos:Concept  ;
+	skos:notation "6100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/610> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Agrar-, Forst- und Ernährungswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6105> a  skos:Concept  ;
+	skos:notation "6105" ;
+	skos:broader <https://onto.tib.eu/destf/cs/610> ;
+	skos:prefLabel "Angewandte Biotechnologie (Agrar-, F.- u. E.-wiss.)"@de .
+
+<https://onto.tib.eu/destf/cs/6106> a  skos:Concept  ;
+	skos:notation "6106" ;
+	skos:broader <https://onto.tib.eu/destf/cs/610> ;
+	skos:prefLabel "Angewandte Maschinenbautechnik (Agrar-, F.- u. E.-wiss.)"@de .
+
+<https://onto.tib.eu/destf/cs/6107> a  skos:Concept  ;
+	skos:notation "6107" ;
+	skos:broader <https://onto.tib.eu/destf/cs/610> ;
+	skos:prefLabel "Angewandte Naturwissenschaften (Agrar-, F.- u. E.-wiss.)"@de .
+
+<https://onto.tib.eu/destf/cs/6108> a  skos:Concept  ;
+	skos:notation "6108" ;
+	skos:broader <https://onto.tib.eu/destf/cs/610> ;
+	skos:prefLabel "Angewandte Verfahrenstechnik (Agrar-, F.- u. E.-wiss.)"@de .
+
+<https://onto.tib.eu/destf/cs/615> a  skos:Concept ;
+	skos:notation "615" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Landespflege, Umweltgestaltung"@de .
+
+<https://onto.tib.eu/destf/cs/6310> a  skos:Concept  ;
+	skos:notation "6310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Landespflege allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6315> a  skos:Concept  ;
+	skos:notation "6315" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:prefLabel "Landschaftsarchitektur (ohne Gartenbau)"@de .
+
+<https://onto.tib.eu/destf/cs/6320> a  skos:Concept  ;
+	skos:notation "6320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:prefLabel "Landschaftsökologie"@de .
+
+<https://onto.tib.eu/destf/cs/6330> a  skos:Concept  ;
+	skos:notation "6330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:prefLabel "Landschaftsplanung und Landschaftsentwicklung"@de .
+
+<https://onto.tib.eu/destf/cs/6340> a  skos:Concept  ;
+	skos:notation "6340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:prefLabel "Meliorationswesen"@de .
+
+<https://onto.tib.eu/destf/cs/6350> a  skos:Concept  ;
+	skos:notation "6350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/615> ;
+	skos:prefLabel "Naturschutz"@de .
+
+<https://onto.tib.eu/destf/cs/620> a  skos:Concept ;
+	skos:notation "620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Agrarwissenschaften, Lebensmittel- und Getränketechnologie"@de .
+
+<https://onto.tib.eu/destf/cs/6200> a  skos:Concept  ;
+	skos:notation "6200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Agrarwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6205> a  skos:Concept  ;
+	skos:notation "6205" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Agrarbiologie"@de .
+
+<https://onto.tib.eu/destf/cs/6210> a  skos:Concept  ;
+	skos:notation "6210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Agrartechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6260> a  skos:Concept  ;
+	skos:notation "6260" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Brauwesen/Getränketechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6300> a  skos:Concept  ;
+	skos:notation "6300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Gartenbau"@de .
+
+<https://onto.tib.eu/destf/cs/6250> a  skos:Concept  ;
+	skos:notation "6250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Lebensmitteltechnologie/Getränketechnologie"@de .
+
+<https://onto.tib.eu/destf/cs/6255> a  skos:Concept  ;
+	skos:notation "6255" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Milch- und Molkereiwirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6220> a  skos:Concept  ;
+	skos:notation "6220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Pflanzenproduktion"@de .
+
+<https://onto.tib.eu/destf/cs/6230> a  skos:Concept  ;
+	skos:notation "6230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Tierproduktion"@de .
+
+<https://onto.tib.eu/destf/cs/6235> a  skos:Concept  ;
+	skos:notation "6235" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Weinbau- und Kellerwirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6240> a  skos:Concept  ;
+	skos:notation "6240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/620> ;
+	skos:prefLabel "Wirtschafts- und Sozialwissenschaften des Landbaus"@de .
+
+<https://onto.tib.eu/destf/cs/640> a  skos:Concept ;
+	skos:notation "640" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Forstwissenschaft, Holzwirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6400> a  skos:Concept  ;
+	skos:notation "6400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/640> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Forstwissenschaft, Holzwirtschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6420> a  skos:Concept  ;
+	skos:notation "6420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/640> ;
+	skos:prefLabel "Forstliche Fachwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/6410> a  skos:Concept  ;
+	skos:notation "6410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/640> ;
+	skos:prefLabel "Forstliche Grundlagenwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/6415> a  skos:Concept  ;
+	skos:notation "6415" ;
+	skos:broader <https://onto.tib.eu/destf/cs/640> ;
+	skos:prefLabel "Holzwirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6430> a  skos:Concept  ;
+	skos:notation "6430" ;
+	skos:broader <https://onto.tib.eu/destf/cs/640> ;
+	skos:prefLabel "Holzwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/650> a  skos:Concept ;
+	skos:notation "650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/07> ;
+	skos:prefLabel "Ernährungs- und Haushaltswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/6500> a  skos:Concept  ;
+	skos:notation "6500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/650> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Ernährungs- und Haushaltswissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6520> a  skos:Concept  ;
+	skos:notation "6520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/650> ;
+	skos:prefLabel "Ernährungswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/6510> a  skos:Concept  ;
+	skos:notation "6510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/650> ;
+	skos:prefLabel "Haushaltswissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/08> a  skos:Concept ;
+	skos:notation "08" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:prefLabel "Ingenieurwissenschaften"@de .
+
+<https://onto.tib.eu/destf/cs/670> a  skos:Concept ;
+	skos:notation "670" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Ingenieurwissenschaften allgemein"@de .
+	
+<https://onto.tib.eu/destf/cs/6700> a  skos:Concept  ;
+	skos:notation "6700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Ingenieurwissenschaften allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6740> a  skos:Concept  ;
+	skos:notation "6740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:note "Interdisziplinäre Lehr- und Forschungsgebiete, die mehrere Lehr- und Forschungsbereiche einer Fächergruppe betreffen und nicht schwerpunktmäßig zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Interdisziplinäre Studien (Schwerpunkt Ingenieurwesen - ohne Mechatronik)"@de .
+
+<https://onto.tib.eu/destf/cs/6750> a  skos:Concept  ;
+	skos:notation "6750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:prefLabel "Mechatronik"@de .
+
+<https://onto.tib.eu/destf/cs/6780> a  skos:Concept  ;
+	skos:notation "6780" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:prefLabel "Medientechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6710> a  skos:Concept  ;
+	skos:notation "6710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:prefLabel "Polytechnik/Arbeitslehre"@de .
+
+<https://onto.tib.eu/destf/cs/6790> a  skos:Concept  ;
+	skos:notation "6790" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:prefLabel "Regenerative Energien"@de .
+
+<https://onto.tib.eu/destf/cs/6720> a  skos:Concept  ;
+	skos:notation "6720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/670> ;
+	skos:prefLabel "Techn. Gesundheitswesen"@de .
+
+<https://onto.tib.eu/destf/cs/675> a  skos:Concept ;
+	skos:notation "675" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de .
+
+<https://onto.tib.eu/destf/cs/6755> a  skos:Concept  ;
+	skos:notation "6755" ;
+	skos:broader <https://onto.tib.eu/destf/cs/675> ;
+	skos:prefLabel "Wirtschaftsingenieurwesen mit ingenieurwissenschaftlichem Schwerpunkt"@de .
+
+<https://onto.tib.eu/destf/cs/680> a  skos:Concept ;
+	skos:notation "680" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Bergbau, Hüttenwesen"@de .
+
+<https://onto.tib.eu/destf/cs/6800> a  skos:Concept  ;
+	skos:notation "6800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Bergbau, Hüttenwesen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6870> a  skos:Concept  ;
+	skos:notation "6870" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Archäometrie (Ingenieurarchäologie)"@de .
+
+<https://onto.tib.eu/destf/cs/6860> a  skos:Concept  ;
+	skos:notation "6860" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Aufbereitung und Veredelung"@de .
+
+<https://onto.tib.eu/destf/cs/6830> a  skos:Concept  ;
+	skos:notation "6830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Bergbauliche Betriebswirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6810> a  skos:Concept  ;
+	skos:notation "6810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Bergbau und mineralische Rohstoffwirtschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6820> a  skos:Concept  ;
+	skos:notation "6820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Bergtechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6840> a  skos:Concept  ;
+	skos:notation "6840" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Bergwirtschaft, Bergrecht"@de .
+
+<https://onto.tib.eu/destf/cs/6845> a  skos:Concept  ;
+	skos:notation "6845" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Hütten- und Gießereiwesen"@de .
+
+<https://onto.tib.eu/destf/cs/6850> a  skos:Concept  ;
+	skos:notation "6850" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Markscheidewesen, Bergschadenkunde, Geophysik im Bergbau"@de .
+
+<https://onto.tib.eu/destf/cs/6855> a  skos:Concept  ;
+	skos:notation "6855" ;
+	skos:broader <https://onto.tib.eu/destf/cs/680> ;
+	skos:prefLabel "Metallurgie"@de .
+
+<https://onto.tib.eu/destf/cs/690> a  skos:Concept ;
+	skos:notation "690" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Maschinenbau/Verfahrenstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6900> a  skos:Concept  ;
+	skos:notation "6900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Maschinenbau allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/6760> a  skos:Concept  ;
+	skos:notation "6760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Automatisierungstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6905> a  skos:Concept  ;
+	skos:notation "6905" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Biotechnologie (techn. Verfahren)"@de .
+
+<https://onto.tib.eu/destf/cs/6906> a  skos:Concept  ;
+	skos:notation "6906" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Chemieingenieurwesen/-Chemietechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6930> a  skos:Concept  ;
+	skos:notation "6930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Energietechnik (ohne Elektrotechnik)"@de .
+
+<https://onto.tib.eu/destf/cs/7190> a  skos:Concept  ;
+	skos:notation "7190" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Feinwerktechnik (mechanisch)"@de .
+
+<https://onto.tib.eu/destf/cs/6910> a  skos:Concept  ;
+	skos:notation "6910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Grundlagen des Maschinenwesens"@de .
+
+<https://onto.tib.eu/destf/cs/7040> a  skos:Concept  ;
+	skos:notation "7040" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Holztechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7045> a  skos:Concept  ;
+	skos:notation "7045" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Kerntechnik, Kernverfahrenstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7030> a  skos:Concept  ;
+	skos:notation "7030" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Kunststofftechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6935> a  skos:Concept  ;
+	skos:notation "6935" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Logistik"@de .
+
+<https://onto.tib.eu/destf/cs/7010> a  skos:Concept  ;
+	skos:notation "7010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Medizintechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7020> a  skos:Concept  ;
+	skos:notation "7020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Physikalische Technik"@de .
+
+<https://onto.tib.eu/destf/cs/6907> a  skos:Concept  ;
+	skos:notation "6907" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Print- und Medientechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6920> a  skos:Concept  ;
+	skos:notation "6920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Produkte des Maschinenbaus"@de .
+
+<https://onto.tib.eu/destf/cs/6940> a  skos:Concept  ;
+	skos:notation "6940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Produktions- und Fertigungstechnologie"@de .
+
+<https://onto.tib.eu/destf/cs/6945> a  skos:Concept  ;
+	skos:notation "6945" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Sicherheitstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6980> a  skos:Concept  ;
+	skos:notation "6980" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Sondergebiete des Maschinenwesens"@de .
+
+<https://onto.tib.eu/destf/cs/6970> a  skos:Concept  ;
+	skos:notation "6970" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Steuerungs-, Mess- und Regelungstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6975> a  skos:Concept  ;
+	skos:notation "6975" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Technische/angewandte Optik"@de .
+
+<https://onto.tib.eu/destf/cs/6976> a  skos:Concept  ;
+	skos:notation "6976" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Textiltechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6950> a  skos:Concept  ;
+	skos:notation "6950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Transport- und Verteiltechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6985> a  skos:Concept  ;
+	skos:notation "6985" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Umwelttechnik (einschl. Recycling)"@de .
+
+<https://onto.tib.eu/destf/cs/6960> a  skos:Concept  ;
+	skos:notation "6960" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Verfahrenstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/6965> a  skos:Concept  ;
+	skos:notation "6965" ;
+	skos:broader <https://onto.tib.eu/destf/cs/690> ;
+	skos:prefLabel "Versorgungs-/Entsorgungstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/710> a  skos:Concept ;
+	skos:notation "710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Elektrotechnik und Informationstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7100> a  skos:Concept  ;
+	skos:notation "7100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Elektrotechnik allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7110> a  skos:Concept  ;
+	skos:notation "7110" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Allgemeine Elektrotechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7120> a  skos:Concept  ;
+	skos:notation "7120" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Elektrische Energietechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7125> a  skos:Concept  ;
+	skos:notation "7125" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Feinwerktechnik (elektrisch)"@de .
+
+<https://onto.tib.eu/destf/cs/7130> a  skos:Concept  ;
+	skos:notation "7130" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Kommunikations- und Informationstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7160> a  skos:Concept  ;
+	skos:notation "7160" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Mikro- und Nanoelektronik"@de .
+
+<https://onto.tib.eu/destf/cs/7140> a  skos:Concept  ;
+	skos:notation "7140" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Mikrosystemtechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7150> a  skos:Concept  ;
+	skos:notation "7150" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Optoelektronik"@de .
+
+<https://onto.tib.eu/destf/cs/7170> a  skos:Concept  ;
+	skos:notation "7170" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Sensorik und Messtechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7155> a  skos:Concept  ;
+	skos:notation "7155" ;
+	skos:broader <https://onto.tib.eu/destf/cs/710> ;
+	skos:prefLabel "Steuerungs-, Mess- und Regelungstechnik (elektrisch)"@de .
+
+<https://onto.tib.eu/destf/cs/720> a  skos:Concept ;
+	skos:notation "720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Verkehrstechnik, Nautik"@de .
+
+<https://onto.tib.eu/destf/cs/7200> a  skos:Concept  ;
+	skos:notation "7200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Verkehrstechnik, Nautik allgemein"@de .
+
+
+<https://onto.tib.eu/destf/cs/7240> a  skos:Concept  ;
+	skos:notation "7240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Fahrzeug- und Flugzeugbau"@de .
+
+<https://onto.tib.eu/destf/cs/7245> a  skos:Concept  ;
+	skos:notation "7245" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Fahrzeugtechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7246> a  skos:Concept  ;
+	skos:notation "7246" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Luft- und Raumfahrttechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7230> a  skos:Concept  ;
+	skos:notation "7230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Nautik, Seefahrt"@de .
+
+<https://onto.tib.eu/destf/cs/7220> a  skos:Concept  ;
+	skos:notation "7220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Schiffbau, Meerestechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7210> a  skos:Concept  ;
+	skos:notation "7210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Schiffsbetriebstechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7215> a  skos:Concept  ;
+	skos:notation "7215" ;
+	skos:broader <https://onto.tib.eu/destf/cs/720> ;
+	skos:prefLabel "Verkehrsingenieurwesen"@de .
+
+<https://onto.tib.eu/destf/cs/730> a  skos:Concept ;
+	skos:notation "730"	;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Architektur"@de .
+
+<https://onto.tib.eu/destf/cs/7300> a  skos:Concept  ;
+	skos:notation "7300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Architektur allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7350> a  skos:Concept  ;
+	skos:notation "7350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Baugeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/7330> a  skos:Concept  ;
+	skos:notation "7330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Bautechnik und Baubetrieb"@de .
+
+<https://onto.tib.eu/destf/cs/7335> a  skos:Concept  ;
+	skos:notation "7335" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Denkmalpflege (Architekt.)"@de .
+
+<https://onto.tib.eu/destf/cs/7340> a  skos:Concept  ;
+	skos:notation "7340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Gebäudeplanung"@de .
+
+<https://onto.tib.eu/destf/cs/7320> a  skos:Concept  ;
+	skos:notation "7320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Gestaltung und Darstellung"@de .
+
+<https://onto.tib.eu/destf/cs/7310> a  skos:Concept  ;
+	skos:notation "7310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Grundlagen und Hilfswissenschaften der Architektur"@de .
+
+<https://onto.tib.eu/destf/cs/7390> a  skos:Concept  ;
+	skos:notation "7390" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Innenarchitektur"@de .
+
+<https://onto.tib.eu/destf/cs/7395> a  skos:Concept  ;
+	skos:notation "7395" ;
+	skos:broader <https://onto.tib.eu/destf/cs/730> ;
+	skos:prefLabel "Städtebau und Siedlungswesen"@de .
+
+<https://onto.tib.eu/destf/cs/740> a  skos:Concept ;
+	skos:notation "740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Raumplanung"@de .
+
+<https://onto.tib.eu/destf/cs/7400> a  skos:Concept  ;
+	skos:notation "7400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Raumplanung allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7410> a  skos:Concept  ;
+	skos:notation "7410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Grundlagen der Raumplanung"@de .
+
+<https://onto.tib.eu/destf/cs/7450> a  skos:Concept  ;
+	skos:notation "7450" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Infrastrukturplanung"@de .
+
+<https://onto.tib.eu/destf/cs/7440> a  skos:Concept  ;
+	skos:notation "7440" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Raumordnung"@de .
+
+<https://onto.tib.eu/destf/cs/7430> a  skos:Concept  ;
+	skos:notation "7430" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Regional- und Landesplanung"@de .
+
+<https://onto.tib.eu/destf/cs/7420> a  skos:Concept  ;
+	skos:notation "7420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Stadtplanung (Ortsplanung)"@de .
+
+<https://onto.tib.eu/destf/cs/7460> a  skos:Concept  ;
+	skos:notation "7460" ;
+	skos:broader <https://onto.tib.eu/destf/cs/740> ;
+	skos:prefLabel "Umweltschutz"@de .
+
+<https://onto.tib.eu/destf/cs/750> a  skos:Concept ;
+	skos:notation "750" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Bauingenieurwesen"@de .
+
+<https://onto.tib.eu/destf/cs/7500> a  skos:Concept  ;
+	skos:notation "7500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Bauingenieurwesen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7540> a  skos:Concept  ;
+	skos:notation "7540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Baubetriebswesen/Baumanagement"@de .
+
+<https://onto.tib.eu/destf/cs/7570> a  skos:Concept  ;
+	skos:notation "7570" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Baustofftechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7660> a  skos:Concept  ;
+	skos:notation "7660" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Holzbau"@de .
+
+<https://onto.tib.eu/destf/cs/7510> a  skos:Concept  ;
+	skos:notation "7510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Konstruktiver Ingenieurbau"@de .
+
+<https://onto.tib.eu/destf/cs/7530> a  skos:Concept  ;
+	skos:notation "7530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Verkehrsbau, -wesen"@de .
+
+<https://onto.tib.eu/destf/cs/7520> a  skos:Concept  ;
+	skos:notation "7520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Wasserbau, -wesen"@de .
+
+<https://onto.tib.eu/destf/cs/7550> a  skos:Concept  ;
+	skos:notation "7550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/750> ;
+	skos:prefLabel "Sonstige Bereiche des Bauingenieurwesens"@de .
+
+<https://onto.tib.eu/destf/cs/760> a  skos:Concept ;
+	skos:notation "760" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Vermessungswesen"@de .
+
+<https://onto.tib.eu/destf/cs/7600> a  skos:Concept  ;
+	skos:notation "7600" ;
+	skos:broader <https://onto.tib.eu/destf/cs/760> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Vermessungswesen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7610> a  skos:Concept  ;
+	skos:notation "7610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/760> ;
+	skos:prefLabel "Kartographie"@de .
+
+<https://onto.tib.eu/destf/cs/7620> a  skos:Concept  ;
+	skos:notation "7620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/760> ;
+	skos:prefLabel "Photogrammetrie"@de .
+
+<https://onto.tib.eu/destf/cs/765> a  skos:Concept ;
+	skos:notation "765" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Informatik"@de .
+
+<https://onto.tib.eu/destf/cs/3500> a  skos:Concept  ;
+	skos:notation "3500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Informatik allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/3520> a  skos:Concept  ;
+	skos:notation "3520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Angewandte Informatik"@de .
+
+<https://onto.tib.eu/destf/cs/3540> a  skos:Concept  ;
+	skos:notation "3540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Bioinformatik"@de .
+
+<https://onto.tib.eu/destf/cs/3550> a  skos:Concept  ;
+	skos:notation "3550" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Computer- und Kommunikationstechniken"@de .
+
+<https://onto.tib.eu/destf/cs/3530> a  skos:Concept  ;
+	skos:notation "3530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Ingenieurinformatik/Technische Informatik"@de .
+
+<https://onto.tib.eu/destf/cs/3560> a  skos:Concept  ;
+	skos:notation "3560" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Künstliche Intelligenz"@de .
+
+<https://onto.tib.eu/destf/cs/3670> a  skos:Concept  ;
+	skos:notation "3670" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Softwaretechnologie"@de .
+
+<https://onto.tib.eu/destf/cs/3510> a  skos:Concept  ;
+	skos:notation "3510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Theoretische Informatik"@de .
+
+<https://onto.tib.eu/destf/cs/2990> a  skos:Concept  ;
+	skos:notation "2990" ;
+	skos:broader <https://onto.tib.eu/destf/cs/765> ;
+	skos:prefLabel "Wirtschaftsinformatik (f. Informatiker)"@de .
+
+<https://onto.tib.eu/destf/cs/770> a  skos:Concept ;
+	skos:notation "770" ;
+	skos:broader <https://onto.tib.eu/destf/cs/08> ;
+	skos:prefLabel "Materialwissenschaft und Werkstofftechnik"@de .
+
+<https://onto.tib.eu/destf/cs/7700> a  skos:Concept  ;
+	skos:notation "7700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/770> ;
+	skos:prefLabel "Materialwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/6990> a  skos:Concept  ;
+	skos:notation "6990" ;
+	skos:broader <https://onto.tib.eu/destf/cs/770> ;
+	skos:prefLabel "Werkstofftechnik"@de .
+
+<https://onto.tib.eu/destf/cs/09> a  skos:Concept ;
+	skos:notation "09" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:prefLabel "Kunst, Kunstwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/780> a  skos:Concept ;
+	skos:notation "780" ;
+	skos:broader <https://onto.tib.eu/destf/cs/09> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einer Fächergruppe, aber keinem Lehr- und Forschungsbereich zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Kunst, Kunstwissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7800> a  skos:Concept  ;
+	skos:notation "7800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/780> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Kunst, Kunstwissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7820> a  skos:Concept  ;
+	skos:notation "7820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/780> ;
+	skos:prefLabel "Kunsterziehung"@de .
+
+<https://onto.tib.eu/destf/cs/7810> a  skos:Concept  ;
+	skos:notation "7810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/780> ;
+	skos:prefLabel "Kunstgeschichte"@de .
+
+<https://onto.tib.eu/destf/cs/7840> a  skos:Concept  ;
+	skos:notation "7840" ;
+	skos:broader <https://onto.tib.eu/destf/cs/780> ;
+	skos:prefLabel "Kunsttherapie"@de .
+
+<https://onto.tib.eu/destf/cs/7830> a  skos:Concept  ;
+	skos:notation "7830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/780> ;
+	skos:prefLabel "Restaurierungskunde"@de .
+
+<https://onto.tib.eu/destf/cs/790> a  skos:Concept ;
+	skos:notation "790" ;
+	skos:broader <https://onto.tib.eu/destf/cs/09> ;
+	skos:prefLabel "Bildende Kunst"@de .
+
+<https://onto.tib.eu/destf/cs/7900> a  skos:Concept  ;
+	skos:notation "7900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Bildende Kunst allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/7950> a  skos:Concept  ;
+	skos:notation "7950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:prefLabel "Aktionen, Performance, Environment, Fotografie"@de .
+
+<https://onto.tib.eu/destf/cs/7940> a  skos:Concept  ;
+	skos:notation "7940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:prefLabel "Graphik"@de .
+
+<https://onto.tib.eu/destf/cs/7920> a  skos:Concept  ;
+	skos:notation "7920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:prefLabel "Malerei"@de .
+
+<https://onto.tib.eu/destf/cs/7960> a  skos:Concept  ;
+	skos:notation "7960" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:prefLabel "Neue Medien"@de .
+
+<https://onto.tib.eu/destf/cs/7930> a  skos:Concept  ;
+	skos:notation "7930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/790> ;
+	skos:prefLabel "Plastik, Bildhauerei"@de .
+
+<https://onto.tib.eu/destf/cs/800> a  skos:Concept ;
+	skos:notation "800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/09> ;
+	skos:prefLabel "Gestaltung"@de.
+
+<https://onto.tib.eu/destf/cs/8000> a  skos:Concept  ;
+	skos:notation "8000" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Gestaltung allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/8050> a  skos:Concept  ;
+	skos:notation "8050" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Angewandte Kunst"@de .
+
+<https://onto.tib.eu/destf/cs/8060> a  skos:Concept  ;
+	skos:notation "8060" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Bühnenbild, Kostüm"@de .
+
+<https://onto.tib.eu/destf/cs/8070> a  skos:Concept  ;
+	skos:notation "8070" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Designtheorie, -geschichte"@de .
+
+<https://onto.tib.eu/destf/cs/8075> a  skos:Concept  ;
+	skos:notation "8075" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Edelstein- und Schmuckdesign"@de .
+
+<https://onto.tib.eu/destf/cs/8076> a  skos:Concept  ;
+	skos:notation "8076" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Graphikdesign/Kommunikationsgestaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8010> a  skos:Concept  ;
+	skos:notation "8010" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Industriedesign/Produktgestaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8020> a  skos:Concept  ;
+	skos:notation "8020" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Modedesign"@de .
+
+<https://onto.tib.eu/destf/cs/8040> a  skos:Concept  ;
+	skos:notation "8040" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Textildesign"@de .
+
+<https://onto.tib.eu/destf/cs/8030> a  skos:Concept  ;
+	skos:notation "8030" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Visuelle Kommunikation"@de .
+
+<https://onto.tib.eu/destf/cs/8035> a  skos:Concept  ;
+	skos:notation "8035" ;
+	skos:broader <https://onto.tib.eu/destf/cs/800> ;
+	skos:prefLabel "Werkerziehung (Gestaltung)"@de .
+
+<https://onto.tib.eu/destf/cs/820> a  skos:Concept ;
+	skos:notation "820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/09> ;
+	skos:prefLabel "Darstellende Kunst, Film und Fernsehen, Theaterwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/8200> a  skos:Concept  ;
+	skos:notation "8200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Darstellende Kunst, Film und Fernsehen, Theaterwissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/8210> a  skos:Concept  ;
+	skos:notation "8210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Darstellende Kunst"@de .
+
+<https://onto.tib.eu/destf/cs/8250> a  skos:Concept  ;
+	skos:notation "8250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Film und Fernsehen"@de .
+
+<https://onto.tib.eu/destf/cs/8270> a  skos:Concept  ;
+	skos:notation "8270" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Musiktheater"@de .
+
+<https://onto.tib.eu/destf/cs/8275> a  skos:Concept  ;
+	skos:notation "8275" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Produktionswirtschaft im Bereich Darstellende Kunst, Theater, Film und Fernsehen"@de .
+
+<https://onto.tib.eu/destf/cs/8230> a  skos:Concept  ;
+	skos:notation "8230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Regie"@de .
+
+<https://onto.tib.eu/destf/cs/8220> a  skos:Concept  ;
+	skos:notation "8220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Schauspiel"@de .
+
+<https://onto.tib.eu/destf/cs/8225> a  skos:Concept  ;
+	skos:notation "8225" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Tanzwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/8240> a  skos:Concept  ;
+	skos:notation "8240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/820> ;
+	skos:prefLabel "Theaterwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/830> a  skos:Concept ;
+	skos:notation "830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/09> ;
+	skos:prefLabel "Musik, Musikwissenschaft"@de .
+
+<https://onto.tib.eu/destf/cs/8300> a  skos:Concept  ;
+	skos:notation "8300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Musik, Musikwissenschaft allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/8340> a  skos:Concept  ;
+	skos:notation "8340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Dirigieren"@de .
+
+<https://onto.tib.eu/destf/cs/8320> a  skos:Concept  ;
+	skos:notation "8320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Gesang"@de .
+
+<https://onto.tib.eu/destf/cs/8310> a  skos:Concept  ;
+	skos:notation "8310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Instrumentalmusik"@de .
+
+<https://onto.tib.eu/destf/cs/8315> a  skos:Concept  ;
+	skos:notation "8315" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Jazz und Popularmusik"@de .
+
+<https://onto.tib.eu/destf/cs/8325> a  skos:Concept  ;
+	skos:notation "8325" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Kirchenmusik"@de .
+
+<https://onto.tib.eu/destf/cs/8330> a  skos:Concept  ;
+	skos:notation "8330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Komposition"@de .
+
+<https://onto.tib.eu/destf/cs/8360> a  skos:Concept  ;
+	skos:notation "8360" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Musikerziehung"@de .
+
+<https://onto.tib.eu/destf/cs/8350> a  skos:Concept  ;
+	skos:notation "8350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Musikwissenschaft, -geschichte"@de .
+
+<https://onto.tib.eu/destf/cs/8363> a  skos:Concept  ;
+	skos:notation "8363" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Orchestermusik"@de .
+
+<https://onto.tib.eu/destf/cs/8364> a  skos:Concept  ;
+	skos:notation "8364" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Rhythmik"@de .
+
+<https://onto.tib.eu/destf/cs/8365> a  skos:Concept  ;
+	skos:notation "8365" ;
+	skos:broader <https://onto.tib.eu/destf/cs/830> ;
+	skos:prefLabel "Sonstige Musikpraxis"@de .
+
+<https://onto.tib.eu/destf/cs/15> a  skos:Concept ;
+	skos:notation "15" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:prefLabel "Zentrale Einrichtungen (ohne klinikspezifische Einrichtungen)"@de .
+
+<https://onto.tib.eu/destf/cs/870> a  skos:Concept ;
+	skos:notation "870" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Hochschule insgesamt"@de .
+
+<https://onto.tib.eu/destf/cs/8700> a  skos:Concept  ;
+	skos:notation "8700" ;
+	skos:broader <https://onto.tib.eu/destf/cs/870> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Hochschule allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/8730> a  skos:Concept  ;
+	skos:notation "8730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/870> ;
+	skos:prefLabel "Hochschulkommission"@de .
+
+<https://onto.tib.eu/destf/cs/8720> a  skos:Concept  ;
+	skos:notation "8720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/870> ;
+	skos:prefLabel "Nicht nutzbare Räume"@de .
+
+<https://onto.tib.eu/destf/cs/8710> a  skos:Concept  ;
+	skos:notation "8710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/870> ;
+	skos:prefLabel "Nicht zugeteilte Stellen/Räume/Mittel"@de .
+
+<https://onto.tib.eu/destf/cs/880> a  skos:Concept ;
+	skos:notation "880" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ; 
+	skos:prefLabel "Zentrale Hochschulverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8800> a  skos:Concept  ;
+	skos:notation "8800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Allgemeine Hochschulverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8805> a  skos:Concept  ;
+	skos:notation "8805" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Akademische Selbstverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8810> a  skos:Concept  ;
+	skos:notation "8810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Fakultäts-/Fachbereichsverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8806> a  skos:Concept  ;
+	skos:notation "8806" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Personalvertretung einschl. Vertretungen für Datenschutz, Behinderte, Frauen etc."@de .
+
+<https://onto.tib.eu/destf/cs/8820> a  skos:Concept  ;
+	skos:notation "8820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Studentische Selbstverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/8830> a  skos:Concept  ;
+	skos:notation "8830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/880> ;
+	skos:prefLabel "Zentrale Studienberatung"@de .
+
+<https://onto.tib.eu/destf/cs/890> a  skos:Concept ;
+	skos:notation "890" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Zentral verwaltete Hörsäle und Lehrräume"@de .
+
+<https://onto.tib.eu/destf/cs/8600> a  skos:Concept  ;
+	skos:notation "8600" ;
+	skos:broader <https://onto.tib.eu/destf/cs/890> ;
+	skos:prefLabel "Hörsaal/Lehrraum"@de .
+
+
+<https://onto.tib.eu/destf/cs/900> a  skos:Concept ;
+	skos:notation "900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Zentralbibliothek"@de .
+
+<https://onto.tib.eu/destf/cs/9050> a  skos:Concept  ;
+	skos:notation "9050" ;
+	skos:broader <https://onto.tib.eu/destf/cs/900> ;
+	skos:prefLabel "Archiv"@de .
+
+<https://onto.tib.eu/destf/cs/9000> a  skos:Concept  ;
+	skos:notation "9000" ;
+	skos:broader <https://onto.tib.eu/destf/cs/900> ;
+	skos:prefLabel "Bibliothek"@de .
+
+<https://onto.tib.eu/destf/cs/910> a  skos:Concept ;
+	skos:notation "910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Hochschulrechenzentrum"@de .
+
+<https://onto.tib.eu/destf/cs/9100> a  skos:Concept  ;
+	skos:notation "9100" ;
+	skos:broader <https://onto.tib.eu/destf/cs/910> ;
+	skos:prefLabel "Rechenzentrum"@de .
+
+<https://onto.tib.eu/destf/cs/920> a  skos:Concept ;
+	skos:notation "920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Zentrale wissenschaftliche Einrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9200> a  skos:Concept  ;
+	skos:notation "9200" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Zentrale wissenschaftliche Einrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9230> a  skos:Concept  ;
+	skos:notation "9230" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Akademisches Auslandsamt"@de .
+
+<https://onto.tib.eu/destf/cs/9280> a  skos:Concept  ;
+	skos:notation "9280" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Forschungs-/Technologie-/Transferstellen"@de .
+
+<https://onto.tib.eu/destf/cs/9210> a  skos:Concept  ;
+	skos:notation "9210" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Sprachenzentrum"@de .
+
+<https://onto.tib.eu/destf/cs/9220> a  skos:Concept  ;
+	skos:notation "9220" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Sprachlabor"@de .
+
+<https://onto.tib.eu/destf/cs/9250> a  skos:Concept  ;
+	skos:notation "9250" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Strahlenlabor"@de .
+
+<https://onto.tib.eu/destf/cs/9240> a  skos:Concept  ;
+	skos:notation "9240" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Tierversuchsanlage"@de .
+
+<https://onto.tib.eu/destf/cs/9290> a  skos:Concept  ;
+	skos:notation "9290" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Weiterbildungszentrum"@de .
+
+<https://onto.tib.eu/destf/cs/9260> a  skos:Concept  ;
+	skos:notation "9260" ;
+	skos:broader <https://onto.tib.eu/destf/cs/920> ;
+	skos:prefLabel "Wissenschaftliche/Künstlerische Werkstätten"@de .
+
+<https://onto.tib.eu/destf/cs/930> a  skos:Concept ;
+	skos:notation "930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Zentrale Betriebs- und Versorgungseinrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9300> a  skos:Concept  ;
+	skos:notation "9300" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Zentrale Betriebs- und Versorgungseinrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9305> a  skos:Concept  ;
+	skos:notation "9305" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Arbeitssicherheit, Feuerwehr"@de .
+
+<https://onto.tib.eu/destf/cs/9350> a  skos:Concept  ;
+	skos:notation "9350" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Fahrbereitschaft"@de .
+
+<https://onto.tib.eu/destf/cs/9320> a  skos:Concept  ;
+	skos:notation "9320" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Foto-, Reprostelle"@de .
+
+<https://onto.tib.eu/destf/cs/9310> a  skos:Concept  ;
+	skos:notation "9310" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Hausverwaltung"@de .
+
+<https://onto.tib.eu/destf/cs/9340> a  skos:Concept  ;
+	skos:notation "9340" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Materialversorgungslager der Hochschule"@de .
+
+<https://onto.tib.eu/destf/cs/9360> a  skos:Concept  ;
+	skos:notation "9360" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Versorgungseinrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9330> a  skos:Concept  ;
+	skos:notation "9330" ;
+	skos:broader <https://onto.tib.eu/destf/cs/930> ;
+	skos:prefLabel "Zentrale Betriebswerkstätten"@de .
+
+<https://onto.tib.eu/destf/cs/940> a  skos:Concept ;
+	skos:notation "940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Soziale Einrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9400> a  skos:Concept  ;
+	skos:notation "9400" ;
+	skos:broader <https://onto.tib.eu/destf/cs/940> ;
+	skos:prefLabel "Soziale Einrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9420> a  skos:Concept  ;
+	skos:notation "9420" ;
+	skos:broader <https://onto.tib.eu/destf/cs/940> ;
+	skos:prefLabel "Wohnheim"@de .
+
+<https://onto.tib.eu/destf/cs/9410> a  skos:Concept  ;
+	skos:notation "9410" ;
+	skos:broader <https://onto.tib.eu/destf/cs/940> ;
+	skos:prefLabel "Wohnung/Gästehaus"@de .
+
+<https://onto.tib.eu/destf/cs/9430> a  skos:Concept  ;
+	skos:notation "9430" ;
+	skos:broader <https://onto.tib.eu/destf/cs/940> ;
+	skos:prefLabel "Sonstige soziale Einrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/950> a  skos:Concept ;
+	skos:notation "950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Übrige Ausbildungseinrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9500> a  skos:Concept  ;
+	skos:notation "9500" ;
+	skos:broader <https://onto.tib.eu/destf/cs/950> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Übrige Ausbildungseinrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9520> a  skos:Concept  ;
+	skos:notation "9520" ;
+	skos:broader <https://onto.tib.eu/destf/cs/950> ;
+	skos:prefLabel "Schulen für nichtakademische Ausbildungsgänge"@de .
+
+<https://onto.tib.eu/destf/cs/9540> a  skos:Concept  ;
+	skos:notation "9540" ;
+	skos:broader <https://onto.tib.eu/destf/cs/950> ;
+	skos:prefLabel "Sportstätten"@de .
+
+<https://onto.tib.eu/destf/cs/9510> a  skos:Concept  ;
+	skos:notation "9510" ;
+	skos:broader <https://onto.tib.eu/destf/cs/950> ;
+	skos:prefLabel "Studienkolleg"@de .
+
+<https://onto.tib.eu/destf/cs/9530> a  skos:Concept  ;
+	skos:notation "9530" ;
+	skos:broader <https://onto.tib.eu/destf/cs/950> ;
+	skos:prefLabel "Sonstige Bildungseinrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/960> a  skos:Concept ;
+	skos:notation "960" ;
+	skos:broader <https://onto.tib.eu/destf/cs/15> ;
+	skos:prefLabel "Mit der Hochschule verbundene sowie hochschulfremde Einrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9600> a  skos:Concept  ;
+	skos:notation "9600" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Mit der Hochschule verbundene Einrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9650> a  skos:Concept  ;
+	skos:notation "9650" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Einrichtungen des öffentlichen Gesundheitswesens"@de .
+
+<https://onto.tib.eu/destf/cs/9675> a  skos:Concept  ;
+	skos:notation "9675" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Fraunhofer-Institute"@de .
+
+<https://onto.tib.eu/destf/cs/9660> a  skos:Concept  ;
+	skos:notation "9660" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Hochschulbauamt"@de .
+
+<https://onto.tib.eu/destf/cs/9665> a  skos:Concept  ;
+	skos:notation "9665" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Kirchliche Prüfungsämter"@de .
+
+<https://onto.tib.eu/destf/cs/9670> a  skos:Concept  ;
+	skos:notation "9670" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Landesanstalten"@de .
+
+<https://onto.tib.eu/destf/cs/9640> a  skos:Concept  ;
+	skos:notation "9640" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Materialprüfungsanstalten"@de .
+
+<https://onto.tib.eu/destf/cs/9630> a  skos:Concept  ;
+	skos:notation "9630" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Max-Planck-Institute"@de .
+
+<https://onto.tib.eu/destf/cs/9620> a  skos:Concept  ;
+	skos:notation "9620" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Staatliche Prüfungsämter"@de .
+
+<https://onto.tib.eu/destf/cs/9610> a  skos:Concept  ;
+	skos:notation "9610" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Studentenwerk"@de .
+
+<https://onto.tib.eu/destf/cs/9680> a  skos:Concept  ;
+	skos:notation "9680" ;
+	skos:broader <https://onto.tib.eu/destf/cs/960> ;
+	skos:prefLabel "Sonstige hochschulfremde Institutionen"@de .
+
+<https://onto.tib.eu/destf/cs/20> a  skos:Concept ;
+	skos:notation "20" ;
+	skos:topConceptOf <https://onto.tib.eu/destf/cs/> ;
+	skos:note "Entsprechende Einrichtungen der Veterinärmedizin sind den jeweiligen Lehr- und Forschungsbereichen „540-580“ zuzuordnen."@de ;
+	skos:prefLabel "Zentrale Einrichtungen der Hochschulkliniken (nur Humanmedizin)"@de .
+
+<https://onto.tib.eu/destf/cs/970> a  skos:Concept ;
+	skos:notation "970" ;
+	skos:broader <https://onto.tib.eu/destf/cs/20> ;
+	skos:prefLabel "Kliniken insgesamt, Zentrale Dienste"@de .
+
+<https://onto.tib.eu/destf/cs/8900> a  skos:Concept  ;
+	skos:notation "8900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Zentrale Dienste der Kliniken allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/8905> a  skos:Concept  ;
+	skos:notation "8905" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Ambulanz, Konsiliardienst, soweit nicht fachlich zuzuordnen"@de .
+
+<https://onto.tib.eu/destf/cs/8930> a  skos:Concept  ;
+	skos:notation "8930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Apotheke"@de .
+
+<https://onto.tib.eu/destf/cs/9730> a  skos:Concept  ;
+	skos:notation "9730" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Energie, Wasser, Transport"@de .
+
+<https://onto.tib.eu/destf/cs/8910> a  skos:Concept  ;
+	skos:notation "8910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Klinikverwaltung (einschl. Rechenzentrum)"@de .
+
+<https://onto.tib.eu/destf/cs/8915> a  skos:Concept  ;
+	skos:notation "8915" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Pflegedienst, soweit nicht fachlich zuzuordnen"@de .
+
+<https://onto.tib.eu/destf/cs/8940> a  skos:Concept  ;
+	skos:notation "8940" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Reinigung, Wäsche, Sterilisation"@de .
+
+<https://onto.tib.eu/destf/cs/9740> a  skos:Concept  ;
+	skos:notation "9740" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Werkstätten"@de .
+
+<https://onto.tib.eu/destf/cs/9710> a  skos:Concept  ;
+	skos:notation "9710" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Zentral verwaltete Hörsäle und Lehrräume"@de .
+
+<https://onto.tib.eu/destf/cs/8920> a  skos:Concept  ;
+	skos:notation "8920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Zentrale Blutbank"@de .
+
+<https://onto.tib.eu/destf/cs/9720> a  skos:Concept  ;
+	skos:notation "9720" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Zentrale wissenschaftliche Einrichtungen (einschl. Bibliothek)"@de .
+
+<https://onto.tib.eu/destf/cs/8950> a  skos:Concept  ;
+	skos:notation "8950" ;
+	skos:broader <https://onto.tib.eu/destf/cs/970> ;
+	skos:prefLabel "Zentrallabor"@de .
+
+<https://onto.tib.eu/destf/cs/980> a  skos:Concept ;
+	skos:notation "980" ;
+	skos:broader <https://onto.tib.eu/destf/cs/20> ; 
+	skos:prefLabel "Soziale Einrichtungen der Kliniken"@de .
+
+<https://onto.tib.eu/destf/cs/9800> a  skos:Concept  ;
+	skos:notation "9800" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Soziale Einrichtungen der Kliniken allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9820> a  skos:Concept  ;
+	skos:notation "9820" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Dienstwohnungen"@de .
+
+<https://onto.tib.eu/destf/cs/9830> a  skos:Concept  ;
+	skos:notation "9830" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Kindergarten"@de .
+
+<https://onto.tib.eu/destf/cs/9810> a  skos:Concept  ;
+	skos:notation "9810" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Krankenhausseelsorge"@de .
+
+<https://onto.tib.eu/destf/cs/9815> a  skos:Concept  ;
+	skos:notation "9815" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Patientenbücherei"@de .
+
+<https://onto.tib.eu/destf/cs/9805> a  skos:Concept  ;
+	skos:notation "9805" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Sozialdienst, Patientenbetreuung"@de .
+
+<https://onto.tib.eu/destf/cs/9825> a  skos:Concept  ;
+	skos:notation "9825" ;
+	skos:broader <https://onto.tib.eu/destf/cs/980> ;
+	skos:prefLabel "Wohnheime"@de .
+
+<https://onto.tib.eu/destf/cs/986> a  skos:Concept ;
+	skos:notation "986" ;
+	skos:broader <https://onto.tib.eu/destf/cs/20> ;
+	skos:prefLabel "Übrige Ausbildungseinrichtungen der Kliniken"@de .
+
+<https://onto.tib.eu/destf/cs/9860> a  skos:Concept  ;
+	skos:notation "9860" ;
+	skos:broader <https://onto.tib.eu/destf/cs/986> ;
+	skos:prefLabel "Schulen für nichtakademische Ausbildungsgänge (z.B. Krankenpflegeschulen, Schulen für Logopäden, med.-techn. Assistenten)"@de .
+
+<https://onto.tib.eu/destf/cs/990> a  skos:Concept ;
+	skos:notation "990" ;
+	skos:broader <https://onto.tib.eu/destf/cs/20> ;
+	skos:prefLabel "Mit den Kliniken verbundene sowie klinikfremde Einrichtungen"@de .
+
+<https://onto.tib.eu/destf/cs/9900> a  skos:Concept  ;
+	skos:notation "9900" ;
+	skos:broader <https://onto.tib.eu/destf/cs/990> ;
+	skos:note "Lehr- und Forschungsgebiete, die lediglich einem Lehr- und Forschungsbereich, aber keinem Fachgebiet zugeordnet werden können, sind hier nachzuweisen."@de ;
+	skos:prefLabel "Mit den Kliniken verbundene Einrichtungen allgemein"@de .
+
+<https://onto.tib.eu/destf/cs/9920> a  skos:Concept  ;
+	skos:notation "9920" ;
+	skos:broader <https://onto.tib.eu/destf/cs/990> ;
+	skos:prefLabel "Blutbank anderer Träger"@de .
+
+<https://onto.tib.eu/destf/cs/9930> a  skos:Concept  ;
+	skos:notation "9930" ;
+	skos:broader <https://onto.tib.eu/destf/cs/990> ;
+	skos:prefLabel "Geschäft, Gaststätte, Bank, Friseur"@de .
+
+<https://onto.tib.eu/destf/cs/9910> a  skos:Concept  ;
+	skos:notation "9910" ;
+	skos:broader <https://onto.tib.eu/destf/cs/990> ;
+	skos:prefLabel "Öffentliches Gesundheitswesen (z.B. Blutalkoholuntersuchungsstelle, Medizinaluntersuchungsamt)"@de .
+
+
+
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
