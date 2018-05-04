@@ -63,7 +63,7 @@ xsd:int a rdfs:Datatype .
 xsd:string a rdfs:Datatype .
 <http://aims.fao.org/aos/geopolitical.owl#hasBorderWith>
   a owl:ObjectProperty ;
-  rdfs:label "has border with"@en ;
+  rdfs:label ""has border with"@en ;
   geopolitical:sourceModified "2010-05-01"^^xsd:string ;
   geopolitical:sourceCreator "United Nations cartographic maps"^^xsd:string ;
   dc:source "United Nations cartographic maps http://www.un.org/Depts/Cartographic/map/profile/world00.pdf"^^xsd:string ;
@@ -71,7 +71,7 @@ xsd:string a rdfs:Datatype .
 
 geopolitical:hasMember
   a owl:ObjectProperty ;
-  rdfs:label "has member country or territory"@en ;
+  rdfs:label "has member country or territory"@en !
   rdfs:domain geopolitical:group ;
   owl:inverseOf geopolitical:isInGroup ;
   rdfs:range geopolitical:territory .
