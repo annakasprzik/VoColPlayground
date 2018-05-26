@@ -4352,14 +4352,14 @@ obo:UO_0000280
   a owl:Class ;
   rdfs:label "Phase"@en ;
   rdfs:subClassOf obo:BFO_0000015 ;
-  obo:IAO_0000115 "Phase describes the level of a trial required of drugs before (and after) they are routinely used in clinical practice: 
+  obo:IAO_0000115 """Phase describes the level of a trial required of drugs before (and after) they are routinely used in clinical practice: 
 - Phase I trials assess toxic effects on humans (not many people participate in them, and usually without controls); 
 - Phase ll trials assess therapeutic benefit (usually involving a few hundred people, usually with controls, but not always); 
 - Phase III trials compare the new treatment against standard (or placebo) treatment (usually a full randomised controlled trial). At this point, a drug can be approved for community use. 
 - Phase IV monitors a new treatment in the community, often to evaluate longterm safety and effectiveness. [Glossary of Terms in The Cochrane Collaboration]
 
 A trial can be of a combination phase (e.g., I/II).
-The concept of phase is not applicable to trials studying certain interventions (e.g., device, procedure, behavioral)"^^xsd:string ;
+The concept of phase is not applicable to trials studying certain interventions (e.g., device, procedure, behavioral)"""^^xsd:string ;
   obo:IAO_0000117 "Simona"^^xsd:string .
 
 <http://purl.org/net/OCRe/study_design.owl#Phase_0>
@@ -4387,8 +4387,8 @@ The concept of phase is not applicable to trials studying certain interventions 
   a owl:Class ;
   rdfs:label "Phase 3"@en ;
   rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100038> ;
-  obo:IAO_0000115 "A Phase III trial compares the new treatment against standard (or placebo) treatment (usually a full
-randomised controlled trial). At this point, a drug can be approved for community use. [Glossary of Terms in The Cochrane Collaboration]"^^xsd:string ;
+  obo:IAO_0000115 """A Phase III trial compares the new treatment against standard (or placebo) treatment (usually a full
+randomised controlled trial). At this point, a drug can be approved for community use. [Glossary of Terms in The Cochrane Collaboration]"""^^xsd:string ;
   statistics:curator "Simona"^^xsd:string .
 
 <http://purl.org/net/OCRe/study_design.owl#Phase_4>
@@ -4402,8 +4402,8 @@ randomised controlled trial). At this point, a drug can be approved for communit
   a owl:Class ;
   rdfs:label "Single Group Study"@en ;
   rdfs:subClassOf <http://purl.org/net/OCRe/research.owl#Interventional_study> ;
-  obo:IAO_0000115 "A single group study is an interventional study that has only a single allocation group and no contemporaneuos comparison group.
-A study in which an individual acts has his/her own comparison does not fall into this category, since an individual is not a group."^^xsd:string ;
+  obo:IAO_0000115 """A single group study is an interventional study that has only a single allocation group and no contemporaneuos comparison group.
+A study in which an individual acts has his/her own comparison does not fall into this category, since an individual is not a group."""^^xsd:string ;
   statistics:curator "Simona"^^xsd:string ;
   study_protocol:develop_comment "Simona: to be reviewed"^^xsd:string .
 
@@ -7095,3 +7095,4 @@ _:genid428
   owl:minCardinality "0"^^xsd:nonNegativeInteger .
 
 [] owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
