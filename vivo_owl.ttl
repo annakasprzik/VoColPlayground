@@ -6444,7 +6444,7 @@ vcard:Address
      _:genid356
    )
   ] ;
-  rdfs:comment "To specify the components of the delivery address for the vCard object"^^xsd:string ;
+  rdfs:comment "To specify the components of the delivery address for the vCard object."^^xsd:string ;
   rdfs:label "Address"@en .
 
 vcard:Agent
