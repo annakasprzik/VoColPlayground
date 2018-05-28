@@ -86,7 +86,7 @@ geopolitical:isAdministeredBy
 
 geopolitical:isInGroup
   a owl:ObjectProperty ;
-  rdfs:label "in geographic grouping"@en ;
+  rdfs:label "in geographic grouping"@en-us ;
   rdfs:range geopolitical:group ;
   rdfs:domain geopolitical:territory .
 
