@@ -18,7 +18,7 @@
                                                #owl:imports <http://kerndatensatz-forschung.de/owl/Meta> ;
                                                owl:versionInfo "2017-01-04"^^xsd:string ;
                                                vitro:ontologyPrefixAnnot "kdsf" ;
-                                               rdfs:label "KDSF-VIVO-Alignment"@de-de ;
+                                               rdfs:label "KDSF-VIVO-Alignment"@de-DE ;
                                                rdfs:comment "This ontology is available under the Creative Commons Attribution-ShareAlike 4.0 International."^^xsd:string ,
                                                             "This ontology is an adoption of the Research Core Dataset (KDSF). This alignment was created by Tatiana Walther, Anna Kasprzik and Christian Hauschke (Technische Informationsbibliothek (TIB)) for use in current research information system VIVO. It is tested with VIVO 1.9.\""^^xsd:string ;
                                                dct:rights <https://creativecommons.org/licenses/by-sa/4.0/> .
