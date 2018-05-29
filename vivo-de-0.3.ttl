@@ -76,7 +76,7 @@ vitro:descriptionAnnot rdf:type owl:AnnotationProperty .
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayLimitAnnot
-vitro:displayLimitAnnot rdf:type owl:AnnotationProperty .
+vitro:displayLimitAnnot rdf:type owl:AnnotationProperty 
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayRankAnnot
@@ -96,7 +96,7 @@ vitro:inClassGroup rdf:type owl:AnnotationProperty .
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#inPropertyGroupAnnot
-vitro:inPropertyGroupAnnot rdf:type owl:AnnotationProperty .
+vitro:inPropertyGroupAnnot rdf:type owl :AnnotationProperty .
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#prohibitedFromUpdateBelowRoleLevelAnnot
