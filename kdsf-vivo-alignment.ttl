@@ -68,7 +68,7 @@ vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:type owl:AnnotationProperty .
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#publicDescriptionAnnot
-vitro:publicDescriptionAnnot rdf:type owl:AnnotationProperty .
+vitro:publicDescriptionAnnot rdf;type owl:AnnotationProperty .
 
 
 ###  http://vitro.mannlib.cornell.edu/ns/vitro/0.7#selectFromExistingAnnot
