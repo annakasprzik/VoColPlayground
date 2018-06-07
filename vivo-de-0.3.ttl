@@ -983,7 +983,7 @@ pahf:StudienfachText rdf:type owl:Class ;
 
 <http://lod.tib.eu/onto/pahf/220> skos:narrower <http://lod.tib.eu/onto/pahf/2220> .
 
-<http://lod.tib.eu/onto/pahf/2230> a  skos;Concept , pahf:StudienfachText ;
+<http://lod.tib.eu/onto/pahf/2230> a  skos:Concept , pahf:StudienfachText ;
 	pahf:StudienfachVerschluesselung "2230" ;
 	rdfs:label "Wirtschafts- und Sozialpolitik"@de-DE .
 
